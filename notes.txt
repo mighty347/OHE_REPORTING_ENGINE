@@ -1,0 +1,18 @@
+Listening on topic : PROD-AI-REPORT-PROCESS-REQUEST
+2025-06-26 17:36:48.392384 > Received message:  {'InspectionId': 'e2bddc82-6ddd-4893-b709-e8c08c8f6c3d', 'TopicName': 'e2bddc82-6ddd-4893-b709-e8c08c8f6c3d-20250626T173647-w', 'RequestType': 'w', 'CallFor': 'DronePatrollingDefectSheet'}
+2025-06-26 17:51:10.322572 > Received message:  {'InspectionId': 'e2bddc82-6ddd-4893-b709-e8c08c8f6c3d', 'TopicName': 'e2bddc82-6ddd-4893-b709-e8c08c8f6c3d-20250626T175109-w', 'RequestType': 'w', 'CallFor': 'DronePatrollingDefectSheet'}
+2025-06-26 18:02:09.440159 > Received message:  {'InspectionId': 'e2bddc82-6ddd-4893-b709-e8c08c8f6c3d', 'TopicName': 'e2bddc82-6ddd-4893-b709-e8c08c8f6c3d-20250626T180208-t', 'RequestType': 't', 'CallFor': 'DronePatrollingDefectSheet'}
+2025-06-26 18:03:13.441158 > Received message:  {'InspectionId': '56d155c8-10c1-4224-ba6d-649c78524b2e', 'TopicName': '56d155c8-10c1-4224-ba6d-649c78524b2e-20250626T180313-w', 'RequestType': 'w', 'CallFor': 'DronePatrollingDefectSheet'}
+2025-06-26 18:03:44.646061 > Received message:  {'InspectionId': '56d155c8-10c1-4224-ba6d-649c78524b2e', 'TopicName': '56d155c8-10c1-4224-ba6d-649c78524b2e-20250626T180344-t', 'RequestType': 't', 'CallFor': 'DronePatrollingDefectSheet'}
+
+
+
+{
+	"InspectionId": "038d913b-29ad-4a9d-936b-595e634415d1",
+	"TopicName": "038d913b-29ad-4a9d-936b-595e634415d1-20250630T092126-t",
+	"RequestType": "t",
+	"CallFor": "DronePatrollingDefectSheet"
+}
+
+
+

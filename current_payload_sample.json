@@ -1,0 +1,3954 @@
+{
+    "surveillance_reports": [
+        {
+            "AnnotationId": "5fcb750a-d422-440c-aa18-b3f283d1b767",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            907,
+                            410
+                        ],
+                        [
+                            979,
+                            410
+                        ],
+                        [
+                            979,
+                            497
+                        ],
+                        [
+                            907,
+                            497
+                        ],
+                        [
+                            907,
+                            410
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_23_helmet_missing_18-39-59.jpeg",
+            "Confidence": 0.78,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:09:59+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "faae1518-3081-4189-be91-d46f2ac44c6f",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            633,
+                            420
+                        ],
+                        [
+                            694,
+                            420
+                        ],
+                        [
+                            694,
+                            594
+                        ],
+                        [
+                            633,
+                            594
+                        ],
+                        [
+                            633,
+                            420
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_24_ifr_suit_missing_18-39-59.jpeg",
+            "Confidence": 0.63,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:09:59+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "ee31cd87-98d0-4c59-a75a-1ed3d602519d",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1592,
+                            691
+                        ],
+                        [
+                            1686,
+                            691
+                        ],
+                        [
+                            1686,
+                            833
+                        ],
+                        [
+                            1592,
+                            833
+                        ],
+                        [
+                            1592,
+                            691
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_22_helmet_missing_18-39-14.jpeg",
+            "Confidence": 0.82,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:09:14+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "2c2ffd51-3c63-4dfe-861a-c554d3734155",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1514,
+                            565
+                        ],
+                        [
+                            1609,
+                            565
+                        ],
+                        [
+                            1609,
+                            702
+                        ],
+                        [
+                            1514,
+                            702
+                        ],
+                        [
+                            1514,
+                            565
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_20_ifr_suit_missing_18-38-20.jpeg",
+            "Confidence": 0.28,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:08:20+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "e4c55c47-bd4e-44af-8f66-0aac7fe7a566",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1512,
+                            321
+                        ],
+                        [
+                            1558,
+                            321
+                        ],
+                        [
+                            1558,
+                            394
+                        ],
+                        [
+                            1512,
+                            394
+                        ],
+                        [
+                            1512,
+                            321
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_19_helmet_missing_18-38-20.jpeg",
+            "Confidence": 0.8,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:08:20+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "ab0bdf18-3c3f-4b24-8a6a-bfbafda9958a",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1472,
+                            380
+                        ],
+                        [
+                            1590,
+                            380
+                        ],
+                        [
+                            1590,
+                            547
+                        ],
+                        [
+                            1472,
+                            547
+                        ],
+                        [
+                            1472,
+                            380
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_21_ifr_suit_missing_18-38-20.jpeg",
+            "Confidence": 0.32,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:08:20+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "87eff0ba-cbae-420e-beb5-c11da51e9cbe",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1479,
+                            314
+                        ],
+                        [
+                            1516,
+                            314
+                        ],
+                        [
+                            1516,
+                            383
+                        ],
+                        [
+                            1479,
+                            383
+                        ],
+                        [
+                            1479,
+                            314
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_18_helmet_missing_18-38-20.jpeg",
+            "Confidence": 0.31,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:08:20+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "5c0f8b91-90b0-41ee-9ce4-c04b4c341ff5",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1731,
+                            899
+                        ],
+                        [
+                            1746,
+                            899
+                        ],
+                        [
+                            1746,
+                            917
+                        ],
+                        [
+                            1731,
+                            917
+                        ],
+                        [
+                            1731,
+                            899
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_16_helmet_missing_18-37-44.jpeg",
+            "Confidence": 0.38,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:07:44+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "8c7ab1f1-eb55-4b0d-af63-026e29d58bfb",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            659,
+                            664
+                        ],
+                        [
+                            773,
+                            664
+                        ],
+                        [
+                            773,
+                            777
+                        ],
+                        [
+                            659,
+                            777
+                        ],
+                        [
+                            659,
+                            664
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_17_helmet_missing_18-37-44.jpeg",
+            "Confidence": 0.36,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:07:44+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "fdcf0430-6d9c-48b7-a013-bbf3e055c00b",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1504,
+                            505
+                        ],
+                        [
+                            1530,
+                            505
+                        ],
+                        [
+                            1530,
+                            565
+                        ],
+                        [
+                            1504,
+                            565
+                        ],
+                        [
+                            1504,
+                            505
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_15_helmet_missing_18-36-47.jpeg",
+            "Confidence": 0.42,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:47+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "96459bd6-61c3-4c5c-be2b-73e5467a2b08",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1498,
+                            313
+                        ],
+                        [
+                            1540,
+                            313
+                        ],
+                        [
+                            1540,
+                            377
+                        ],
+                        [
+                            1498,
+                            377
+                        ],
+                        [
+                            1498,
+                            313
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_6_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.81,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "9e146ebb-6825-4546-b225-bc319ee4cca1",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            679,
+                            672
+                        ],
+                        [
+                            770,
+                            672
+                        ],
+                        [
+                            770,
+                            779
+                        ],
+                        [
+                            679,
+                            779
+                        ],
+                        [
+                            679,
+                            672
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_1_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.28,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "6bc64628-269b-4e5e-b39f-d3fd0772b63a",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1518,
+                            505
+                        ],
+                        [
+                            1560,
+                            505
+                        ],
+                        [
+                            1560,
+                            577
+                        ],
+                        [
+                            1518,
+                            577
+                        ],
+                        [
+                            1518,
+                            505
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_3_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.76,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "0d512ef6-28ca-4d09-aa39-e25cbf042867",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            628,
+                            362
+                        ],
+                        [
+                            659,
+                            362
+                        ],
+                        [
+                            659,
+                            430
+                        ],
+                        [
+                            628,
+                            430
+                        ],
+                        [
+                            628,
+                            362
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_2_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.71,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "a2fc7aa7-7fce-40e2-8990-9f78114a6ccf",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1310,
+                            383
+                        ],
+                        [
+                            1354,
+                            383
+                        ],
+                        [
+                            1354,
+                            452
+                        ],
+                        [
+                            1310,
+                            452
+                        ],
+                        [
+                            1310,
+                            383
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_5_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.79,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "5ebde137-c42a-414b-a035-bdd3d83c16b2",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1002,
+                            450
+                        ],
+                        [
+                            1066,
+                            450
+                        ],
+                        [
+                            1066,
+                            532
+                        ],
+                        [
+                            1002,
+                            532
+                        ],
+                        [
+                            1002,
+                            450
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_4_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.79,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "ad5754d9-1f5c-45d2-adac-ad5b9e618cce",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1396,
+                            448
+                        ],
+                        [
+                            1448,
+                            448
+                        ],
+                        [
+                            1448,
+                            520
+                        ],
+                        [
+                            1396,
+                            520
+                        ],
+                        [
+                            1396,
+                            448
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_7_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.81,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "9c858a1f-a668-48fb-b5f4-5ac08b0639dc",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1537,
+                            343
+                        ],
+                        [
+                            1591,
+                            343
+                        ],
+                        [
+                            1591,
+                            418
+                        ],
+                        [
+                            1537,
+                            418
+                        ],
+                        [
+                            1537,
+                            343
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_8_helmet_missing_18-36-45.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "413fd92e-d2cb-44d4-955d-372a98d31587",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1197,
+                            315
+                        ],
+                        [
+                            1295,
+                            315
+                        ],
+                        [
+                            1295,
+                            499
+                        ],
+                        [
+                            1197,
+                            499
+                        ],
+                        [
+                            1197,
+                            315
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_13_ifr_suit_missing_18-36-45.jpeg",
+            "Confidence": 0.79,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:45+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "121d032d-664a-4ef6-8c03-e858958430fc",
+            "CameraId": "354ab368-be41-4a9c-aaad-2eca58b91471",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1220,
+                            265
+                        ],
+                        [
+                            1261,
+                            265
+                        ],
+                        [
+                            1261,
+                            322
+                        ],
+                        [
+                            1220,
+                            322
+                        ],
+                        [
+                            1220,
+                            265
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.110:9000/surveillanceprod/detections/354ab368-be41-4a9c-aaad-2eca58b91471/25-02-26/capture_0_helmet_missing_18-36-42.jpeg",
+            "Confidence": 0.8,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T13:06:42+00:00",
+            "CameraName": "test local",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "ca2cf6ab-9008-4303-90ac-f37c8929ab05",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1581,
+                            563
+                        ],
+                        [
+                            1647,
+                            563
+                        ],
+                        [
+                            1647,
+                            652
+                        ],
+                        [
+                            1581,
+                            652
+                        ],
+                        [
+                            1581,
+                            563
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_11_helmet_missing_15-25-44.jpeg",
+            "Confidence": 0.84,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:55:44+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "8b0f9cac-6c08-41fc-9b50-0f696ac9e478",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            838,
+                            978
+                        ],
+                        [
+                            1145,
+                            978
+                        ],
+                        [
+                            1145,
+                            1078
+                        ],
+                        [
+                            838,
+                            1078
+                        ],
+                        [
+                            838,
+                            978
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_14_ifr_suit_missing_15-25-44.jpeg",
+            "Confidence": 0.46,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:55:44+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "24a37ee9-9105-4086-82d0-34f4d6ddc397",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            854,
+                            947
+                        ],
+                        [
+                            1219,
+                            947
+                        ],
+                        [
+                            1219,
+                            1079
+                        ],
+                        [
+                            854,
+                            1079
+                        ],
+                        [
+                            854,
+                            947
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_17_ifr_suit_missing_15-21-18.jpeg",
+            "Confidence": 0.5,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:51:18+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "0fa51d54-d10e-4406-823d-b9b35915500d",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1591,
+                            549
+                        ],
+                        [
+                            1772,
+                            549
+                        ],
+                        [
+                            1772,
+                            777
+                        ],
+                        [
+                            1591,
+                            777
+                        ],
+                        [
+                            1591,
+                            549
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_15_ifr_suit_missing_15-21-05.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:51:05+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "94acd0cf-91c9-4c32-98e8-7ffc9aee40e8",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1636,
+                            468
+                        ],
+                        [
+                            1703,
+                            468
+                        ],
+                        [
+                            1703,
+                            562
+                        ],
+                        [
+                            1636,
+                            562
+                        ],
+                        [
+                            1636,
+                            468
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_16_helmet_missing_15-21-05.jpeg",
+            "Confidence": 0.82,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:51:05+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "79855f64-f17f-4bee-84c5-675ca1ebd068",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            639,
+                            420
+                        ],
+                        [
+                            749,
+                            420
+                        ],
+                        [
+                            749,
+                            606
+                        ],
+                        [
+                            639,
+                            606
+                        ],
+                        [
+                            639,
+                            420
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_9_ifr_suit_missing_15-20-59.jpeg",
+            "Confidence": 0.84,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:50:59+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "c0bee2fa-d599-4e45-971b-1845adf568d2",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            714,
+                            609
+                        ],
+                        [
+                            802,
+                            609
+                        ],
+                        [
+                            802,
+                            729
+                        ],
+                        [
+                            714,
+                            729
+                        ],
+                        [
+                            714,
+                            609
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_5_helmet_missing_15-20-59.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:50:59+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "84c93fcb-8e4c-4f73-af3a-eeb512f360c8",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1198,
+                            340
+                        ],
+                        [
+                            1325,
+                            340
+                        ],
+                        [
+                            1325,
+                            510
+                        ],
+                        [
+                            1198,
+                            510
+                        ],
+                        [
+                            1198,
+                            340
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_23_ifr_suit_missing_15-18-42.jpeg",
+            "Confidence": 0.84,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:48:42+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "9e9f984c-678a-4b2c-9ffc-394b451135a5",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1597,
+                            357
+                        ],
+                        [
+                            1649,
+                            357
+                        ],
+                        [
+                            1649,
+                            440
+                        ],
+                        [
+                            1597,
+                            440
+                        ],
+                        [
+                            1597,
+                            357
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_20_helmet_missing_15-18-31.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:48:31+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "4e23ef00-ed6e-40ad-9c69-309555e0a7ce",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            894,
+                            303
+                        ],
+                        [
+                            1049,
+                            303
+                        ],
+                        [
+                            1049,
+                            470
+                        ],
+                        [
+                            894,
+                            470
+                        ],
+                        [
+                            894,
+                            303
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_18_ifr_suit_missing_15-18-27.jpeg",
+            "Confidence": 0.85,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:48:27+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "ae292a2a-43f5-42b0-bfc8-11cc4750e341",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            583,
+                            710
+                        ],
+                        [
+                            914,
+                            710
+                        ],
+                        [
+                            914,
+                            1002
+                        ],
+                        [
+                            583,
+                            1002
+                        ],
+                        [
+                            583,
+                            710
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_16_ifr_suit_missing_15-18-20.jpeg",
+            "Confidence": 0.69,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:48:20+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "4535bb58-e192-47a3-8ea2-5880afa85bc4",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            638,
+                            418
+                        ],
+                        [
+                            735,
+                            418
+                        ],
+                        [
+                            735,
+                            576
+                        ],
+                        [
+                            638,
+                            576
+                        ],
+                        [
+                            638,
+                            418
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_15_ifr_suit_missing_15-18-20.jpeg",
+            "Confidence": 0.29,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:48:20+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "97c52b02-1baa-468c-8ae1-23ea0459a94d",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            932,
+                            888
+                        ],
+                        [
+                            1066,
+                            888
+                        ],
+                        [
+                            1066,
+                            1023
+                        ],
+                        [
+                            932,
+                            1023
+                        ],
+                        [
+                            932,
+                            888
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_11_helmet_missing_15-18-14.jpeg",
+            "Confidence": 0.84,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:48:14+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "4c382528-58a6-4884-ac4b-cf7ab28b56be",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            775,
+                            970
+                        ],
+                        [
+                            1104,
+                            970
+                        ],
+                        [
+                            1104,
+                            1078
+                        ],
+                        [
+                            775,
+                            1078
+                        ],
+                        [
+                            775,
+                            970
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_12_ifr_suit_missing_15-18-14.jpeg",
+            "Confidence": 0.71,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:48:14+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "247246e9-0c18-4382-b029-a0d06d066471",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1555,
+                            624
+                        ],
+                        [
+                            1666,
+                            624
+                        ],
+                        [
+                            1666,
+                            1061
+                        ],
+                        [
+                            1555,
+                            1061
+                        ],
+                        [
+                            1555,
+                            624
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_22_ifr_suit_missing_15-17-15.jpeg",
+            "Confidence": 0.34,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:47:15+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "cb831445-6208-4818-86d6-e5101db568fa",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            909,
+                            540
+                        ],
+                        [
+                            1108,
+                            540
+                        ],
+                        [
+                            1108,
+                            758
+                        ],
+                        [
+                            909,
+                            758
+                        ],
+                        [
+                            909,
+                            540
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_21_ifr_suit_missing_15-17-09.jpeg",
+            "Confidence": 0.49,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:47:09+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "c66815ad-440a-475b-8678-90495202f9c3",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            727,
+                            294
+                        ],
+                        [
+                            784,
+                            294
+                        ],
+                        [
+                            784,
+                            371
+                        ],
+                        [
+                            727,
+                            371
+                        ],
+                        [
+                            727,
+                            294
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_19_helmet_missing_15-16-52.jpeg",
+            "Confidence": 0.82,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:46:52+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "cdba3fa9-dbaa-4ccb-9c7e-eecd8bad754a",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            640,
+                            462
+                        ],
+                        [
+                            761,
+                            462
+                        ],
+                        [
+                            761,
+                            582
+                        ],
+                        [
+                            640,
+                            582
+                        ],
+                        [
+                            640,
+                            462
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_18_ifr_suit_missing_15-16-34.jpeg",
+            "Confidence": 0.2,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:46:34+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "8edc78e3-de04-484b-af4f-3add658eea80",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            916,
+                            891
+                        ],
+                        [
+                            1053,
+                            891
+                        ],
+                        [
+                            1053,
+                            1032
+                        ],
+                        [
+                            916,
+                            1032
+                        ],
+                        [
+                            916,
+                            891
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_16_helmet_missing_15-16-29.jpeg",
+            "Confidence": 0.81,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:46:29+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "af1184f2-7036-48b2-a5e2-0452f0fad692",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            796,
+                            992
+                        ],
+                        [
+                            1100,
+                            992
+                        ],
+                        [
+                            1100,
+                            1079
+                        ],
+                        [
+                            796,
+                            1079
+                        ],
+                        [
+                            796,
+                            992
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_17_ifr_suit_missing_15-16-29.jpeg",
+            "Confidence": 0.46,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:46:29+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "782c4154-ecdf-4db9-80bd-cadefe82a7b4",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            674,
+                            424
+                        ],
+                        [
+                            728,
+                            424
+                        ],
+                        [
+                            728,
+                            487
+                        ],
+                        [
+                            674,
+                            487
+                        ],
+                        [
+                            674,
+                            424
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_14_helmet_missing_15-16-24.jpeg",
+            "Confidence": 0.79,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:46:24+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "6602dd43-eac9-432a-b1bc-d413be43ad30",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            909,
+                            363
+                        ],
+                        [
+                            969,
+                            363
+                        ],
+                        [
+                            969,
+                            435
+                        ],
+                        [
+                            909,
+                            435
+                        ],
+                        [
+                            909,
+                            363
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_6_helmet_missing_15-16-05.jpeg",
+            "Confidence": 0.85,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:46:05+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "576c176f-c8b0-4fe7-b77f-d099c1bc7a63",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            876,
+                            422
+                        ],
+                        [
+                            984,
+                            422
+                        ],
+                        [
+                            984,
+                            595
+                        ],
+                        [
+                            876,
+                            595
+                        ],
+                        [
+                            876,
+                            422
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/25-02-26/capture_7_ifr_suit_missing_15-16-05.jpeg",
+            "Confidence": 0.25,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-25T09:46:05+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "f3563a48-7df7-426c-8893-55e314cc3b84",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            958,
+                            500
+                        ],
+                        [
+                            1070,
+                            500
+                        ],
+                        [
+                            1070,
+                            645
+                        ],
+                        [
+                            958,
+                            645
+                        ],
+                        [
+                            958,
+                            500
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_26_ifr_suit_missing_17-18-03.jpeg",
+            "Confidence": 0.47,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:48:03+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "e2c671bb-114f-4f72-8667-75bbc8e7521b",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1249,
+                            597
+                        ],
+                        [
+                            1335,
+                            597
+                        ],
+                        [
+                            1335,
+                            725
+                        ],
+                        [
+                            1249,
+                            725
+                        ],
+                        [
+                            1249,
+                            597
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_27_helmet_missing_17-18-03.jpeg",
+            "Confidence": 0.82,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:48:03+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "20478124-836c-4651-90a8-4229bf3cf5c0",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1398,
+                            318
+                        ],
+                        [
+                            1443,
+                            318
+                        ],
+                        [
+                            1443,
+                            387
+                        ],
+                        [
+                            1398,
+                            387
+                        ],
+                        [
+                            1398,
+                            318
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_23_helmet_missing_17-17-37.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:47:37+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "bdc71510-1349-484a-a4cc-678e197b301d",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1341,
+                            333
+                        ],
+                        [
+                            1479,
+                            333
+                        ],
+                        [
+                            1479,
+                            574
+                        ],
+                        [
+                            1341,
+                            574
+                        ],
+                        [
+                            1341,
+                            333
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_22_ifr_suit_missing_17-17-36.jpeg",
+            "Confidence": 0.88,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:47:36+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "05fab990-b0da-43b5-85cb-ac23cd26f37e",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1352,
+                            897
+                        ],
+                        [
+                            1574,
+                            897
+                        ],
+                        [
+                            1574,
+                            1079
+                        ],
+                        [
+                            1352,
+                            1079
+                        ],
+                        [
+                            1352,
+                            897
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_20_ifr_suit_missing_17-17-34.jpeg",
+            "Confidence": 0.4,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:47:34+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "a7cd960d-f236-4f9e-98db-993888f4d204",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1273,
+                            649
+                        ],
+                        [
+                            1345,
+                            649
+                        ],
+                        [
+                            1345,
+                            713
+                        ],
+                        [
+                            1273,
+                            713
+                        ],
+                        [
+                            1273,
+                            649
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_19_helmet_missing_17-17-28.jpeg",
+            "Confidence": 0.2,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:47:28+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "4f43e14c-b47b-4979-985f-0d235c251f16",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1546,
+                            618
+                        ],
+                        [
+                            1682,
+                            618
+                        ],
+                        [
+                            1682,
+                            741
+                        ],
+                        [
+                            1546,
+                            741
+                        ],
+                        [
+                            1546,
+                            618
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_17_ifr_suit_missing_17-17-16.jpeg",
+            "Confidence": 0.26,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:47:16+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "81e873e9-e26e-49a3-aab2-7f772273525e",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            731,
+                            595
+                        ],
+                        [
+                            816,
+                            595
+                        ],
+                        [
+                            816,
+                            712
+                        ],
+                        [
+                            731,
+                            712
+                        ],
+                        [
+                            731,
+                            595
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_10_helmet_missing_17-17-10.jpeg",
+            "Confidence": 0.87,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:47:09+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "4e583569-25cf-4692-84bd-da78193754fc",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            603,
+                            696
+                        ],
+                        [
+                            890,
+                            696
+                        ],
+                        [
+                            890,
+                            1023
+                        ],
+                        [
+                            603,
+                            1023
+                        ],
+                        [
+                            603,
+                            696
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_12_ifr_suit_missing_17-17-10.jpeg",
+            "Confidence": 0.85,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:47:09+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "2fcc14d0-e89b-4a3c-be6b-e798974f5bca",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            799,
+                            916
+                        ],
+                        [
+                            1029,
+                            916
+                        ],
+                        [
+                            1029,
+                            1078
+                        ],
+                        [
+                            799,
+                            1078
+                        ],
+                        [
+                            799,
+                            916
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_38_ifr_suit_missing_17-16-05.jpeg",
+            "Confidence": 0.34,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:46:05+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "0a73460a-9eb2-4960-afcf-dcf9e9ef9f13",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1222,
+                            421
+                        ],
+                        [
+                            1318,
+                            421
+                        ],
+                        [
+                            1318,
+                            518
+                        ],
+                        [
+                            1222,
+                            518
+                        ],
+                        [
+                            1222,
+                            421
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_37_ifr_suit_missing_17-16-05.jpeg",
+            "Confidence": 0.34,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:46:04+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "fc679634-4273-48bf-a31f-f1f84e045b89",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1302,
+                            893
+                        ],
+                        [
+                            1542,
+                            893
+                        ],
+                        [
+                            1542,
+                            1079
+                        ],
+                        [
+                            1302,
+                            1079
+                        ],
+                        [
+                            1302,
+                            893
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_33_ifr_suit_missing_17-15-53.jpeg",
+            "Confidence": 0.76,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:45:52+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "e6feafcd-81db-4de8-8ba2-083b5952fcf8",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1359,
+                            830
+                        ],
+                        [
+                            1578,
+                            830
+                        ],
+                        [
+                            1578,
+                            1079
+                        ],
+                        [
+                            1359,
+                            1079
+                        ],
+                        [
+                            1359,
+                            830
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_30_ifr_suit_missing_17-15-48.jpeg",
+            "Confidence": 0.68,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:45:48+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "5b333c2c-8562-46f5-83b3-a05baca11aa7",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1554,
+                            733
+                        ],
+                        [
+                            1675,
+                            733
+                        ],
+                        [
+                            1675,
+                            872
+                        ],
+                        [
+                            1554,
+                            872
+                        ],
+                        [
+                            1554,
+                            733
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_29_helmet_missing_17-15-48.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:45:47+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "03a4518b-1152-4e2c-a01a-492892ad58cb",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1236,
+                            410
+                        ],
+                        [
+                            1360,
+                            410
+                        ],
+                        [
+                            1360,
+                            527
+                        ],
+                        [
+                            1236,
+                            527
+                        ],
+                        [
+                            1236,
+                            410
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_23_ifr_suit_missing_17-15-23.jpeg",
+            "Confidence": 0.75,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:45:22+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "2b47b02c-78c9-48fd-b09b-e0cfe26f6c7f",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1110,
+                            762
+                        ],
+                        [
+                            1320,
+                            762
+                        ],
+                        [
+                            1320,
+                            978
+                        ],
+                        [
+                            1110,
+                            978
+                        ],
+                        [
+                            1110,
+                            762
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_20_ifr_suit_missing_17-15-17.jpeg",
+            "Confidence": 0.3,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:45:16+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "f6c4cf22-5f4b-416a-9d3f-526f614236c9",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            832,
+                            921
+                        ],
+                        [
+                            958,
+                            921
+                        ],
+                        [
+                            958,
+                            1049
+                        ],
+                        [
+                            832,
+                            1049
+                        ],
+                        [
+                            832,
+                            921
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_18_helmet_missing_17-15-00.jpeg",
+            "Confidence": 0.24,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:45:00+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "31c9d41a-021e-4f58-990a-218112658da4",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1336,
+                            342
+                        ],
+                        [
+                            1447,
+                            342
+                        ],
+                        [
+                            1447,
+                            579
+                        ],
+                        [
+                            1336,
+                            579
+                        ],
+                        [
+                            1336,
+                            342
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_7_ifr_suit_missing_17-14-55.jpeg",
+            "Confidence": 0.88,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:44:55+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "06f063df-294b-4a31-b292-85dd31b10b95",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            732,
+                            609
+                        ],
+                        [
+                            843,
+                            609
+                        ],
+                        [
+                            843,
+                            730
+                        ],
+                        [
+                            732,
+                            730
+                        ],
+                        [
+                            732,
+                            609
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_0_helmet_missing_17-14-53.jpeg",
+            "Confidence": 0.59,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:44:53+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "be1ffb96-bb71-476c-b90c-4f421727e34a",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1128,
+                            716
+                        ],
+                        [
+                            1228,
+                            716
+                        ],
+                        [
+                            1228,
+                            830
+                        ],
+                        [
+                            1128,
+                            830
+                        ],
+                        [
+                            1128,
+                            716
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_19_helmet_missing_17-10-35.jpeg",
+            "Confidence": 0.55,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:34+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "d230f143-f73e-4e6e-8052-d028d2163e18",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1304,
+                            855
+                        ],
+                        [
+                            1555,
+                            855
+                        ],
+                        [
+                            1555,
+                            1080
+                        ],
+                        [
+                            1304,
+                            1080
+                        ],
+                        [
+                            1304,
+                            855
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_18_ifr_suit_missing_17-10-27.jpeg",
+            "Confidence": 0.67,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:26+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "ff9729fd-532d-48d0-9c41-6529ffedaec1",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            804,
+                            916
+                        ],
+                        [
+                            971,
+                            916
+                        ],
+                        [
+                            971,
+                            1055
+                        ],
+                        [
+                            804,
+                            1055
+                        ],
+                        [
+                            804,
+                            916
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_15_helmet_missing_17-10-27.jpeg",
+            "Confidence": 0.22,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:26+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "f28af251-88e7-464f-878c-ac48c48fd1d5",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1558,
+                            613
+                        ],
+                        [
+                            1700,
+                            613
+                        ],
+                        [
+                            1700,
+                            754
+                        ],
+                        [
+                            1558,
+                            754
+                        ],
+                        [
+                            1558,
+                            613
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_17_ifr_suit_missing_17-10-27.jpeg",
+            "Confidence": 0.56,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:26+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "8a6c38b1-1958-42df-b2af-27c4db2ab573",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1386,
+                            777
+                        ],
+                        [
+                            1483,
+                            777
+                        ],
+                        [
+                            1483,
+                            898
+                        ],
+                        [
+                            1386,
+                            898
+                        ],
+                        [
+                            1386,
+                            777
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_16_helmet_missing_17-10-27.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:26+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "4d0c89e4-766c-40f4-b60d-0d9273200a6e",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            631,
+                            372
+                        ],
+                        [
+                            665,
+                            372
+                        ],
+                        [
+                            665,
+                            450
+                        ],
+                        [
+                            631,
+                            450
+                        ],
+                        [
+                            631,
+                            372
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_12_helmet_missing_17-10-18.jpeg",
+            "Confidence": 0.35,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:17+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "ea6b559c-a7b0-4973-a990-5aaa38955d81",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1435,
+                            774
+                        ],
+                        [
+                            1528,
+                            774
+                        ],
+                        [
+                            1528,
+                            890
+                        ],
+                        [
+                            1435,
+                            890
+                        ],
+                        [
+                            1435,
+                            774
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_7_helmet_missing_17-10-11.jpeg",
+            "Confidence": 0.87,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:10+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "ce25dc69-fb79-4ad9-a088-7e85e77c05f0",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            604,
+                            735
+                        ],
+                        [
+                            907,
+                            735
+                        ],
+                        [
+                            907,
+                            1035
+                        ],
+                        [
+                            604,
+                            1035
+                        ],
+                        [
+                            604,
+                            735
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/24-02-26/capture_10_ifr_suit_missing_17-10-11.jpeg",
+            "Confidence": 0.86,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-24T11:40:10+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "a435da79-76e5-454c-abdc-6862c92f313e",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1359,
+                            506
+                        ],
+                        [
+                            1451,
+                            506
+                        ],
+                        [
+                            1451,
+                            662
+                        ],
+                        [
+                            1359,
+                            662
+                        ],
+                        [
+                            1359,
+                            506
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_4_helmet_missing_19-09-07.jpeg",
+            "Confidence": 0.79,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:39:06+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "d6a8b418-4690-406c-9693-844e3e6bb2e9",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1639,
+                            753
+                        ],
+                        [
+                            1736,
+                            753
+                        ],
+                        [
+                            1736,
+                            882
+                        ],
+                        [
+                            1639,
+                            882
+                        ],
+                        [
+                            1639,
+                            753
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_2_helmet_missing_19-09-01.jpeg",
+            "Confidence": 0.72,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:39:00+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "b35e6b02-9a7f-4b7c-9c9a-60ab00709ddb",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            944,
+                            511
+                        ],
+                        [
+                            1093,
+                            511
+                        ],
+                        [
+                            1093,
+                            768
+                        ],
+                        [
+                            944,
+                            768
+                        ],
+                        [
+                            944,
+                            511
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_1_ifr_suit_missing_19-08-58.jpeg",
+            "Confidence": 0.47,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:38:57+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "8929676c-5a3a-4d37-94aa-ca62a566afb5",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            999,
+                            444
+                        ],
+                        [
+                            1068,
+                            444
+                        ],
+                        [
+                            1068,
+                            527
+                        ],
+                        [
+                            999,
+                            527
+                        ],
+                        [
+                            999,
+                            444
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_0_helmet_missing_19-08-58.jpeg",
+            "Confidence": 0.81,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:38:57+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "3a357048-e6c0-4494-bedd-aa4f20038623",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            762,
+                            306
+                        ],
+                        [
+                            818,
+                            306
+                        ],
+                        [
+                            818,
+                            376
+                        ],
+                        [
+                            762,
+                            376
+                        ],
+                        [
+                            762,
+                            306
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_4_helmet_missing_19-06-10.jpeg",
+            "Confidence": 0.41,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:36:10+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "3a69236d-35be-44c6-997a-9c73343e7787",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            718,
+                            375
+                        ],
+                        [
+                            860,
+                            375
+                        ],
+                        [
+                            860,
+                            639
+                        ],
+                        [
+                            718,
+                            639
+                        ],
+                        [
+                            718,
+                            375
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_5_ifr_suit_missing_19-06-10.jpeg",
+            "Confidence": 0.23,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:36:10+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "9cffdb8f-7e88-4f31-951f-44852ebcefc4",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            631,
+                            462
+                        ],
+                        [
+                            772,
+                            462
+                        ],
+                        [
+                            772,
+                            627
+                        ],
+                        [
+                            631,
+                            627
+                        ],
+                        [
+                            631,
+                            462
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_10_ifr_suit_missing_18-53-52.jpeg",
+            "Confidence": 0.23,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:23:52+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "e926749f-022f-4eaf-b308-dd6dcb0b1662",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            971,
+                            516
+                        ],
+                        [
+                            1123,
+                            516
+                        ],
+                        [
+                            1123,
+                            915
+                        ],
+                        [
+                            971,
+                            915
+                        ],
+                        [
+                            971,
+                            516
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_9_ifr_suit_missing_18-53-51.jpeg",
+            "Confidence": 0.51,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:23:51+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "c277d896-3d64-41e6-ba98-309cc0eef0f7",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            957,
+                            504
+                        ],
+                        [
+                            1072,
+                            504
+                        ],
+                        [
+                            1072,
+                            641
+                        ],
+                        [
+                            957,
+                            641
+                        ],
+                        [
+                            957,
+                            504
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_5_ifr_suit_missing_18-53-36.jpeg",
+            "Confidence": 0.26,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:23:36+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "47bb5fa8-9fea-4ef3-ba84-30da8b0436ef",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1352,
+                            439
+                        ],
+                        [
+                            1409,
+                            439
+                        ],
+                        [
+                            1409,
+                            525
+                        ],
+                        [
+                            1352,
+                            525
+                        ],
+                        [
+                            1352,
+                            439
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_4_helmet_missing_18-53-35.jpeg",
+            "Confidence": 0.83,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:23:35+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "f51fbd8e-fa4e-4c23-ba08-c1402d149c1f",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1519,
+                            469
+                        ],
+                        [
+                            1574,
+                            469
+                        ],
+                        [
+                            1574,
+                            548
+                        ],
+                        [
+                            1519,
+                            548
+                        ],
+                        [
+                            1519,
+                            469
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_13_helmet_missing_18-51-32.jpeg",
+            "Confidence": 0.79,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:21:32+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "5f49a202-8d94-44f8-84c8-edac26e9c40e",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            842,
+                            703
+                        ],
+                        [
+                            892,
+                            703
+                        ],
+                        [
+                            892,
+                            798
+                        ],
+                        [
+                            842,
+                            798
+                        ],
+                        [
+                            842,
+                            703
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_11_helmet_missing_18-51-26.jpeg",
+            "Confidence": 0.24,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:21:26+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        },
+        {
+            "AnnotationId": "6abdc79c-1de4-4d16-b65c-a075b1198c9e",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            662,
+                            698
+                        ],
+                        [
+                            892,
+                            698
+                        ],
+                        [
+                            892,
+                            947
+                        ],
+                        [
+                            662,
+                            947
+                        ],
+                        [
+                            662,
+                            698
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "ifr_suit_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_6_ifr_suit_missing_18-51-18.jpeg",
+            "Confidence": 0.73,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:21:18+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "IFR Suit Missing"
+        },
+        {
+            "AnnotationId": "4ddff0ad-09b7-4cbe-933e-4d386163d5c1",
+            "CameraId": "1b8f9ea7-0c79-4213-bb42-d51531d3e54b",
+            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+            "AnnotationType": "1",
+            "AnnotatedBy": "1",
+            "Geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            676,
+                            624
+                        ],
+                        [
+                            769,
+                            624
+                        ],
+                        [
+                            769,
+                            741
+                        ],
+                        [
+                            676,
+                            741
+                        ],
+                        [
+                            676,
+                            624
+                        ]
+                    ]
+                ]
+            },
+            "DetectedObject": "helmet_missing",
+            "FrameUrl": "http://192.168.1.58:9000/surveillanceprod/detections/1b8f9ea7-0c79-4213-bb42-d51531d3e54b/23-02-26/capture_4_helmet_missing_18-51-18.jpeg",
+            "Confidence": 0.84,
+            "ReviewStatus": "1",
+            "ReviewedBy": null,
+            "ReviewedAt": null,
+            "CreatedDate": "2026-02-23T13:21:18+00:00",
+            "CameraName": "test camera 1",
+            "ZoneName": "Urbtech Trade center",
+            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+            "SiteName": "Greater Noida",
+            "AnomalyName": "Helmet Missing"
+        }
+    ],
+    "from": "22-02-2026",
+    "to": "27-02-2026"
+}

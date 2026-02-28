@@ -1,0 +1,14 @@
+[Unit]
+Description=Reporting engine service for NTPC
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/ntpc_reporting_engine/
+ExecStart=/home/ubuntu/ntpc_reporting_engine/start_reporting_service
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

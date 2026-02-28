@@ -1,0 +1,9 @@
+{
+    "task": {
+        "SurveyId": "97a8dccb-846d-422f-8356-7a4ac364dd46",
+        "TopicName": "add8592c-1fa3-4888-a3cd-a61626f28893-20240529T104302-w",
+        "RequestType": "s"
+    },
+    "kafka_bootstrap_servers": "13.126.133.71:9092",
+    "result_response_topic": "DEV-INSPECTION-AI-REPORT-PROCESS-RESPONSE"
+}

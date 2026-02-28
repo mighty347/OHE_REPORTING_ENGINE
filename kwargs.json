@@ -1,0 +1,18 @@
+{
+    "task": {
+        "reportRequestId": "bac72bd7-38cf-4512-b331-dd428fae2450",
+        "organizationId": "9eef6999-1bf0-4ad7-850b-5158121ac7b4",
+        "requestedBy": "1c83dedd-a426-4281-9134-59b0c4f1e339",
+        "parameters": {
+            "p_from": "2026-02-25T18:30:00Z",
+            "p_to": "2026-02-27T18:29:59Z",
+            "p_site_ids": null,
+            "p_zone_ids": null,
+            "p_camera_ids": null,
+            "p_anomaly_ids": null
+        },
+        "createdAt": "2026-02-27T09:28:11.2843007Z"
+    },
+    "kafka_bootstrap_servers": "kafka:9092",
+    "result_response_topic": "surveillance-iocl-prod-report-response"
+}

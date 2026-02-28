@@ -1,0 +1,262 @@
+2025/11/27_06:34:55::678215 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/ntpc/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.pdf
+2025/11/27_06:34:55::678234 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/ntpc/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.xlsx
+2025/11/27_06:36:38::867861 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.pdf
+2025/11/27_06:36:38::867880 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.xlsx
+2025/11/27_06:45:15::359622 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.pdf
+2025/11/27_06:45:15::359638 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.xlsx
+2025/11/27_06:47:53::958198 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.pdf
+2025/11/27_06:47:53::958216 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.xlsx
+2025/11/27_06:50:21::480222 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.pdf
+2025/11/27_06:50:21::480238 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1/f5ecbb2a-f7d0-4c47-872d-c7e2386153c1-20251125T074504-s.xlsx
+2025/11/27_06:51:04::373895 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T065031-s.pdf
+2025/11/27_06:51:04::373911 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T065031-s.xlsx
+2025/11/27_07:17:56::212261 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T065031-s.pdf
+2025/11/27_07:17:56::212280 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T065031-s.xlsx
+2025/11/27_07:21:59::660536 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T065031-s.pdf
+2025/11/27_07:21:59::660553 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T065031-s.xlsx
+2025/11/27_07:29:12::764525 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T072830-s.pdf
+2025/11/27_07:29:12::764542 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T072830-s.xlsx
+2025/11/27_07:31:43::406957 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T072830-s.pdf
+2025/11/27_07:31:43::406974 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T072830-s.xlsx
+2025/11/27_07:33:43::295335 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T072830-s.pdf
+2025/11/27_07:33:43::295351 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T072830-s.xlsx
+2025/11/27_07:35:30::524142 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073449-s.pdf
+2025/11/27_07:35:30::524159 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073449-s.xlsx
+2025/11/27_07:39:49::123551 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.pdf
+2025/11/27_07:39:49::123567 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.xlsx
+2025/11/27_07:43:23::295462 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.pdf
+2025/11/27_07:43:23::295479 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.xlsx
+2025/11/27_07:44:52::519644 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.pdf
+2025/11/27_07:44:52::519662 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.xlsx
+2025/11/27_07:49:47::852411 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.pdf
+2025/11/27_07:49:47::852426 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.xlsx
+2025/11/27_11:48:17::051835 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.pdf
+2025/11/27_11:48:17::051853 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.xlsx
+2025/11/27_12:10:32::042470 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.pdf
+2025/11/27_12:10:32::042487 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251127T073806-s.xlsx
+2025/11/28_05:12:58::376419 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/28_05:12:58::376436 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/28_06:22:58::837971 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/28_06:22:58::837989 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/28_06:30:35::901276 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/28_06:30:35::901296 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_04:05:23::976565 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_04:05:23::976584 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_04:08:26::401312 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_04:08:26::401327 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_04:26:23::273508 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_04:26:23::273524 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:08:02::742103 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:08:02::742121 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:13:20::126764 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:13:20::126787 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:20:12::726381 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:20:12::726400 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:26:22::737170 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:26:22::737189 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:28:27::262817 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:28:27::262855 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:32:04::013293 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:32:04::013311 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:38:28::123939 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:38:28::123957 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:42:07::888141 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:42:07::888160 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:46:13::208983 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:46:13::209000 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:50:53::153164 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:50:53::153181 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:52:07::150978 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:52:07::150996 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_05:56:56::775071 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_05:56:56::775087 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_06:05:39::869070 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_06:05:39::869090 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_06:07:48::048931 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_06:07:48::048949 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_06:09:44::018945 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_06:09:44::018964 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_06:11:04::893655 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_06:11:04::893673 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_06:15:47::924660 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_06:15:47::924682 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_06:19:19::269241 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_06:19:19::269257 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_07:36:02::886498 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_07:36:02::886515 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_07:42:15::809309 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_07:42:15::809325 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_07:46:37::165049 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_07:46:37::165068 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/11/29_07:48:06::611573 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.pdf
+2025/11/29_07:48:06::611592 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251128T051131-s.xlsx
+2025/12/01_05:07:38::218602 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T050701-s.pdf
+2025/12/01_05:07:38::218620 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T050701-s.xlsx
+2025/12/01_07:15:18::825205 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T065429-s.pdf
+2025/12/01_07:15:18::825223 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T065429-s.xlsx
+2025/12/01_07:17:15::816796 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T071550-s.pdf
+2025/12/01_07:17:15::816815 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T071550-s.xlsx
+2025/12/01_07:29:03::983311 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T072739-s.pdf
+2025/12/01_07:29:03::983331 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/6c313161-a413-4578-af34-a9d04d173337/6c313161-a413-4578-af34-a9d04d173337-20251201T072739-s.xlsx
+2025/12/01_07:51:03::324355 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T075004-s.pdf
+2025/12/01_07:51:03::324372 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T075004-s.xlsx
+2025/12/01_07:55:00::873987 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T075004-s.pdf
+2025/12/01_07:55:00::874006 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T075004-s.xlsx
+2025/12/01_09:46:45::725833 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T094549-s.pdf
+2025/12/01_09:46:45::725854 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T094549-s.xlsx
+2025/12/01_10:03:16::349760 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T100233-s.pdf
+2025/12/01_10:03:16::349778 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T100233-s.xlsx
+2025/12/01_10:09:52::421846 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T100908-s.pdf
+2025/12/01_10:09:52::421863 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T100908-s.xlsx
+2025/12/01_10:13:32::894945 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T101248-s.pdf
+2025/12/01_10:13:32::894964 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T101248-s.xlsx
+2025/12/01_10:23:38::761886 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T102229-s.pdf
+2025/12/01_10:23:38::761904 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/44ace76d-d47b-4652-9211-fd7f71d454dc/44ace76d-d47b-4652-9211-fd7f71d454dc-20251201T102229-s.xlsx
+2025/12/01_10:25:38::181081 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T102459-s.pdf
+2025/12/01_10:25:38::181098 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T102459-s.xlsx
+2025/12/01_10:43:40::054703 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T104301-s.pdf
+2025/12/01_10:43:40::054724 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T104301-s.xlsx
+2025/12/01_10:46:55::307957 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T104613-s.pdf
+2025/12/01_10:46:55::307979 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T104613-s.xlsx
+2025/12/01_10:56:02::902574 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1b9d3640-c25a-457f-9cbc-66fcdd74150c/1b9d3640-c25a-457f-9cbc-66fcdd74150c-20251201T105503-s.pdf
+2025/12/01_10:56:02::902590 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1b9d3640-c25a-457f-9cbc-66fcdd74150c/1b9d3640-c25a-457f-9cbc-66fcdd74150c-20251201T105503-s.xlsx
+2025/12/01_11:00:21::586836 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T105942-s.pdf
+2025/12/01_11:00:21::587007 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T105942-s.xlsx
+2025/12/01_11:25:21::122768 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T112421-s.pdf
+2025/12/01_11:25:21::122785 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T112421-s.xlsx
+2025/12/01_11:35:20::167987 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T113419-s.pdf
+2025/12/01_11:35:20::168004 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T113419-s.xlsx
+2025/12/01_11:40:46::209806 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T114003-s.pdf
+2025/12/01_11:40:46::209824 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502/a4a87ccb-0789-4d8b-8ab6-aff3fdbcc502-20251201T114003-s.xlsx
+2025/12/01_11:42:11::047397 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114106-s.pdf
+2025/12/01_11:42:11::047413 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114106-s.xlsx
+2025/12/01_11:48:45::647799 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114514-s.pdf
+2025/12/01_11:48:45::647817 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114514-s.xlsx
+2025/12/01_11:52:14::929950 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114521-s.pdf
+2025/12/01_11:52:14::929968 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114521-s.xlsx
+2025/12/01_11:54:26::930991 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114555-s.pdf
+2025/12/01_11:54:26::931009 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T114555-s.xlsx
+2025/12/01_12:09:14::588226 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/26c77983-dca5-410f-940c-2746ec87c16c/26c77983-dca5-410f-940c-2746ec87c16c-20251201T120827-s.pdf
+2025/12/01_12:09:14::588245 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/26c77983-dca5-410f-940c-2746ec87c16c/26c77983-dca5-410f-940c-2746ec87c16c-20251201T120827-s.xlsx
+2025/12/01_12:32:28::044569 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T123114-s.pdf
+2025/12/01_12:32:28::044590 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T123114-s.xlsx
+2025/12/01_17:00:10::303784 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T165901-s.pdf
+2025/12/01_17:00:10::303803 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/1223a28f-02c3-41ec-9c87-3185bfc407d2/1223a28f-02c3-41ec-9c87-3185bfc407d2-20251201T165901-s.xlsx
+2025/12/02_06:18:18::253895 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T061714-s.pdf
+2025/12/02_06:18:18::253916 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T061714-s.xlsx
+2025/12/02_06:32:02::979360 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.pdf
+2025/12/02_06:32:02::979375 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.xlsx
+2025/12/02_06:54:13::714921 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.pdf
+2025/12/02_06:54:13::714941 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.xlsx
+2025/12/02_07:04:05::802344 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.pdf
+2025/12/02_07:04:05::802359 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.xlsx
+2025/12/02_07:09:45::816033 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.pdf
+2025/12/02_07:09:45::816050 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.xlsx
+2025/12/02_07:12:05::057560 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.pdf
+2025/12/02_07:12:05::057578 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T063048-s.xlsx
+2025/12/02_08:01:25::489244 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T080024-s.pdf
+2025/12/02_08:01:25::489263 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T080024-s.xlsx
+2025/12/02_08:10:18::207013 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T080024-s.pdf
+2025/12/02_08:10:18::207030 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T080024-s.xlsx
+2025/12/02_08:13:02::550090 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T080024-s.pdf
+2025/12/02_08:13:02::550112 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T080024-s.xlsx
+2025/12/02_09:06:43::330765 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T090515-s.pdf
+2025/12/02_09:06:43::330783 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T090515-s.xlsx
+2025/12/02_09:21:16::600074 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T090515-s.pdf
+2025/12/02_09:21:16::600092 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T090515-s.xlsx
+2025/12/02_09:33:30::763306 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T093220-s.pdf
+2025/12/02_09:33:30::763333 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T093220-s.xlsx
+2025/12/02_09:44:33::652373 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T094325-s.pdf
+2025/12/02_09:44:33::652391 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/d85d647d-9d26-49d1-a365-a41bf3131364/d85d647d-9d26-49d1-a365-a41bf3131364-20251202T094325-s.xlsx
+2025/12/02_10:50:00::627951 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.pdf
+2025/12/02_10:50:00::627968 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.xlsx
+2025/12/02_10:57:00::515154 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.pdf
+2025/12/02_10:57:00::515171 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.xlsx
+2025/12/02_11:04:49::399782 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.pdf
+2025/12/02_11:04:49::399802 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.xlsx
+2025/12/02_11:11:13::318678 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.pdf
+2025/12/02_11:11:13::318695 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T104902-s.xlsx
+2025/12/02_11:18:53::619668 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T111755-s.pdf
+2025/12/02_11:18:53::619685 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T111755-s.xlsx
+2025/12/02_11:38:28::105663 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T113722-s.pdf
+2025/12/02_11:38:28::105682 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T113722-s.xlsx
+2025/12/02_11:40:36::095319 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T114007-s.pdf
+2025/12/02_11:40:36::095338 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T114007-s.xlsx
+2025/12/02_11:45:20::221731 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T114418-s.pdf
+2025/12/02_11:45:20::221752 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/09916a2a-e171-4da6-8154-dd755f0bd701/09916a2a-e171-4da6-8154-dd755f0bd701-20251202T114418-s.xlsx
+2025/12/02_12:08:18::405489 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/bff7d6aa-585a-4c09-b42e-47c1972b1a53/bff7d6aa-585a-4c09-b42e-47c1972b1a53-20251202T120737-s.pdf
+2025/12/02_12:08:18::405508 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/bff7d6aa-585a-4c09-b42e-47c1972b1a53/bff7d6aa-585a-4c09-b42e-47c1972b1a53-20251202T120737-s.xlsx
+2025/12/02_12:32:40::786773 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.pdf
+2025/12/02_12:32:40::786791 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.xlsx
+2025/12/02_12:53:15::488149 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.pdf
+2025/12/02_12:53:15::488168 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.xlsx
+2025/12/02_13:00:49::658284 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.pdf
+2025/12/02_13:00:49::658301 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.xlsx
+2025/12/02_13:11:12::890278 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.pdf
+2025/12/02_13:11:12::890296 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T123205-s.xlsx
+2025/12/02_13:19:28::480354 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T131850-s.pdf
+2025/12/02_13:19:28::480374 > EXCEL https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/8799d9cc-0bef-4c71-ac18-a61d1fc98645/8799d9cc-0bef-4c71-ac18-a61d1fc98645-20251202T131850-s.xlsx
+2025/12/19_11:16:36::762116 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/None/None.pdf
+2025/12/19_11:16:36::762129 >
+2025/12/19_11:17:00::636937 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/None/None.pdf
+2025/12/19_11:17:00::636953 >
+2025/12/19_11:47:45::476935 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/None/None.pdf
+2025/12/19_11:47:45::476955 >
+2025/12/19_11:51:16::919202 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/None/None.pdf
+2025/12/19_11:51:16::919220 >
+2025/12/19_11:58:48::759852 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/vaayu/Solar/None/844206be-0d76-4908-ae0d-76801cb551bd.pdf
+2025/12/19_11:58:48::759870 >
+2025/12/19_12:04:22::371533 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/844206be-0d76-4908-ae0d-76801cb551bd.pdf
+2025/12/19_12:04:22::371551 >
+2025/12/19_12:27:49::376320 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/844206be-0d76-4908-ae0d-76801cb551bd.pdf
+2025/12/19_12:27:49::376341 >
+2025/12/22_05:50:23::589312 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/844206be-0d76-4908-ae0d-76801cb551bd.pdf
+2025/12/22_05:50:23::589326 >
+2025/12/22_05:53:24::835950 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/844206be-0d76-4908-ae0d-76801cb551bd.pdf
+2025/12/22_05:53:24::835967 >
+2025/12/22_05:57:46::815600 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/844206be-0d76-4908-ae0d-76801cb551bd.pdf
+2025/12/22_05:57:46::815618 >
+2025/12/22_06:02:54::027002 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/844206be-0d76-4908-ae0d-76801cb551bd.pdf
+2025/12/22_06:02:54::027022 >
+2025/12/22_09:26:44::132721 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/83bd1b5e-b46a-4511-b1df-9ad0c6ce015a.pdf
+2025/12/22_09:26:44::132745 >
+2025/12/22_09:33:36::693053 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/e17b2110-f8f2-43e4-8b79-557e8acc368f.pdf
+2025/12/22_09:33:36::693078 >
+2025/12/22_09:58:20::985131 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/5c89d602-ed1a-41b2-85cc-b43ba7af8ddc.pdf
+2025/12/22_09:58:20::985150 >
+2025/12/22_12:48:24::575968 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/22_12:48:24::575988 >
+2025/12/22_16:29:49::159936 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/22_16:29:49::159955 >
+2025/12/22_16:36:17::310996 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/22_16:36:17::311013 >
+2025/12/22_16:37:17::220725 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/22_16:37:17::220744 >
+2025/12/22_16:50:22::960137 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/22_16:50:22::960159 >
+2025/12/22_16:51:37::083291 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/22_16:51:37::083308 >
+2025/12/23_11:16:44::964535 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/23_11:16:44::964562 >
+2025/12/23_11:29:30::903366 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/95487b2f-3f0b-48a9-a12d-e2a48be04237.pdf
+2025/12/23_11:29:30::903392 >
+2026/01/30_05:37:16::728817 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/01/30_05:37:16::728842 >
+2026/01/30_05:49:57::091304 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/01/30_05:49:57::091322 >
+2026/01/30_05:52:09::407784 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/01/30_05:52:09::407804 >
+2026/01/30_05:55:31::511271 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/01/30_05:55:31::511295 >
+2026/02/05_05:05:53::816942 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/02/05_05:05:53::816962 >
+2026/02/05_05:12:46::382296 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/02/05_05:12:46::382314 >
+2026/02/05_06:31:04::258558 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/02/05_06:31:04::258580 >
+2026/02/05_06:33:45::049641 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/02/05_06:33:45::049663 >
+2026/02/05_07:02:32::776893 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/02/05_07:02:32::776911 >
+2026/02/05_07:07:54::320161 > REPORT https://coredatarepo.s3.ap-south-1.amazonaws.com/reports/surveillance/fd2240e7-253c-4941-a591-f5c677a98ab5.pdf
+2026/02/05_07:07:54::320187 >
