@@ -44,14 +44,14 @@ Helper Macros
 {# ============================== #
 Main Page Macro
 # ============================== #}
-{% macro create_page(global_vars, annotations, InspectionName, tower_lat, tower_long, total_pages, survey_id, show_header) %}
+{% macro create_page(global_vars, annotations, InspectionName, tower_lat, tower_long, total_pages, survey_id, show_header, zonename, sitename) %}
 <div size="A4" class="new-page WithHF">
         <section class="main-wrapper powerNSubstation">
             <div class="home-1 p-0">
                 <header>
-                    {% if show_header %}
-                    <img src="/app/report_modules/visual_inspection_source/temp/{{ survey_id }}/header.png" alt="Header Logo" class="header-logo"/>
-                    {% endif %}
+                    <div class="header-title" style="text-align: right; padding: 10px; font-weight: bold;">
+                        Zone: {{ zonename }}
+                    </div>
                 </header>
 
                 <div class="container-fluid">
@@ -96,11 +96,11 @@ Main Page Macro
                                                 <div class="meta_column">
                                                     <div class="meta-row">
 
-                                                        <span class="meta-value"> <span class="meta-label">Site Name:  </span> {{ annotation['SiteName'] }}</span>
+                                                        <span class="meta-value"> <span class="meta-label">Site Name:  </span> {{ sitename }}</span>
                                                     </div>
                                                     <div class="meta-row">
 
-                                                        <span class="meta-value"><span class="meta-label">Zone Name:  </span> {{ annotation['ZoneName'] }}</span>
+                                                        <span class="meta-value"><span class="meta-label">Zone Name:  </span> {{ zonename }}</span>
                                                     </div>
                                                     
                                                 </div>
@@ -144,7 +144,7 @@ HTML Structure
 </head>
 
 <body>
-    {{ create_page(global_vars, annotations_group, InspectionName, 0.0, 0.0, total_pages, survey_id, show_header) }}
+    {{ create_page(global_vars, annotations_group, InspectionName, 0.0, 0.0, total_pages, survey_id, show_header, zonename, sitename) }}
     {{ increment(global_vars, "page_no") }}
 </body>
 </html>

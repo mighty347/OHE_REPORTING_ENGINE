@@ -115,7 +115,10 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         payload["to"] = extract_date(parameters.get("p_to"))
         with open("current_payload.json", "w") as f:
             json.dump(payload, f , indent=4)
-
+        
+        # with open("current_payload.json", "r") as f:
+        #     payload = json.load(f)
+    
         #------------------------------------------------------
 
         project_dir = os.path.join(ReportGenConfig.TEMP_DIR, task.get("organizationId"))
@@ -153,7 +156,7 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
 
         # 2
         # ret = pdf_engine.generate_table_of_content_page()
-        print(f"{Fore.GREEN}Table of content page generated {Fore.RESET}")
+        # print(f"{Fore.GREEN}Table of content page generated {Fore.RESET}")
 
         #3
         # ret = pdf_engine.generate_about_page()
@@ -166,12 +169,12 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         # print(f"{Fore.GREEN}Solar Common Pages generated {Fore.RESET}")
         
         # #4
-        # ret = pdf_engine.generate_summary_page()
-        # print(f"{Fore.GREEN}Summary page generated {Fore.RESET}")
+        ret = pdf_engine.generate_summary_page()
+        print(f"{Fore.GREEN}Summary page generated {Fore.RESET}")
 
         #5
         # ret = pdf_engine.generate_asset_analysis_page()
-        print(f"{Fore.GREEN}Asset Analysis pages generated {Fore.RESET}")
+        # print(f"{Fore.GREEN}Asset Analysis pages generated {Fore.RESET}")
         
         ret = pdf_engine.generate_annotation_page()
         print(f"{Fore.GREEN}Annotation page generated {Fore.RESET}")
@@ -181,11 +184,11 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
 
         #7
         # ret = pdf_engine.generate_chart_page()
-        print(f"{Fore.GREEN}Chart page generated {Fore.RESET}")
+        # print(f"{Fore.GREEN}Chart page generated {Fore.RESET}")
 
         #8
         # ret = pdf_engine.generate_thermography_page()
-        print(f"{Fore.GREEN}Thermography page generated {Fore.RESET}")
+        # print(f"{Fore.GREEN}Thermography page generated {Fore.RESET}")
 
         #9
         # ret = pdf_engine.generate_execution_plan_pages()
@@ -193,7 +196,7 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
 
         #10
         # ret = pdf_engine.generate_anomalies_info_page()
-        print(f"{Fore.GREEN}Anomalies info page generated {Fore.RESET}")
+        # print(f"{Fore.GREEN}Anomalies info page generated {Fore.RESET}")
 
         #11
         # ret = pdf_engine.generate_anomaly_page()
@@ -212,7 +215,6 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         print("Combining PDFs...")
         pdf_file_path = pdf_engine.combine_pdfs(pdfs=compressed_pdfs, output_file=os.path.join(project_dir, task.get("reportRequestId")+".pdf"))
         print(f"{Fore.GREEN}PDFs combined : {Fore.RESET} {pdf_file_path}")
-
         # ----------------------------------------------------------------
         # uploading pdf file to s3.
 

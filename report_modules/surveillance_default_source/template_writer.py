@@ -36,6 +36,7 @@ from colorama import Fore
 from urllib.parse import urlparse, urlunparse
 
 
+
 def parse_nested_json(data):
     # decoding the json by recursion for each json decodable field.
     if isinstance(data, str):
@@ -134,15 +135,20 @@ class TemplateWriter(object):
         image_with_annotation = []
         total_anomaly_pages = 0
         images = self.payload["surveillance_reports"]
-        for image in images:
-            if image["Geometry"]:
-                image_with_annotation.append(image)
-                total_anomaly_pages +=1
+        zonewise = images[0]['sp_get_annotations_for_report']['ZoneWiseData']
+        for zone in zonewise:
+            annotations = zone.get("Annotations", [])
+            for annotation in annotations:
+                if annotations:
+                    image_with_annotation.append(annotation)
+                    total_anomaly_pages +=1
+            
 
         self.total_page_count = math.ceil(total_anomaly_pages/3)
                 
         
         self.generated_pdfs = []
+        self.generated_docs = []
         # print(f"{Fore.GREEN}Assigning Payload inside init.{Fore.RESET}")
         # print(f"{Fore.RED}self.payload : {Fore.RESET}{payload}")
 
@@ -151,7 +157,7 @@ class TemplateWriter(object):
 
         self.vprint("Generating front page ...")
         front_page_template = self.jinja_env.get_template("front_page_template.html")
-        site_name = self.payload.get("surveillance_reports", {})[0].get("ZoneName", "")
+        site_name = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName']
         html = front_page_template.render({
                                     "base_dir":self.templates_path,
                                     "site_name":site_name,
@@ -184,8 +190,6 @@ class TemplateWriter(object):
         else:
             return False
         
-
-
     def generate_table_of_content_page(self):
         self.vprint("Generating Index page ...")
         table_of_content_page_template = self.jinja_env.get_template("table_of_content_page_template.html")
@@ -386,12 +390,22 @@ class TemplateWriter(object):
         graph_labels = []
         graph_data = []
         graph_backgroundColor = []
-        for anomaly in self.payload.get("AnnomalyDetails"):
-            total_issues += anomaly["AnnomalyCount"]
+        camera_list = []
+        zonename = []
+        sitename =  self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName']
+        summary = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['Summary']
+        anomaly_summary = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['AnomalySummary']
+        cameras = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['CameraList']
+        
+        for camera in cameras:
+            camera_list.append(camera["CameraName"])
+        
+        for anomaly in anomaly_summary:
+            graph_labels.append(anomaly["AnomalyName"])
+            graph_data.append(anomaly["Count"])
 
-            graph_labels.append(anomaly["AnnomalyName"])
-            graph_data.append(anomaly["AnnomalyCount"])
-
+        for zone in self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData']:
+            zonename.append(zone["ZoneName"])
 
         graph_backgroundColor = generate_colors(len(graph_labels))
   
@@ -399,11 +413,12 @@ class TemplateWriter(object):
         html = summary_page_template.render({
             "base_dir": self.templates_path,
             "page_index": self.current_page_count,
-
+            "summary" : summary,
             "total_number_of_modules": self.payload.get("TotalNumberOfModules"),
             "total_issues": total_issues,
             "annomaly_details": self.payload.get("AnnomalyDetails"),
-
+            "camera_list": camera_list,
+            "zonename": zonename,
             "graph_labels": graph_labels,
             "graph_data": graph_data,
             "graph_backgroundColor": graph_backgroundColor
@@ -945,8 +960,6 @@ class TemplateWriter(object):
 
 
             
-
-
         def get_defect_location(tree: list, member_id: str, separator: str='/') -> str:
             """
             Utility function to find the location of defect in tree recursively.
@@ -988,131 +1001,149 @@ class TemplateWriter(object):
 
         total_annotated_images = 0
         images = []
-        for annotation in self.payload.get("surveillance_reports"):
-            if annotation.get("FrameUrl"):
-                images.append(annotation["FrameUrl"])
-                total_annotated_images += 1
+        zones = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData']
+        
+        
+        for zone in zones:
+            zone_name = zone.get("ZoneName")
+            site_name = zone.get("SiteName")    
+            
+            for annotation in zone.get("Annotations", []):
+                if annotation.get("FrameUrl"):
+                    images.append(annotation["FrameUrl"])
+                    total_annotated_images += 1
 
-        for image_count,annotation  in enumerate( self.payload.get("surveillance_reports")):
-            if annotation.get("Geometry"):
-                print(f"Processing... {Fore.YELLOW}{ image_count + 1 }{Fore.RESET}/{Fore.BLUE}{total_annotated_images}{Fore.RESET} ")
-                image_id = image_count + 1
-                current_image_dir = os.path.join(self.project_dir, str(image_id))
-                os.makedirs(current_image_dir, exist_ok=True)
-                print(f"    Downloading image : {annotation.get('FrameUrl')} ... ")
+            for image_count,annotation  in enumerate( zone.get("Annotations", []) ):
+                if annotation.get("Geometry"):
+                    print(f"Processing... {Fore.YELLOW}{ image_count + 1 }{Fore.RESET}/{Fore.BLUE}{total_annotated_images}{Fore.RESET} ")
+                    image_id = image_count + 1
+                    current_image_dir = os.path.join(self.project_dir, str(image_id))
+                    os.makedirs(current_image_dir, exist_ok=True)
+                    print(f"    Downloading image : {annotation.get('FrameUrl')} ... ")
 
-                # image_bytes = fetch_image(annotation.get("FrameUrl"), max_retries=3)
-                parsed_url = urlparse(annotation.get("FrameUrl"))
-                new_netloc = f"minio:{parsed_url.port}"
-                modified_url = parsed_url._replace(
-                                    netloc=new_netloc
-                                )
-                frame_url = urlunparse(modified_url)
-                
-
-                response = requests.get(frame_url)
-                
-                if response.status_code == 200:
-                    image_bytes = response.content
-                else:
-                    print(f"    Got return code : {response.status_code}")
-                    image_bytes = None
+                    # image_bytes = fetch_image(annotation.get("FrameUrl"), max_retries=3)
+                    
+                    ####### For Prod #######
+                    parsed_url = urlparse(annotation.get("FrameUrl"))
+                    new_netloc = f"minio:{parsed_url.port}"
+                    modified_url = parsed_url._replace(
+                                        netloc=new_netloc
+                                    )
+                    frame_url = urlunparse(modified_url)
+                    response = requests.get(frame_url)
+                    
+                    ####### For Local Testing #######
+                    # response = requests.get(annotation.get("FrameUrl"))
                     
 
-                if image_bytes:
-                    print("    Processing image...")
-                    with Image.open(io.BytesIO(image_bytes)) as raw_img:
-                        img = raw_img.copy()
-                        
-                    img_width, img_height = img.size
-                        
-                    annotation_payload = annotation.get("Geometry")                       
-                    geojson = annotation_payload
-
-                    # --- Handle GeoJSON Feature wrapper ---
-                    if geojson is None:
-                        print("No geojson found in annotation payload.")
-                        continue
-                    # If type is Feature, extract geometry
-                    if geojson.get("type") == "Feature":
-                        geometry = geojson.get("geometry")
-                        if not geometry:
-                            continue
-                        geometry_type = geometry.get("type")
-                        geometry_coords = geometry.get("coordinates")
+                    
+                    if response.status_code == 200:
+                        image_bytes = response.content
                     else:
-                        geometry_type = geojson.get("type")
-                        geometry_coords = geojson.get("coordinates")
-                    
-                    if not geometry_coords:
-                        continue
-                    # --------------------------------------
-                    
-                    if geometry_type == "LineString":
-                        line_coord = extract_line_coordinates(geometry_coords)
-                        box_coord = extract_line_box_coordinates(line_coord, img_height=img_height, img_width=img_width, padding=10)
-                        crop_coord, crop_box_coord, crop_line_coord = crop_coordinates_transform(
-                            box_coord=box_coord,
-                            image_size=[img_width, img_height],
-                            crop_padding=[30, 30],
-                            min_crop_size=[300, 300],
-                            line_coord=line_coord,
-                            draw_output='line'
-                        )
-                        cropped_annotation = raw_img.crop((crop_coord[0][0], crop_coord[0][1], crop_coord[1][0], crop_coord[1][1]))
-                        cropped_annotation = draw_line_and_count(cropped_annotation, crop_box_coord, crop_line_coord, anomaly_count, image_type="annotation")
-                        img = draw_line_and_count(img, box_coord, line_coord, anomaly_count, image_type="original", line_width=3)
-                        annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
-                        cropped_annotation = cropped_annotation.convert("RGB")
-                        cropped_annotation.save(annot_img_save_path)
-                        annotation["image_path"] = annot_img_save_path
-                        annotation["annotation_index"] = anomaly_count
-                        anomaly_count += 1
-                        img_save_path = os.path.join(current_image_dir,str(anomaly_count) + ".jpg")
-                        img = img.convert("RGB")
-                        img.save(img_save_path)
-                        annotation["parent_img_path"] = img_save_path
-
-                    elif geometry_type == "Polygon":
-                        polygon_points = [(int(x), int(y)) for x, y in geometry_coords[0]]
-                        box_coord = extract_box_coordinates(polygon_points, img_height)
-                        crop_coord, crop_box_coord = crop_coordinates_transform(
-                            box_coord=box_coord,
-                            image_size=[img_width, img_height],
-                            crop_padding=[30, 30],
-                            min_crop_size=[300, 300],
-                            draw_output='box'
-                        )
-                        cropped_annotation = raw_img.crop((crop_coord[0][0], crop_coord[0][1], crop_coord[1][0], crop_coord[1][1]))
+                        print(f"    Got return code : {response.status_code}")
+                        image_bytes = None
                         
-                        cropped_annotation = draw_box_and_count(cropped_annotation, crop_box_coord, anomaly_count, image_type="annotation")
-                        img = draw_box_and_count(img, box_coord, anomaly_count, image_type="original", line_width=3)
+
+                    if image_bytes:
+                        print("    Processing image...")
+                        with Image.open(io.BytesIO(image_bytes)) as raw_img:
+                            img = raw_img.copy()
                             
-                        annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
-                        cropped_annotation = cropped_annotation.convert("RGB")  # <-- ADD THIS
-                        cropped_annotation.save(annot_img_save_path)
-                        annotation["image_path"] = annot_img_save_path
-                        annotation["annotation_index"] = anomaly_count
-                        anomaly_count += 1   
-                        img_save_path = os.path.join(current_image_dir,str(anomaly_count) + ".jpg")
-                        print("img_save_path: ", img_save_path)
-                        img = img.convert("RGB")  # <-- ADD THIS
-                        img.save(img_save_path)
-                        annotation["parent_img_path"] = img_save_path
+                        img_width, img_height = img.size
+                            
+                        annotation_payload = annotation.get("Geometry")                       
+                        geojson = annotation_payload
+
+                        # --- Handle GeoJSON Feature wrapper ---
+                        if geojson is None:
+                            print("No geojson found in annotation payload.")
+                            continue
+                        # If type is Feature, extract geometry
+                        if geojson.get("type") == "Feature":
+                            geometry = geojson.get("geometry")
+                            if not geometry:
+                                continue
+                            geometry_type = geometry.get("type")
+                            geometry_coords = geometry.get("coordinates")
+                        else:
+                            geometry_type = geojson.get("type")
+                            geometry_coords = geojson.get("coordinates")
+                        
+                        if not geometry_coords:
+                            continue
+                        # --------------------------------------
+                        
+                        if geometry_type == "LineString":
+                            line_coord = extract_line_coordinates(geometry_coords)
+                            box_coord = extract_line_box_coordinates(line_coord, img_height=img_height, img_width=img_width, padding=10)
+                            crop_coord, crop_box_coord, crop_line_coord = crop_coordinates_transform(
+                                box_coord=box_coord,
+                                image_size=[img_width, img_height],
+                                crop_padding=[30, 30],
+                                min_crop_size=[300, 300],
+                                line_coord=line_coord,
+                                draw_output='line'
+                            )
+                            cropped_annotation = raw_img.crop((crop_coord[0][0], crop_coord[0][1], crop_coord[1][0], crop_coord[1][1]))
+                            cropped_annotation = draw_line_and_count(cropped_annotation, crop_box_coord, crop_line_coord, anomaly_count, image_type="annotation")
+                            img = draw_line_and_count(img, box_coord, line_coord, anomaly_count, image_type="original", line_width=3)
+                            # annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
+                            annot_img_save_path = os.path.join(current_image_dir, "cropped.jpg")
+                            cropped_annotation = cropped_annotation.convert("RGB")
+                            cropped_annotation.save(annot_img_save_path)
+                            annotation["image_path"] = annot_img_save_path
+                            annotation["annotation_index"] = anomaly_count
+                            # img_save_path = os.path.join(current_image_dir,str(anomaly_count) + ".jpg")
+                            img_save_path = os.path.join(current_image_dir, "original.jpg")
+                            img = img.convert("RGB")
+                            img.save(img_save_path)
+                            annotation["parent_img_path"] = img_save_path
+                            anomaly_count += 1
+
+                        elif geometry_type == "Polygon":
+                            polygon_points = [(int(x), int(y)) for x, y in geometry_coords[0]]
+                            box_coord = extract_box_coordinates(polygon_points, img_height)
+                            crop_coord, crop_box_coord = crop_coordinates_transform(
+                                box_coord=box_coord,
+                                image_size=[img_width, img_height],
+                                crop_padding=[30, 30],
+                                min_crop_size=[300, 300],
+                                draw_output='box'
+                            )
+                            cropped_annotation = raw_img.crop((crop_coord[0][0], crop_coord[0][1], crop_coord[1][0], crop_coord[1][1]))
+                            
+                            cropped_annotation = draw_box_and_count(cropped_annotation, crop_box_coord, anomaly_count, image_type="annotation")
+                            img = draw_box_and_count(img, box_coord, anomaly_count, image_type="original", line_width=3)
+                                
+                            # annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
+                            annot_img_save_path = os.path.join(current_image_dir, "cropped.jpg")
+                            cropped_annotation = cropped_annotation.convert("RGB")  # <-- ADD THIS
+                            cropped_annotation.save(annot_img_save_path)
+                            annotation["image_path"] = annot_img_save_path
+                            annotation["annotation_index"] = anomaly_count
+                            img_save_path = os.path.join(current_image_dir, "original.jpg")
+                            img = img.convert("RGB")  # <-- ADD THIS
+                            img.save(img_save_path)
+                            annotation["parent_img_path"] = img_save_path
+                            anomaly_count += 1   
+
+                        else:
+                            print(f"Got unsupported Annotation type : {geometry_type}")
+                            continue
 
                     else:
-                        print(f"Got unsupported Annotation type : {geometry_type}")
-                        continue
-
-                else:
-                    print(f"{Fore.RED} [template_writer] > generate_anomaly_page {Fore.RESET} ")#|  image could not be downloaded : {image.get('imageId')}")
+                        print(f"{Fore.RED} [template_writer] > generate_anomaly_page {Fore.RESET} ")#|  image could not be downloaded : {image.get('imageId')}")
                                     
         print("\nAll images processed ...")
  
         # header_image = self.download_header_image()
         # get the annotation template
         annotation_page_template = self.jinja_env.get_template("annotation_page_template.html")
-        report_annotations = [img for img in self.payload.get("surveillance_reports") if img.get("Geometry")]
+        report_annotations = []
+        for zone in zones:
+            for annotation in zone.get("Annotations", []):
+                if annotation.get("Geometry"):
+                    report_annotations.append(annotation)   
         total_annotated_images = len(report_annotations)
 
         tasks = []  # list of (i, html, pdf_path) tuples
@@ -1129,7 +1160,9 @@ class TemplateWriter(object):
                                     "page_index": self.current_page_count,
                                     "total_pages": self.total_page_count,
                                     "annotation_index": image_count + 1,
-                                    "footer_inspection_name":self.payload["surveillance_reports"][0].get("SiteName"),
+                                    "zonename": zone_name,
+                                    "sitename": site_name,
+                                    "footer_inspection_name":self.payload["surveillance_reports"][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName'],
                                     "footer_current_date": self.current_date 
                                     })
             

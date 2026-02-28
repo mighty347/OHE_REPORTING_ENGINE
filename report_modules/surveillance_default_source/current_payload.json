@@ -1,568 +1,564 @@
 {
     "surveillance_reports": [
         {
-            "AnnotationId": "28116f61-0261-45a5-bfca-0cf7ad544a14",
-            "CameraId": "5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            297,
-                            235
+            "sp_get_annotations_for_report": {
+                "Summary": {
+                    "TotalSites": 1,
+                    "TotalZones": 1,
+                    "TotalCameras": 2,
+                    "TotalAnomalies": 2,
+                    "TotalAnnotations": 12
+                },
+                "CameraList": [
+                    {
+                        "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                        "CameraName": "Office Back Camera"
+                    },
+                    {
+                        "CameraId": "5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19",
+                        "CameraName": "Office Front Camera "
+                    }
+                ],
+                "ZoneWiseData": [
+                    {
+                        "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
+                        "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
+                        "SiteName": "Greater Noida",
+                        "ZoneName": "Urbtech Trade center",
+                        "Annotations": [
+                            {
+                                "CameraId": "5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19",
+                                "FrameUrl": "http://192.168.1.114:9090/1ac3d4d1-d42a-4fc9-8998-8f91fc7fa830_12-02-26_capture_1552_ifr_suit_missing_16-54-28.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                297,
+                                                235
+                                            ],
+                                            [
+                                                331,
+                                                235
+                                            ],
+                                            [
+                                                331,
+                                                271
+                                            ],
+                                            [
+                                                297,
+                                                271
+                                            ],
+                                            [
+                                                297,
+                                                235
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Front Camera ",
+                                "Confidence": 0.68,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:14:25.872023+05:30",
+                                "AnnotationId": "28116f61-0261-45a5-bfca-0cf7ad544a14",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/1ac3d4d1-d42a-4fc9-8998-8f91fc7fa830_12-02-26_capture_1846_helmet_missing_21-03-50.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                1000,
+                                                209
+                                            ],
+                                            [
+                                                1027,
+                                                209
+                                            ],
+                                            [
+                                                1027,
+                                                239
+                                            ],
+                                            [
+                                                1000,
+                                                239
+                                            ],
+                                            [
+                                                1000,
+                                                209
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.23,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:14:24.120891+05:30",
+                                "AnnotationId": "5562404b-4718-481a-b768-d790808508fd",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/3719ca4b-807f-4f62-b7c8-f432c921936b_12-02-26_capture_341_ifr_suit_missing_06-10-17.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                892,
+                                                176
+                                            ],
+                                            [
+                                                939,
+                                                176
+                                            ],
+                                            [
+                                                939,
+                                                260
+                                            ],
+                                            [
+                                                892,
+                                                260
+                                            ],
+                                            [
+                                                892,
+                                                176
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.71,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "IFR Suit Missing",
+                                "CreatedDate": "2025-12-24T19:14:22.216908+05:30",
+                                "AnnotationId": "b52047d7-5474-4029-930d-89dc2783e2da",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "ifr_suit_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/3719ca4b-807f-4f62-b7c8-f432c921936b_13-02-26_capture_781_ifr_suit_missing_16-26-31.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                1001,
+                                                208
+                                            ],
+                                            [
+                                                1030,
+                                                208
+                                            ],
+                                            [
+                                                1030,
+                                                238
+                                            ],
+                                            [
+                                                1001,
+                                                238
+                                            ],
+                                            [
+                                                1001,
+                                                208
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.58,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:14:20.406462+05:30",
+                                "AnnotationId": "9098a479-745d-4fbc-a478-4e9201afce74",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/39be1730-baa2-459d-94bd-757056a0cf94_12-02-26_capture_1273_helmet_missing_14-38-13.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                916,
+                                                151
+                                            ],
+                                            [
+                                                941,
+                                                151
+                                            ],
+                                            [
+                                                941,
+                                                184
+                                            ],
+                                            [
+                                                916,
+                                                184
+                                            ],
+                                            [
+                                                916,
+                                                151
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.62,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:14:18.564609+05:30",
+                                "AnnotationId": "30bc81f6-762b-441c-94da-33932e90c46c",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/39be1730-baa2-459d-94bd-757056a0cf94_12-02-26_capture_1462_ifr_suit_missing_16-34-01.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                896,
+                                                145
+                                            ],
+                                            [
+                                                921,
+                                                145
+                                            ],
+                                            [
+                                                921,
+                                                180
+                                            ],
+                                            [
+                                                896,
+                                                180
+                                            ],
+                                            [
+                                                896,
+                                                145
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.72,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:14:16.504912+05:30",
+                                "AnnotationId": "78e0b012-910c-4fe1-a819-a1e3fceb74e1",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19",
+                                "FrameUrl": "http://192.168.1.114:9090/39be1730-baa2-459d-94bd-757056a0cf94_12-02-26_capture_310_ifr_suit_missing_05-54-10.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                252,
+                                                219
+                                            ],
+                                            [
+                                                287,
+                                                219
+                                            ],
+                                            [
+                                                287,
+                                                265
+                                            ],
+                                            [
+                                                252,
+                                                265
+                                            ],
+                                            [
+                                                252,
+                                                219
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Front Camera ",
+                                "Confidence": 0.77,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:14:12.055702+05:30",
+                                "AnnotationId": "91b4713f-397e-435b-9bae-e2a023a58c75",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19",
+                                "FrameUrl": "http://192.168.1.114:9090/6a005654-ab03-42bc-bfeb-13f425ee3225_13-02-26_capture_273_helmet_missing_13-42-59.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                252,
+                                                219
+                                            ],
+                                            [
+                                                287,
+                                                219
+                                            ],
+                                            [
+                                                287,
+                                                265
+                                            ],
+                                            [
+                                                252,
+                                                265
+                                            ],
+                                            [
+                                                252,
+                                                219
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Front Camera ",
+                                "Confidence": 0.77,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:10:22.229356+05:30",
+                                "AnnotationId": "be0ebe94-faa5-4f7e-b671-ebc6b55f00d4",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/39be1730-baa2-459d-94bd-757056a0cf94_13-02-26_capture_4003_helmet_missing_10-29-20.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                968,
+                                                233
+                                            ],
+                                            [
+                                                1023,
+                                                233
+                                            ],
+                                            [
+                                                1023,
+                                                344
+                                            ],
+                                            [
+                                                968,
+                                                344
+                                            ],
+                                            [
+                                                968,
+                                                233
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.48,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "IFR Suit Missing",
+                                "CreatedDate": "2025-12-24T19:10:20.50582+05:30",
+                                "AnnotationId": "6649218c-cdbf-411f-bab4-0856f8f9409e",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "ifr_suit_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/39be1730-baa2-459d-94bd-757056a0cf94_13-02-26_capture_476_helmet_missing_15-09-32.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                828,
+                                                142
+                                            ],
+                                            [
+                                                854,
+                                                142
+                                            ],
+                                            [
+                                                854,
+                                                175
+                                            ],
+                                            [
+                                                828,
+                                                175
+                                            ],
+                                            [
+                                                828,
+                                                142
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.73,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:10:17.059375+05:30",
+                                "AnnotationId": "0c6da439-3e9b-4ecc-927f-d859eb6c84ad",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/439c343c-09af-4284-8d75-f1f72d399b1f_13-02-26_capture_2771_ifr_suit_missing_06-42-43.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                1007,
+                                                208
+                                            ],
+                                            [
+                                                1033,
+                                                208
+                                            ],
+                                            [
+                                                1033,
+                                                241
+                                            ],
+                                            [
+                                                1007,
+                                                241
+                                            ],
+                                            [
+                                                1007,
+                                                208
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.66,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "Helmet Missing",
+                                "CreatedDate": "2025-12-24T19:10:15.214092+05:30",
+                                "AnnotationId": "ab943987-4a93-46bd-ab37-3c970aa00613",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "helmet_missing"
+                            },
+                            {
+                                "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
+                                "FrameUrl": "http://192.168.1.114:9090/6a005654-ab03-42bc-bfeb-13f425ee3225_13-02-26_capture_217_helmet_missing_14-33-12.jpeg",
+                                "Geometry": {
+                                    "type": "Polygon",
+                                    "coordinates": [
+                                        [
+                                            [
+                                                812,
+                                                171
+                                            ],
+                                            [
+                                                859,
+                                                171
+                                            ],
+                                            [
+                                                859,
+                                                288
+                                            ],
+                                            [
+                                                812,
+                                                288
+                                            ],
+                                            [
+                                                812,
+                                                171
+                                            ]
+                                        ]
+                                    ]
+                                },
+                                "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+                                "CameraName": "Office Back Camera",
+                                "Confidence": 0.7,
+                                "ReviewedAt": null,
+                                "ReviewedBy": null,
+                                "AnnotatedBy": "1",
+                                "AnomalyName": "IFR Suit Missing",
+                                "CreatedDate": "2025-12-24T19:10:10.885696+05:30",
+                                "AnnotationId": "7c6dd859-3664-4805-a6e1-eb81891ad068",
+                                "ReviewStatus": "1",
+                                "AnnotationType": "1",
+                                "DetectedObject": "ifr_suit_missing"
+                            }
                         ],
-                        [
-                            331,
-                            235
-                        ],
-                        [
-                            331,
-                            271
-                        ],
-                        [
-                            297,
-                            271
-                        ],
-                        [
-                            297,
-                            235
-                        ]
-                    ]
+                        "TotalAnnotations": 12
+                    }
+                ],
+                "AnomalySummary": [
+                    {
+                        "Count": 9,
+                        "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
+                        "AnomalyName": "Helmet Missing"
+                    },
+                    {
+                        "Count": 3,
+                        "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
+                        "AnomalyName": "IFR Suit Missing"
+                    }
                 ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19/24-12-25/capture_129_helmet_missing_19-10-06.jpeg",
-            "Confidence": 0.68,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:44:25.872023+00:00",
-            "CameraName": "Office Front Camera ",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "5562404b-4718-481a-b768-d790808508fd",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1000,
-                            209
-                        ],
-                        [
-                            1027,
-                            209
-                        ],
-                        [
-                            1027,
-                            239
-                        ],
-                        [
-                            1000,
-                            239
-                        ],
-                        [
-                            1000,
-                            209
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_128_helmet_missing_19-10-04.jpeg",
-            "Confidence": 0.23,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:44:24.120891+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "b52047d7-5474-4029-930d-89dc2783e2da",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            892,
-                            176
-                        ],
-                        [
-                            939,
-                            176
-                        ],
-                        [
-                            939,
-                            260
-                        ],
-                        [
-                            892,
-                            260
-                        ],
-                        [
-                            892,
-                            176
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "ifr_suit_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_127_ifr_suit_missing_19-09-53.jpeg",
-            "Confidence": 0.71,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:44:22.216908+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "IFR Suit Missing"
-        },
-        {
-            "AnnotationId": "9098a479-745d-4fbc-a478-4e9201afce74",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1001,
-                            208
-                        ],
-                        [
-                            1030,
-                            208
-                        ],
-                        [
-                            1030,
-                            238
-                        ],
-                        [
-                            1001,
-                            238
-                        ],
-                        [
-                            1001,
-                            208
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_125_helmet_missing_19-09-53.jpeg",
-            "Confidence": 0.58,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:44:20.406462+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "30bc81f6-762b-441c-94da-33932e90c46c",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            916,
-                            151
-                        ],
-                        [
-                            941,
-                            151
-                        ],
-                        [
-                            941,
-                            184
-                        ],
-                        [
-                            916,
-                            184
-                        ],
-                        [
-                            916,
-                            151
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_126_helmet_missing_19-09-53.jpeg",
-            "Confidence": 0.62,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:44:18.564609+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "78e0b012-910c-4fe1-a819-a1e3fceb74e1",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            896,
-                            145
-                        ],
-                        [
-                            921,
-                            145
-                        ],
-                        [
-                            921,
-                            180
-                        ],
-                        [
-                            896,
-                            180
-                        ],
-                        [
-                            896,
-                            145
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_124_helmet_missing_19-09-44.jpeg",
-            "Confidence": 0.72,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:44:16.504912+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "91b4713f-397e-435b-9bae-e2a023a58c75",
-            "CameraId": "5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            252,
-                            219
-                        ],
-                        [
-                            287,
-                            219
-                        ],
-                        [
-                            287,
-                            265
-                        ],
-                        [
-                            252,
-                            265
-                        ],
-                        [
-                            252,
-                            219
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19/24-12-25/capture_123_helmet_missing_19-09-43.jpeg",
-            "Confidence": 0.77,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:44:12.055702+00:00",
-            "CameraName": "Office Front Camera ",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "be0ebe94-faa5-4f7e-b671-ebc6b55f00d4",
-            "CameraId": "5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            252,
-                            219
-                        ],
-                        [
-                            287,
-                            219
-                        ],
-                        [
-                            287,
-                            265
-                        ],
-                        [
-                            252,
-                            265
-                        ],
-                        [
-                            252,
-                            219
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/5db2b274-e1c6-4aa6-a5f3-d0e2d733dd19/24-12-25/capture_123_helmet_missing_19-09-43.jpeg",
-            "Confidence": 0.77,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:40:22.229356+00:00",
-            "CameraName": "Office Front Camera ",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "6649218c-cdbf-411f-bab4-0856f8f9409e",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            968,
-                            233
-                        ],
-                        [
-                            1023,
-                            233
-                        ],
-                        [
-                            1023,
-                            344
-                        ],
-                        [
-                            968,
-                            344
-                        ],
-                        [
-                            968,
-                            233
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "ifr_suit_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_122_ifr_suit_missing_19-09-35.jpeg",
-            "Confidence": 0.48,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:40:20.505820+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "IFR Suit Missing"
-        },
-        {
-            "AnnotationId": "0c6da439-3e9b-4ecc-927f-d859eb6c84ad",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            828,
-                            142
-                        ],
-                        [
-                            854,
-                            142
-                        ],
-                        [
-                            854,
-                            175
-                        ],
-                        [
-                            828,
-                            175
-                        ],
-                        [
-                            828,
-                            142
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_121_helmet_missing_19-09-26.jpeg",
-            "Confidence": 0.73,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:40:17.059375+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "ab943987-4a93-46bd-ab37-3c970aa00613",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "a4dd2213-9e1b-4027-b7af-ead19b870706",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1007,
-                            208
-                        ],
-                        [
-                            1033,
-                            208
-                        ],
-                        [
-                            1033,
-                            241
-                        ],
-                        [
-                            1007,
-                            241
-                        ],
-                        [
-                            1007,
-                            208
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "helmet_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_120_helmet_missing_19-09-26.jpeg",
-            "Confidence": 0.66,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:40:15.214092+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "Helmet Missing"
-        },
-        {
-            "AnnotationId": "7c6dd859-3664-4805-a6e1-eb81891ad068",
-            "CameraId": "d04edd24-f375-4e61-a1d6-07883873aefe",
-            "ZoneId": "061b6314-d45c-4158-967b-643dd94a5c50",
-            "AnomalyId": "c6d5dc48-b262-495a-b10f-491a1eb96146",
-            "AnnotationType": "1",
-            "AnnotatedBy": "1",
-            "Geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            812,
-                            171
-                        ],
-                        [
-                            859,
-                            171
-                        ],
-                        [
-                            859,
-                            288
-                        ],
-                        [
-                            812,
-                            288
-                        ],
-                        [
-                            812,
-                            171
-                        ]
-                    ]
-                ]
-            },
-            "DetectedObject": "ifr_suit_missing",
-            "FrameUrl": "http://192.168.1.10:9000/surveillancedev/detections/d04edd24-f375-4e61-a1d6-07883873aefe/24-12-25/capture_119_ifr_suit_missing_19-09-25.jpeg",
-            "Confidence": 0.7,
-            "ReviewStatus": "1",
-            "ReviewedBy": null,
-            "ReviewedAt": null,
-            "CreatedDate": "2025-12-24T13:40:10.885696+00:00",
-            "CameraName": "Office Back Camera",
-            "ZoneName": "Urbtech Trade center",
-            "SiteId": "9d2c3e43-b162-4563-b2ab-1750f0fa2b96",
-            "SiteName": "Greater Noida",
-            "AnomalyName": "IFR Suit Missing"
+            }
         }
     ],
     "from": "30-11-2025",

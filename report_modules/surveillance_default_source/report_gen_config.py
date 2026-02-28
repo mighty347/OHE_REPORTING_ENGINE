@@ -61,8 +61,8 @@ class DBConfig(object):
     """
     Production
     """
-    HOST='db'
+    HOST='host.docker.internal'
     PORT=5432
     DATABASE="Surveillance_Yugmi"
     USER="postgres"
-    PASSWORD="e4b9f7c2a18d4f3b92c7e51ad0f4b6ce"
+    PASSWORD="postgres"

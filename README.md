@@ -7,10 +7,10 @@ This project sets up and runs the Reporting Engine, which includes services for 
 ## Docker installation
 
 ```bash
-docker build --tag 'reporting_engine:latest' .
+docker build --tag 'reporting_engine_survey:latest' .
 ```
 ```bash
-docker run -it --name prod_reporting_engine -p 6379:6379 reporting_engine:latest
+docker run -it --name prod_reporting_engine -p 6379:6379 reporting_engine_survey:latest
 ```
 ---
 
