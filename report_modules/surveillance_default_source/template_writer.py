@@ -619,6 +619,7 @@ class TemplateWriter(object):
     def _generate_single_annotation_pdf(self, args):
         """Generate a single PDF and return (index, pdf_path) or (index, None) on failure."""
         i, html, pdf_path = args
+        print(f"Generating page : {i}")
         ret = pdfkit.from_string(
             html,
             output_path=pdf_path,
