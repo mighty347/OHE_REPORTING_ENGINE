@@ -419,6 +419,9 @@ class TemplateWriter(object):
             "annomaly_details": self.payload.get("AnnomalyDetails"),
             "camera_list": camera_list,
             "zonename": zonename,
+            "footer_current_date": self.current_date,
+            "footer_inspection_name":self.payload["surveillance_reports"][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName'],
+            "total_pages": self.total_page_count,
             "graph_labels": graph_labels,
             "graph_data": graph_data,
             "graph_backgroundColor": graph_backgroundColor

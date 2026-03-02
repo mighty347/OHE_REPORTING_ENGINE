@@ -131,6 +131,14 @@
                 </div>
 
             </div>
+            <footer>
+            <div class="footer-bottom">
+                <p class="footer-date">
+                    <span>{{ footer_inspection_name }} on {{ footer_current_date }}</span>
+                </p>
+                <p class="footer-page">Page {{ global_vars['page_no'] }} of {{ total_pages }}</p>
+            </div>
+            </footer>
         </div>
     </div>
 
@@ -147,6 +155,8 @@
         <title>Document</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="{{ base_dir }}/inspection-report-new.component.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
         <!-- <link rel="stylesheet" href="./ntpc.css"> -->
@@ -700,6 +710,7 @@
 
     <body>
         {{ create_page(global_vars, summary, graph_labels, graph_data, graph_backgroundColor, camera_list, zonename) }}
+        {{ increment(global_vars, "page_no") }}
     </body>
 
 

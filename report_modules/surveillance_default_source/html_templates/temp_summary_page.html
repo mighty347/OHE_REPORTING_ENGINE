@@ -46,6 +46,8 @@
         <title>Document</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="/app/report_modules/surveillance_default_source/html_templates/inspection-report-new.component.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
         <!-- <link rel="stylesheet" href="./ntpc.css"> -->
@@ -624,7 +626,7 @@
                             </tr>
                             <tr>
                                 <td>Cameras Covered in This Report</td>
-                                <td>2</td>
+                                <td>8</td>
                             </tr>
                             <tr>
                                 <td>Violations Observed</td>
@@ -632,7 +634,7 @@
                             </tr>
                             <tr>
                                 <td>Annotations Observed</td>
-                                <td>12</td>
+                                <td>123</td>
                             </tr>
                             
                         </tbody>
@@ -646,7 +648,7 @@
                         <tbody>
                             
                             <tr>
-                                <td>Urbtech Trade center</td>
+                                <td>phase2</td>
                             </tr>
                             
                         </tbody>
@@ -660,11 +662,35 @@
                         <tbody>
                             
                             <tr>
-                                <td>Office Back Camera</td>
+                                <td>100-66 (AVU-05)</td>
                             </tr>
                             
                             <tr>
-                                <td>Office Front Camera </td>
+                                <td>100-58 (DCU-04)</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>100-178 (CPP-09)</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>100-222 (OM&S-2 T-1)</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>100-179 (cpp-10)</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>100-105 (HDT-02)</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>100-238 (AVU-06)</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>100-61 (CRU-02)</td>
                             </tr>
                             
                         </tbody>
@@ -678,13 +704,13 @@
                         <tbody>
                             
                             <tr>
-                                <td>Helmet Missing</td>
-                                <td>9</td>
+                                <td>IFR Suit Missing</td>
+                                <td>63</td>
                             </tr>
                             
                             <tr>
-                                <td>IFR Suit Missing</td>
-                                <td>3</td>
+                                <td>Helmet Missing</td>
+                                <td>60</td>
                             </tr>
                             
 
@@ -696,8 +722,19 @@
                 </div>
 
             </div>
+            <footer>
+            <div class="footer-bottom">
+                <p class="footer-date">
+                    <span>test site on Mar 02, 2026</span>
+                </p>
+                <p class="footer-page">Page 1 of 41</p>
+            </div>
+            </footer>
         </div>
     </div>
+
+
+        
 
 
     </body>
@@ -745,9 +782,9 @@
             } else if (id == "anomalies_chart") {
                 data = {
                     text: 'AFFECTED CAPACITY MODULES',
-                    labels: ['Helmet Missing', 'IFR Suit Missing'],
+                    labels: ['IFR Suit Missing', 'Helmet Missing'],
                     datasets: [{
-                        data: [9, 3],
+                        data: [63, 60],
                         backgroundColor: ['rgba(54, 122, 31, 1.0)', 'rgba(71, 163, 41, 1.0)'],
                         borderWidth: 0
                     }]

@@ -116,7 +116,7 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         with open("current_payload.json", "w") as f:
             json.dump(payload, f , indent=4)
         
-        # with open("current_payload.json", "r") as f:
+        # with open("current_payload_new.json", "r") as f:
         #     payload = json.load(f)
     
         #------------------------------------------------------
@@ -171,7 +171,6 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         # #4
         ret = pdf_engine.generate_summary_page()
         print(f"{Fore.GREEN}Summary page generated {Fore.RESET}")
-
         #5
         # ret = pdf_engine.generate_asset_analysis_page()
         # print(f"{Fore.GREEN}Asset Analysis pages generated {Fore.RESET}")
