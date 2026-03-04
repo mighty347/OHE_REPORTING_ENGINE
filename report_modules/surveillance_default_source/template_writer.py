@@ -108,6 +108,18 @@ class TemplateWriter(object):
         self.jinja_env = Environment(loader = FileSystemLoader(self.templates_path))
         self.jinja_env.filters['get_list_item'] = get_list_item
         
+        def format_datetime(value, fmt='%b %d, %Y %I:%M %p'):
+            """Convert ISO 8601 datetime string to a readable format."""
+            if not value:
+                return ''
+            try:
+                dt = datetime.datetime.fromisoformat(str(value))
+                return dt.strftime(fmt)
+            except (ValueError, TypeError):
+                return str(value)
+        
+        self.jinja_env.filters['format_datetime'] = format_datetime
+        
         self.wkhtmltopdf_config = pdfkit.configuration(wkhtmltopdf= wkhtmltopdf_path)
         self.wkhtml_options = wkhtml_options
         self.debug = debug
@@ -382,7 +394,37 @@ class TemplateWriter(object):
             return generated_colors
         
 
-        self.vprint("Generating summary page ...")
+        def render_and_save_summary_pdf(template, render_data, pdf_suffix, page_number):
+            """Helper to render a summary page chunk, convert to PDF, and append to generated_pdfs."""
+            html = template.render(render_data)
+
+            split_html = html.split("__::__")
+            html = split_html[0]
+            self.current_page_count = int(split_html[1])
+
+            if self.debug:
+                debug_filename = f"temp_summary_page_{page_number}.html"
+                with open(os.path.join(self.templates_path, debug_filename), "w") as f:
+                    f.write(html)
+
+            survey_name = self.payload.get("SurveyName", "Not_Found").replace(" ", "_")
+            pdf_path = os.path.join(self.project_dir, f"{survey_name}_summary_{pdf_suffix}.pdf")
+
+            ret = pdfkit.from_string(
+                html,
+                output_path=pdf_path,
+                options=self.wkhtml_options,
+                configuration=self.wkhtmltopdf_config,
+                verbose=self.verbose,
+            )
+            if ret:
+                self.generated_pdfs.append(pdf_path)
+            else:
+                self.vprint(f"Error generating summary PDF: {pdf_path}")
+            return ret
+        
+
+        self.vprint("Generating summary pages ...")
         summary_page_template = self.jinja_env.get_template("summary_page_template.html")
 
         total_issues = 0
@@ -392,67 +434,136 @@ class TemplateWriter(object):
         graph_backgroundColor = []
         camera_list = []
         zonename = []
-        sitename =  self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName']
-        summary = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['Summary']
-        anomaly_summary = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['AnomalySummary']
-        cameras = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['CameraList']
-        
+        # sitename = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName']
+        # summary = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['Summary']
+        # anomaly_summary = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['AnomalySummary']
+        # cameras = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['CameraList']
+
+        report_data = self.payload.get('surveillance_reports', [{}])[0]
+        annot_data = report_data.get('sp_get_annotations_for_report', {})
+        zone_wise = annot_data.get('ZoneWiseData', [])
+        summary = annot_data.get('Summary', '')
+        anomaly_summary = annot_data.get('AnomalySummary', [])
+        cameras = annot_data.get('CameraList', [])
+        footer_inspection_name = zone_wise[0]['SiteName'] if zone_wise else 'Unknown'
+
+        # Build zonename list
+        for zone in zone_wise:
+            zonename.append(zone["ZoneName"])
+
+        # Build camera_list with zone info
         for camera in cameras:
-            camera_list.append(camera["CameraName"])
-        
+            camera_list.append(camera['CameraName'])
+
         for anomaly in anomaly_summary:
             graph_labels.append(anomaly["AnomalyName"])
             graph_data.append(anomaly["Count"])
 
-        for zone in self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData']:
-            zonename.append(zone["ZoneName"])
-
         graph_backgroundColor = generate_colors(len(graph_labels))
-  
 
-        html = summary_page_template.render({
-            "base_dir": self.templates_path,
-            "page_index": self.current_page_count,
-            "summary" : summary,
-            "total_number_of_modules": self.payload.get("TotalNumberOfModules"),
-            "total_issues": total_issues,
-            "annomaly_details": self.payload.get("AnnomalyDetails"),
-            "camera_list": camera_list,
-            "zonename": zonename,
-            "footer_current_date": self.current_date,
-            "footer_inspection_name":self.payload["surveillance_reports"][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName'],
-            "total_pages": self.total_page_count,
-            "graph_labels": graph_labels,
-            "graph_data": graph_data,
-            "graph_backgroundColor": graph_backgroundColor
+        # --- Chunk sizes ---
+        FIRST_PAGE_ITEMS = 14   # max zone/camera items on the first page (has Report Overview too)
+        SUBSEQUENT_PAGE_ITEMS = 26  # max zone/camera items on subsequent pages
 
-        })
+        # --- Combine zones and cameras into one list for chunked rendering ---
+        # Each item is a tuple: ("zone", name) or ("camera", name)
+        all_items = [("zone", z) for z in zonename] + [("camera", c) for c in camera_list]
 
+        # --- Split into page-sized chunks ---
+        chunks = []
+        if len(all_items) > 0:
+            # First chunk (smaller, because first page has Report Overview)
+            first_chunk = all_items[:FIRST_PAGE_ITEMS]
+            chunks.append(first_chunk)
+            # Remaining chunks
+            remaining = all_items[FIRST_PAGE_ITEMS:]
+            for i in range(0, len(remaining), SUBSEQUENT_PAGE_ITEMS):
+                chunks.append(remaining[i:i + SUBSEQUENT_PAGE_ITEMS])
+        
+        page_number = 0
+        zone_heading_shown = False
+        camera_heading_shown = False
 
-        split_html =  html.split("__::__")
-        html = split_html[0]
-        self.current_page_count = int(split_html[1])
+        # Check if violation analysis can fit on the last chunk page
+        # +1 for the heading row
+        violation_rows = len(graph_labels) + 1 if graph_labels else 0
+        violations_merged = False
 
-        if self.debug:
-            with open( os.path.join(self.templates_path, "temp_summary_page.html"), "w") as f:
-                f.write(html)
+        # --- Render each chunk as a separate page ---
+        for chunk_index, chunk in enumerate(chunks):
+            # Separate zones and cameras from this chunk
+            chunk_zones = [item[1] for item in chunk if item[0] == "zone"]
+            chunk_cameras = [item[1] for item in chunk if item[0] == "camera"]
 
-        survey_name = self.payload.get("SurveyName", "Not_Found").replace(" ", "_")
-        pdf_path = os.path.join(self.project_dir , survey_name+'_summary.pdf' )
+            is_first_page = (chunk_index == 0)
+            is_last_chunk = (chunk_index == len(chunks) - 1)
 
-        ret = pdfkit.from_string(
-                            html,
-                            output_path= pdf_path,
-                            options= self.wkhtml_options,
-                            configuration= self.wkhtmltopdf_config,
-                            verbose = self.verbose,
-                            # css = self.css_path
-                        )
-        if ret :
-            self.generated_pdfs.append(pdf_path)
-            return True
-        else:
-            return False
+            # Only show heading on the first page that contains that data type
+            show_zone_heading = len(chunk_zones) > 0 and not zone_heading_shown
+            show_camera_heading = len(chunk_cameras) > 0 and not camera_heading_shown
+
+            if show_zone_heading:
+                zone_heading_shown = True
+            if show_camera_heading:
+                camera_heading_shown = True
+
+            # Determine if violations can fit on this (last) page
+            page_capacity = FIRST_PAGE_ITEMS if is_first_page else SUBSEQUENT_PAGE_ITEMS
+            remaining_space = page_capacity - len(chunk)
+            include_violations = is_last_chunk and graph_labels and remaining_space >= violation_rows
+
+            render_data = {
+                "base_dir": self.templates_path,
+                "page_index": self.current_page_count,
+                "summary": summary if is_first_page else None,
+                "total_number_of_modules": self.payload.get("TotalNumberOfModules"),
+                "total_issues": total_issues,
+                "annomaly_details": self.payload.get("AnnomalyDetails"),
+                "camera_list": chunk_cameras,
+                "zonename": chunk_zones,
+                "show_zone_heading": show_zone_heading,
+                "show_camera_heading": show_camera_heading,
+                "footer_current_date": self.current_date,
+                "footer_inspection_name": footer_inspection_name,
+                "total_pages": self.total_page_count,
+                "graph_labels": graph_labels if include_violations else [],
+                "graph_data": graph_data if include_violations else [],
+                "graph_backgroundColor": graph_backgroundColor if include_violations else [],
+            }
+
+            if include_violations:
+                violations_merged = True
+                self.vprint(f"  Rendering summary page {page_number + 1} (zones: {len(chunk_zones)}, cameras: {len(chunk_cameras)}, + Violation Analysis)")
+            else:
+                self.vprint(f"  Rendering summary page {page_number + 1} (zones: {len(chunk_zones)}, cameras: {len(chunk_cameras)})")
+            render_and_save_summary_pdf(summary_page_template, render_data, f"page_{page_number}", page_number)
+            page_number += 1
+
+        # --- Render the Violation Analysis as a separate page only if it didn't fit ---
+        if graph_labels and not violations_merged:
+            render_data = {
+                "base_dir": self.templates_path,
+                "page_index": self.current_page_count,
+                "summary": None,
+                "total_number_of_modules": self.payload.get("TotalNumberOfModules"),
+                "total_issues": total_issues,
+                "annomaly_details": self.payload.get("AnnomalyDetails"),
+                "camera_list": [],
+                "zonename": [],
+                "show_zone_heading": False,
+                "show_camera_heading": False,
+                "footer_current_date": self.current_date,
+                "footer_inspection_name": footer_inspection_name,
+                "total_pages": self.total_page_count,
+                "graph_labels": graph_labels,
+                "graph_data": graph_data,
+                "graph_backgroundColor": graph_backgroundColor,
+            }
+
+            self.vprint(f"  Rendering summary page {page_number + 1} (Violation Analysis)")
+            render_and_save_summary_pdf(summary_page_template, render_data, f"page_{page_number}", page_number)
+
+        return True
 
 
     def generate_chart_page(self):

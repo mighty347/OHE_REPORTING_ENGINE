@@ -1,158 +1,39 @@
-{# required parameters #}
-
-{# base_dir #}
-{# page_index #}
-
-{# total_number_of_modules #}
-{# total_issues #}
-{# annomaly_details #}
-{# graph_labels #}
-{# graph_data #}
-{# graph_backgroundColor #}
-
-
-
-{# Notes #}
-{# 12 entries in table with chart #}
-{# 20 entries in table without chart #}
-
-{# global variables, counter and parameters #}
-{% set global_vars = {
-"page_no": page_index,
-"anomaly_table_rows": 2,
-"first_page": true,
-"chart_plotted": false,
-} %}
-
-{# for debugging by creating error #}
-{% macro break() %}
-{% set new_var = 90/0 %}
-{% endmacro %}
-
-
-{# Macro to increment the counter #}
-{% macro increment(dct, key, inc=1) %}
-{% if dct.update({key: dct[key] + inc}) %} {% endif %}
-{% endmacro %}
-
-{# Macro to update the dictionary #}
-{% macro update(dct, key, value)%}
-{% if dct.update({key: value}) %} {% endif %}
-{% endmacro %}
 
 
 
 
 
-{% macro create_page(global_vars, summary, graph_labels, graph_data, graph_backgroundColor, camera_list, zonename) %}
 
-<div class="container summary ">
-    <div class="header">
-        <!-- <span>Block - P2</span> -->
-        <span></span>
-    </div>
-    <div class="content">
-        <div class="row">
-            {% if summary %}
-            <div class="col topic-head-image">
-                <span>Report Overview</span>
-            </div>
-            <div class="col">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td>Sites Covered in This Report</td>
-                            <td>{{ summary["TotalSites"] }}</td>
-                        </tr>
-                        <tr>
-                            <td>Zones Covered in This Report</td>
-                            <td>{{ summary["TotalZones"] }}</td>
-                        </tr>
-                        <tr>
-                            <td>Cameras Covered in This Report</td>
-                            <td>{{ summary["TotalCameras"] }}</td>
-                        </tr>
-                        <tr>
-                            <td>Violations Observed</td>
-                            <td>{{ summary["TotalAnomalies"] }}</td>
-                        </tr>
-                        <tr>
-                            <td>Annotations Observed</td>
-                            <td>{{ summary["TotalAnnotations"] }}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            {% endif %}
-            {% if zonename %}
-            {% if show_zone_heading %}
-            <div class="col topic-head-image">
-                <span>Zone Details</span>
-            </div>
-            {% endif %}
-            <div class="col">
-                <table class="table">
-                    <tbody>
-                        {% for zone in zonename %}
-                        <tr>
-                            <td>{{ zone }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-            {% endif %}
-            {% if camera_list %}
-            {% if show_camera_heading %}
-            <div class="col topic-head-image">
-                <span>Camera Details</span>
-            </div>
-            {% endif %}
-            <div class="col">
-                <table class="table">
-                    <tbody>
-                        {% for camera in camera_list %}
-                        <tr>
-                            <td>{{ camera }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-            {% endif %}
-            {% if graph_labels %}
-            <div class="col topic-head-image">
-                <span>Category-wise Violation Analysis</span>
-            </div>
-            <div class="col">
-                <table class="table">
-                    <tbody>
-                        {% for i in range(graph_labels | length) %}
-                        <tr>
-                            <td>{{ graph_labels[i] }}</td>
-                            <td>{{ graph_data[i] }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-            {% endif %}
 
-            {{ update(global_vars, "first_page", false) }}
 
-        </div>
-    </div>
-    <footer>
-        <div class="footer-bottom">
-            <p class="footer-date">
-                <span>{{ footer_inspection_name }} on {{ footer_current_date }}</span>
-            </p>
-            <p class="footer-page">Page {{ global_vars['page_no'] }} of {{ total_pages }}</p>
-        </div>
-    </footer>
-</div>
 
-{% endmacro %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -165,7 +46,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="{{ base_dir }}/inspection-report-new.component.css">
+    <link rel="stylesheet" href="/app/report_modules/surveillance_default_source/html_templates/inspection-report-new.component.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -240,7 +121,7 @@
 
         .header {
             /* background-image: url(./assests/header-image.png); */
-            background-image: url({{ base_dir }}/assets/header-image.png);
+            background-image: url(/app/report_modules/surveillance_default_source/html_templates/assets/header-image.png);
             background-repeat: no-repeat;
             background-size: 70% 100%;
             margin-top: 40px;
@@ -273,7 +154,7 @@
         }
 
         .content-image {
-            background-image: url({{ base_dir }}/assets/Group.png);
+            background-image: url(/app/report_modules/surveillance_default_source/html_templates/assets/Group.png);
             /* background-image: url(./assests/Group.png); */
             background-repeat: no-repeat;
             background-position: right bottom 150px;
@@ -461,7 +342,7 @@
             font-weight: 600;
             padding: 14px 110px;
             /* background-image: url(./assests/topic-image.png); */
-            background-image: url({{ base_dir }}/assets/topic-image.png);
+            background-image: url(/app/report_modules/surveillance_default_source/html_templates/assets/topic-image.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             /* margin-top: 50px !important; */
@@ -476,7 +357,7 @@
             font-weight: 600;
             padding: 14px 64px;
             /* background-image: url(./assests/index-image.png); */
-            background-image: url({{ base_dir }}/assets/index-image.png);
+            background-image: url(/app/report_modules/surveillance_default_source/html_templates/assets/index-image.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             /* margin-top: 50px !important; */
@@ -487,7 +368,7 @@
 
         .page-footer {
             /* background-image: url(./assests/footer-image.png); */
-            background-image: url({{ base_dir }}/assets/footer-image.png);
+            background-image: url(/app/report_modules/surveillance_default_source/html_templates/assets/footer-image.png);
             background-repeat: no-repeat;
             background-size: 100%;
             text-align: end;
@@ -719,9 +600,152 @@
 </head>
 
 <body>
-    {{ create_page(global_vars, summary, graph_labels, graph_data, graph_backgroundColor, camera_list, zonename) }}
-    {{ increment(global_vars, "page_no") }}
+    
+
+<div class="container summary ">
+    <div class="header">
+        <!-- <span>Block - P2</span> -->
+        <span></span>
+    </div>
+    <div class="content">
+        <div class="row">
+            
+            <div class="col topic-head-image">
+                <span>Report Overview</span>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Sites Covered in This Report</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Zones Covered in This Report</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Cameras Covered in This Report</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Violations Observed</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Annotations Observed</td>
+                            <td>123</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            
+            <div class="col topic-head-image">
+                <span>Zone Details</span>
+            </div>
+            
+            <div class="col">
+                <table class="table">
+                    <tbody>
+                        
+                        <tr>
+                            <td>phase2</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            
+            <div class="col topic-head-image">
+                <span>Camera Details</span>
+            </div>
+            
+            <div class="col">
+                <table class="table">
+                    <tbody>
+                        
+                        <tr>
+                            <td>100-224 (OM&S-3 CRU TANK)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-55</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-135</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-146 (WRDS-02)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-147</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-62</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-134</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-138</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-66 (AVU-05)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>test cam 1</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-70</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-58 (DCU-04)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>100-63</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+
+            
+
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p class="footer-date">
+                <span>test site on Mar 04, 2026</span>
+            </p>
+            <p class="footer-page">Page 1 of 41</p>
+        </div>
+    </footer>
+</div>
+
+
+    
+
+
 </body>
 
 </html>
-__::__{{ global_vars["page_no"] }}

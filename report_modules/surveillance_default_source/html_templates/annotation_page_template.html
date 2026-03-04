@@ -44,90 +44,102 @@ Helper Macros
 {# ============================== #
 Main Page Macro
 # ============================== #}
-{% macro create_page(global_vars, annotations, InspectionName, tower_lat, tower_long, total_pages, survey_id, show_header, zonename, sitename) %}
+{% macro create_page(global_vars, annotations, InspectionName, tower_lat, tower_long, total_pages, survey_id,
+show_header, zonename, sitename) %}
 <div size="A4" class="new-page WithHF">
-        <section class="main-wrapper powerNSubstation">
-            <div class="home-1 p-0">
-                <header>
-                    <div class="header-title" style="text-align: right; padding: 10px; font-weight: bold;">
-                        Zone: {{ zonename }}
-                    </div>
-                </header>
+    <section class="main-wrapper powerNSubstation">
+        <div class="home-1 p-0">
+            <header>
+                <div class="header-title" style="text-align: right; padding: 10px; font-weight: bold;">
+                    Zone: {{ zonename }}
+                </div>
+            </header>
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="inner-page-content">
-                            <div class="image_Wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="inner-page-content">
+                        <div class="image_Wrapper">
 
-                                {% for annotation in annotations if annotation %}
-                                <div class="ImageAnnotate">
+                            {% for annotation in annotations if annotation %}
+                            <div class="ImageAnnotate">
 
-                                    <!-- ========== Parent Image ========== -->
-                                    <div class="ImageGroup">
-                                        <div class="imgCont">
-                                            <div class = "imgBox">
-                                                <img src="{{ annotation['parent_img_path'] }}" alt="Parent Image" />
-                                                <span
-                                                    style="position: absolute; top: 10px; left: 10px; color: white; background-color: rgba(0,0,0,0.5); padding: 5px;">Full View</span>
-                                            </div>
-                                            <div class = "imgBox">
-                                                <img src="{{ annotation['image_path'] }}" alt="child Image" />
-                                                <span class="overLabel"
-                                                    style="position: absolute; top: 10px; left: 51%; color: white; background-color: rgba(0,0,0,0.5); padding: 5px;">Close View </span>
-                                            </div>   
+                                <!-- ========== Parent Image ========== -->
+                                <div class="ImageGroup">
+                                    <div class="imgCont">
+                                        <div class="imgBox">
+                                            <img src="{{ annotation['parent_img_path'] }}" alt="Parent Image" />
+                                            <span
+                                                style="position: absolute; top: 10px; left: 10px; color: white; background-color: rgba(0,0,0,0.5); padding: 5px;">Full
+                                                View</span>
                                         </div>
-                                        <div class="detail_container">
-                                            <div class="meta_container details">
-                                                <div class="meta_column">
-                                                    <div class="meta-row">
-                                                        <span class="meta-value">
-                                                            <span class="meta-label">S.no. : </span>{{ annotation["annotation_index"] }}
-                                                        </span>
-                                                    </div>
-                                                    <div class="meta-row">
-                                                        <span class="meta-value"><span class="meta-label">Camera Name : </span>{{ annotation['CameraName'] }}</span>
-                                                    </div>
-                                                    <div class="meta-row">
-                                                        <span class="meta-value"><span class="meta-label">Defect Name: </span>{{ annotation['AnomalyName'] }}</span>
-                                                    </div>
+                                        <div class="imgBox">
+                                            <img src="{{ annotation['image_path'] }}" alt="child Image" />
+                                            <span class="overLabel"
+                                                style="position: absolute; top: 10px; left: 51%; color: white; background-color: rgba(0,0,0,0.5); padding: 5px;">Close
+                                                View </span>
+                                        </div>
+                                    </div>
+                                    <div class="detail_container">
+                                        <div class="meta_container details">
+                                            <div class="meta_column">
+                                                <div class="meta-row">
+                                                    <span class="meta-value">
+                                                        <span class="meta-label">S.no. : </span>{{
+                                                        annotation["annotation_index"] }}
+                                                    </span>
+                                                </div>
+                                                <div class="meta-row">
+                                                    <span class="meta-value"><span class="meta-label">Camera Name :
+                                                        </span>{{ annotation['CameraName'] }}</span>
+                                                </div>
+                                                <div class="meta-row">
+                                                    <span class="meta-value"><span class="meta-label">Defect Name:
+                                                        </span>{{ annotation['AnomalyName'] }}</span>
                                                 </div>
                                             </div>
-                                            <div class="meta_container ai_analysis">
-                                                <div class="meta_column">
-                                                    <div class="meta-row">
+                                        </div>
+                                        <div class="meta_container ai_analysis">
+                                            <div class="meta_column">
+                                                <div class="meta-row">
 
-                                                        <span class="meta-value"> <span class="meta-label">Site Name:  </span> {{ sitename }}</span>
-                                                    </div>
-                                                    <div class="meta-row">
-
-                                                        <span class="meta-value"><span class="meta-label">Zone Name:  </span> {{ zonename }}</span>
-                                                    </div>
-                                                    
+                                                    <span class="meta-value"> <span class="meta-label">Site Name:
+                                                        </span> {{ sitename }}</span>
                                                 </div>
+                                                <div class="meta-row">
+
+                                                    <span class="meta-value"><span class="meta-label">Zone Name: </span>
+                                                        {{ zonename }}</span>
+                                                </div>
+                                                <div class="meta-row">
+                                                    <span class="meta-value"><span class="meta-label">Date & Time:
+                                                        </span> {{ annotation['CreatedDate'] | format_datetime }}</span>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                </div> <!-- end ImageAnnotate -->
+                            </div> <!-- end ImageAnnotate -->
 
-                                {% if not loop.last %}
-                                {% endif %}
-                                {% endfor %}
-                            </div> <!-- end image_Wrapper -->
-                        </div> <!-- end inner-page-content -->
-                    </div> <!-- end row -->
-                </div> <!-- end container-fluid -->
+                            {% if not loop.last %}
+                            {% endif %}
+                            {% endfor %}
+                        </div> <!-- end image_Wrapper -->
+                    </div> <!-- end inner-page-content -->
+                </div> <!-- end row -->
+            </div> <!-- end container-fluid -->
 
-                <footer>
-                    <div class="footer-bottom">
-                        <p class="footer-date">
-                            <span>{{ footer_inspection_name }} on {{ footer_current_date }}</span>
-                        </p>
-                        <p class="footer-page">Page {{ global_vars['page_no'] }} of {{ total_pages }}</p>
-                    </div>
-                </footer>
-            </div> <!-- end home-1 -->
-        </section>
+            <footer>
+                <div class="footer-bottom">
+                    <p class="footer-date">
+                        <span>{{ footer_inspection_name }} on {{ footer_current_date }}</span>
+                    </p>
+                    <p class="footer-page">Page {{ global_vars['page_no'] }} of {{ total_pages }}</p>
+                </div>
+            </footer>
+        </div> <!-- end home-1 -->
+    </section>
 </div>
 {% endmacro %}
 
@@ -144,9 +156,11 @@ HTML Structure
 </head>
 
 <body>
-    {{ create_page(global_vars, annotations_group, InspectionName, 0.0, 0.0, total_pages, survey_id, show_header, zonename, sitename) }}
+    {{ create_page(global_vars, annotations_group, InspectionName, 0.0, 0.0, total_pages, survey_id, show_header,
+    zonename, sitename) }}
     {{ increment(global_vars, "page_no") }}
 </body>
+
 </html>
 
 __::__{{ global_vars['page_no'] }}

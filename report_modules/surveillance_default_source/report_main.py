@@ -110,12 +110,15 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         #     json.dump(excel_data, f, indent=4)
         
         # excel_data = excel_data[0]["JsonResultSet"]
+        
+        ##############For Production
         payload = sanitize_for_json(payload)
         payload["from"] = extract_date(parameters.get("p_from"))
         payload["to"] = extract_date(parameters.get("p_to"))
         with open("current_payload.json", "w") as f:
             json.dump(payload, f , indent=4)
         
+        ########### For Development
         # with open("current_payload_new.json", "r") as f:
         #     payload = json.load(f)
     
