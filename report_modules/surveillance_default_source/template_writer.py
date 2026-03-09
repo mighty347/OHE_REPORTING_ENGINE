@@ -1121,7 +1121,7 @@ class TemplateWriter(object):
         
         for zone in zones:
             zone_name = zone.get("ZoneName")
-            site_name = zone.get("SiteName")    
+            site_name = zone.get("SiteName")
             
             for annotation in zone.get("Annotations", []):
                 if annotation.get("FrameUrl"):
@@ -1132,7 +1132,9 @@ class TemplateWriter(object):
                 if annotation.get("Geometry"):
                     print(f"Processing... {Fore.YELLOW}{ image_count + 1 }{Fore.RESET}/{Fore.BLUE}{total_annotated_images}{Fore.RESET} ")
                     image_id = image_count + 1
-                    current_image_dir = os.path.join(self.project_dir, str(image_id))
+                    # current_image_dir = os.path.join(self.project_dir, f"{zone.get('ZoneId', time.time())}{str(image_id)}") # here including zone_id because we need only a unique path if not found it will take epoch time.
+                    current_image_dir = os.path.join(self.project_dir, f"{annotation.get('AnnotationId', time.time())}")
+                    
                     os.makedirs(current_image_dir, exist_ok=True)
                     print(f"    Downloading image : {annotation.get('FrameUrl')} ... ")
 

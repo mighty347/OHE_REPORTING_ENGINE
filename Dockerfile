@@ -30,10 +30,12 @@ RUN chmod +x /app/*.sh && sed -i 's/\r$//' /app/*.sh
 #     && pip install --upgrade pip \
 #     && pip install -r requirements.txt
 
-RUN python3 -m venv /app/ntpc_reporting_engine_venv \
-    && . /app/ntpc_reporting_engine_venv/bin/activate \
-    && pip install --upgrade pip \
-    && pip install -r requirements.txt
+
+# NOTE: As of now not creating virtual environment for the project (only for development)
+# RUN python3 -m venv /app/ntpc_reporting_engine_venv \
+#     && . /app/ntpc_reporting_engine_venv/bin/activate \
+#     && pip install --upgrade pip \
+#     && pip install -r requirements.txt
 
 
 # Build Python extensions

@@ -40,7 +40,7 @@ class AWSConfig(object):
 class MinioConfig(object):
     bucket_name= "surveillanceprod"
     endpoint= "minio:9000"
-    hostname= "http://192.168.1.110:9000"
+    hostname= "http://192.168.100.240:9000"
     access_key= "surveillanceadmin"
     secret_key= "surveillanceadmin123"
     secure= False
