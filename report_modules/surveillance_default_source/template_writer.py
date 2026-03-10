@@ -114,7 +114,18 @@ class TemplateWriter(object):
                 return ''
             try:
                 dt = datetime.datetime.fromisoformat(str(value))
+                # Define IST timezone
+                ist = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+
+                # If datetime has no timezone assume UTC
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=datetime.timezone.utc)
+
+                # Convert to IST
+                dt = dt.astimezone(ist)
+
                 return dt.strftime(fmt)
+
             except (ValueError, TypeError):
                 return str(value)
         
@@ -134,30 +145,53 @@ class TemplateWriter(object):
         self.current_date = datetime.date.today().strftime('%b %d, %Y')
 
         self.current_page_count = 1
-        self.total_page_count = 0 # total_annotation_count + 6
-
-        # count the anomalies that are not the No Issue
-        try:
-            # TODO: count the total number of pages here. 
-            self.total_page_count += 1
-        except Exception as e:
-            print(f"ERROR : {e}")
-            raise
-
+        
+        # Calculate anomaly pages
         image_with_annotation = []
         total_anomaly_pages = 0
-        images = self.payload["surveillance_reports"]
-        zonewise = images[0]['sp_get_annotations_for_report']['ZoneWiseData']
-        for zone in zonewise:
-            annotations = zone.get("Annotations", [])
-            for annotation in annotations:
-                if annotations:
-                    image_with_annotation.append(annotation)
-                    total_anomaly_pages +=1
-            
+        images = self.payload.get("surveillance_reports", [{}])
+        if images and 'sp_get_annotations_for_report' in images[0]:
+            zonewise = images[0]['sp_get_annotations_for_report'].get('ZoneWiseData', [])
+            for zone in zonewise:
+                annotations = zone.get("Annotations", [])
+                for annotation in annotations:
+                    if annotations:
+                        image_with_annotation.append(annotation)
+                        total_anomaly_pages += 1
 
-        self.total_page_count = math.ceil(total_anomaly_pages/3)
+        annot_data = self.payload.get('surveillance_reports', [{}])[0].get('sp_get_annotations_for_report', {})
+        zone_wise = annot_data.get('ZoneWiseData', [])
+        cameras = annot_data.get('CameraList', [])
+        anomaly_summary = annot_data.get('AnomalySummary', [])
+        
+        all_items_count = len(zone_wise) + len(cameras)
+        graph_labels_count = len(anomaly_summary)
+        summary_pages = 0
+        FIRST_PAGE_ITEMS = 14
+        SUBSEQUENT_PAGE_ITEMS = 26
+        
+        if all_items_count > 0:
+            summary_pages = 1
+            remaining = all_items_count - FIRST_PAGE_ITEMS
+            if remaining > 0:
+                summary_pages += math.ceil(remaining / SUBSEQUENT_PAGE_ITEMS)
+            
+            if graph_labels_count > 0:
+                violation_rows = graph_labels_count + 1
+                items_on_last_page = all_items_count if remaining <= 0 else (remaining % SUBSEQUENT_PAGE_ITEMS)
+                if items_on_last_page == 0 and remaining > 0:
+                    items_on_last_page = SUBSEQUENT_PAGE_ITEMS
                 
+                page_capacity = FIRST_PAGE_ITEMS if summary_pages == 1 else SUBSEQUENT_PAGE_ITEMS
+                remaining_space = page_capacity - items_on_last_page
+                
+                if remaining_space < violation_rows:
+                    summary_pages += 1
+        elif graph_labels_count > 0:
+            summary_pages = 1
+
+        self.total_page_count = summary_pages + math.ceil(total_anomaly_pages/3)
+        
         
         self.generated_pdfs = []
         self.generated_docs = []
@@ -1113,6 +1147,7 @@ class TemplateWriter(object):
 
         self.vprint("Generating annomaly pages pdf ...")
         anomaly_count = 1
+        created_image_dirs = set()
 
         total_annotated_images = 0
         images = []
@@ -1124,11 +1159,13 @@ class TemplateWriter(object):
             site_name = zone.get("SiteName")
             
             for annotation in zone.get("Annotations", []):
-                if annotation.get("FrameUrl"):
+                if annotation.get("FrameUrl") and annotation.get("Geometry"):
                     images.append(annotation["FrameUrl"])
                     total_annotated_images += 1
 
             for image_count,annotation  in enumerate( zone.get("Annotations", []) ):
+                annotation["zone_name"] = zone_name
+                annotation["site_name"] = site_name
                 if annotation.get("Geometry"):
                     print(f"Processing... {Fore.YELLOW}{ image_count + 1 }{Fore.RESET}/{Fore.BLUE}{total_annotated_images}{Fore.RESET} ")
                     image_id = image_count + 1
@@ -1136,6 +1173,7 @@ class TemplateWriter(object):
                     current_image_dir = os.path.join(self.project_dir, f"{annotation.get('AnnotationId', time.time())}")
                     
                     os.makedirs(current_image_dir, exist_ok=True)
+                    created_image_dirs.add(current_image_dir)
                     print(f"    Downloading image : {annotation.get('FrameUrl')} ... ")
 
                     # image_bytes = fetch_image(annotation.get("FrameUrl"), max_retries=3)
@@ -1205,13 +1243,15 @@ class TemplateWriter(object):
                             cropped_annotation = draw_line_and_count(cropped_annotation, crop_box_coord, crop_line_coord, anomaly_count, image_type="annotation")
                             img = draw_line_and_count(img, box_coord, line_coord, anomaly_count, image_type="original", line_width=3)
                             # annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
-                            annot_img_save_path = os.path.join(current_image_dir, "cropped.jpg")
+                            # annot_img_save_path = os.path.join(current_image_dir, "cropped.jpg")
+                            annot_img_save_path = os.path.join(current_image_dir, f"cropped_{anomaly_count}.jpg")
                             cropped_annotation = cropped_annotation.convert("RGB")
                             cropped_annotation.save(annot_img_save_path)
                             annotation["image_path"] = annot_img_save_path
                             annotation["annotation_index"] = anomaly_count
                             # img_save_path = os.path.join(current_image_dir,str(anomaly_count) + ".jpg")
-                            img_save_path = os.path.join(current_image_dir, "original.jpg")
+                            # img_save_path = os.path.join(current_image_dir, "original.jpg")
+                            img_save_path = os.path.join(current_image_dir, f"original_{anomaly_count}.jpg")
                             img = img.convert("RGB")
                             img.save(img_save_path)
                             annotation["parent_img_path"] = img_save_path
@@ -1233,12 +1273,12 @@ class TemplateWriter(object):
                             img = draw_box_and_count(img, box_coord, anomaly_count, image_type="original", line_width=3)
                                 
                             # annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
-                            annot_img_save_path = os.path.join(current_image_dir, "cropped.jpg")
+                            annot_img_save_path = os.path.join(current_image_dir, f"cropped_{anomaly_count}.jpg")
                             cropped_annotation = cropped_annotation.convert("RGB")  # <-- ADD THIS
                             cropped_annotation.save(annot_img_save_path)
                             annotation["image_path"] = annot_img_save_path
                             annotation["annotation_index"] = anomaly_count
-                            img_save_path = os.path.join(current_image_dir, "original.jpg")
+                            img_save_path = os.path.join(current_image_dir, f"original_{anomaly_count}.jpg")
                             img = img.convert("RGB")  # <-- ADD THIS
                             img.save(img_save_path)
                             annotation["parent_img_path"] = img_save_path
@@ -1260,7 +1300,12 @@ class TemplateWriter(object):
         for zone in zones:
             for annotation in zone.get("Annotations", []):
                 if annotation.get("Geometry"):
-                    report_annotations.append(annotation)   
+                    report_annotations.append(annotation)
+
+        report_annotations = sorted(
+        report_annotations,
+        key=lambda x: x.get("annotation_index", 0)
+    )   
         total_annotated_images = len(report_annotations)
 
         tasks = []  # list of (i, html, pdf_path) tuples
@@ -1276,9 +1321,9 @@ class TemplateWriter(object):
                                     "base_url": "https://coredatarepo.s3.ap-south-1.amazonaws.com/",
                                     "page_index": self.current_page_count,
                                     "total_pages": self.total_page_count,
-                                    "annotation_index": image_count + 1,
-                                    "zonename": zone_name,
-                                    "sitename": site_name,
+                                    "annotation_index": annotations_group[0].get("annotation_index"),   
+                                    "zonename": annotations_group[0].get("zone_name"),
+                                    "sitename": annotations_group[0].get("site_name"),
                                     "footer_inspection_name":self.payload["surveillance_reports"][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName'],
                                     "footer_current_date": self.current_date 
                                     })
