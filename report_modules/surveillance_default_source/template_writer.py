@@ -203,7 +203,16 @@ class TemplateWriter(object):
 
         self.vprint("Generating front page ...")
         front_page_template = self.jinja_env.get_template("front_page_template.html")
-        site_name = self.payload['surveillance_reports'][0]['sp_get_annotations_for_report']['ZoneWiseData'][0]['SiteName']
+        site_name = "Not Available"
+        try:
+            site_name = (
+                self.payload.get("surveillance_reports", [{}])[0]
+                .get("sp_get_annotations_for_report", {})
+                .get("ZoneWiseData", [{}])[0]
+                .get("SiteName", "Not Available")
+            )
+        except (IndexError, AttributeError):
+            pass
         html = front_page_template.render({
                                     "base_dir":self.templates_path,
                                     "site_name":site_name,
