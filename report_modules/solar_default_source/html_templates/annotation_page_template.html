@@ -1,0 +1,213 @@
+{# required parameters #}
+
+{# base_dir #}
+{# InspectionName #}
+{# inspection_date #}
+
+<!-- {# tower_data #} -->
+{# image #}
+{# tower_no #}
+{# tower_lat #}
+{# tower_long #}
+<!-- image wise -->
+
+{# page_index #}
+{# total_pages #}
+{# position_of_defect #}
+{# footer_inspection_name #}
+{# footer_current_date #}
+
+
+{# global variables, counter and parameters #}
+{% set global_vars = {  
+    "page_no": page_index,
+} %}
+
+{# for debugging by creating error #}
+{% macro break() %}
+{% set new_var = 90/0 %}
+{% endmacro %}
+
+
+{# Macro to increment the counter #}
+{% macro increment(dct, key, inc=1) %}
+{% if dct.update({key: dct[key] + inc}) %} {% endif %}
+{% endmacro %}
+
+{# Macro to update the dictionary #}
+{% macro update(dct, key, value)%}
+{% if dct.update({key: value}) %} {% endif %}
+{% endmacro %}
+
+
+
+{% macro create_page(global_vars, annotation, InspectionName, tower_lat, tower_long, total_pages) %}
+    <div size="A4" class="new-page WithHF">
+        <section class="main-wrapper powerNSubstation">
+            <div class="home-1 p-0">
+                <header>
+                    {# if first page only then create summary table  #}
+                    <h3>{{ tower_no }}</h3>
+                    <span></span>
+                </header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="inner-page-content">
+                                <div class="table_Wrap">
+                                    {% if annotation.get("Direction") or annotation.get("AssetName") %}
+                                    <div class="widthIssue">
+                                        <div class="table_cont">Mast Name :</div>
+                                        <div class="table_cont">
+                                            {% if annotation.get("Direction") %}
+                                                {{ annotation["Direction"] }}
+                                            {% endif %}
+
+                                            {% if annotation.get("Direction") and annotation.get("AssetName") %}
+                                                -
+                                            {% endif %}
+
+                                            {% if annotation.get("AssetName") %}
+                                                {{ annotation["AssetName"] }}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                    <div class="widthIssue">
+                                        <!-- <div class="table_cont">Name of Line</div>
+                                        <div class="table_cont">{{ InspectionName }}</div> -->
+                                    </div>
+                                </div>
+                                <div class="image_Wrapper">
+                                    <div class="ImageGroup">
+                                        <div id='map_thermal' style="pointer-events:none"></div>
+                                        <!-- <img src="{# {{ image["ImageLocalUrl"] }} #}" alt="Sample image"> -->
+                                        {% if annotation.get("thermal_parent_img_path") %}
+                                        <img src="{{ annotation["thermal_parent_img_path"] }}" alt="Sample image">
+                                        {% endif %}
+                                    </div>
+                                    <div class="ImageGroup">
+                                        <div id='annomap_thermal' style="pointer-events:none;"></div>
+                                        {% if annotation.get("thermal_image_path") %}
+                                        <img src="{{ annotation["thermal_image_path"] }}" alt="Sample image">
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                 <div class="image_Wrapper">
+                                    <div class="ImageGroup">
+                                        <div id='map_visual' style="pointer-events:none"></div>
+                                        <!-- <img src="{# {{ image["ImageLocalUrl"] }} #}" alt="Sample image"> -->
+                                        {% if annotation.get("visual_parent_img_path") %}
+                                        <img src="{{ annotation["visual_parent_img_path"] }}" alt="Sample image">
+                                        {% endif %}
+                                    </div>
+                                    <div class="ImageGroup">
+                                        <div id='annomap_visual' style="pointer-events:none;"></div>
+                                        {% if annotation.get("visual_image_path") %}
+                                        <img src="{{ annotation["visual_image_path"] }}" alt="Sample image">
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% set report_columns = annotation.get("ReportColumnsVisual") or annotation.get("ReportColumnsThermal") or {} %}
+
+                                <table class="customTable">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Defect </th>
+                                        {% for key, value in report_columns.items() %}
+                                            <th>{{ key }}</th>
+                                        {% endfor %}
+                                        <th>Condition </th>
+                                    </tr>
+                                    <tr>
+                                        <td>{{ annotation["annotation_index"] }}</td>
+                                        <td>{{ annotation["Anomaly"] }}</td>
+                                        {% for key, value in report_columns.items() %}
+                                            <td>{{ value|string|lower|capitalize }}</td>
+                                        {% endfor %}
+                                        <td>{{ annotation["ConditionVisual"] or annotation["ConditionThermal"] }}</td>
+                                    </tr>
+                                </table>
+                                <table class="customTable">
+                                    <tr>
+                                        <th>Lat, Long</th>
+                                        <th>Image Name</th>
+                                        <th>Target Date</th>
+                                        {% if annotation.get('ImageVisualUrl') %}<th>VisualImageURL</th>{% endif %}
+                                        {% if annotation.get('ImageThermalUrl') %}<th>ThermalImageURL</th>{% endif %}
+                                    </tr>
+                                    <tr>
+                                        <td>{{ (annotation["ImageVisualPayload"]["lat"], annotation["ImageVisualPayload"]["lng"]) if annotation["ImageVisualPayload"] else (annotation["ImageThermalPayload"]["lat"], annotation["ImageThermalPayload"]["lng"]) }}</td>
+                                        <td>{{ annotation["ImageVisualPayload"]["name"] if annotation["ImageVisualPayload"] else annotation["ImageThermalPayload"]["name"] }}</td>
+                                        <td>{{ annotation["ImageVisualPayload"]["takenAt"][:10] if annotation["ImageVisualPayload"] else annotation["ImageThermalPayload"]["takenAt"][:10] }}</td>
+                                        {% if annotation.get('ImageVisualUrl') %}
+                                        <td><a href="{{ annotation['ImageVisualUrl'] }}" target="_blank">
+                                                {{ annotation['ImageVisualUrl'] }}
+                                            </a>
+                                        </td>
+                                        {% endif %}
+                                        {% if annotation.get('ImageThermalUrl') %}
+                                        <td><a href="{{ annotation['ImageThermalUrl'] }}" target="_blank">
+                                                {{ annotation['ImageThermalUrl'] }}
+                                            </a>
+                                        </td>
+                                        {% endif %}
+                                    </tr>
+                                </table>
+                                {% if annotation.get("MinTemperature") or annotation.get("MaxTemperature") or annotation.get("DeltaTemperature") %}
+                                <table class="customTable">
+                                    <tr>
+                                        {% if annotation.get("MinTemperature") %}<th>Min Temperature</th>{% endif %}
+                                        {% if annotation.get("MaxTemperature") %}<th>Max Temperature</th>{% endif %}
+                                        {% if annotation.get("DeltaTemperature") %}<th>Delta Temperature</th>{% endif %}
+                                    </tr>
+                                    <tr>
+                                        {% if annotation.get("MinTemperature") %}<td>{{ annotation["MinTemperature"] }}</td>{% endif %}
+                                        {% if annotation.get("MaxTemperature") %}<td>{{ annotation["MaxTemperature"] }}</td>{% endif %}
+                                        {% if annotation.get("DeltaTemperature") %}<td>{{ annotation["DeltaTemperature"] }}</td>{% endif %}
+                                    </tr>
+                                </table>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="page-footer">
+                        <span>Pg. {{ global_vars["page_no"] }}</span>
+                     </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+{% endmacro %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{base_dir}}/temp.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+{# {% for image in tower_data["Images"] %} #}
+    {# {% for annotation in image["Annotations"] %} #}
+        {# {{ create_page(global_vars, annotation, InspectionName, tower_data["ObjectStructureGeoLocation"]["coordinates"]|get_list_item(0), tower_data["ObjectStructureGeoLocation"]["coordinates"]|get_list_item(1), image ) }} #}
+    {# {% endfor %} #}
+{# {% endfor %} #}
+
+
+{# {% for annotation in image["Annotations"] %} #}
+{{ create_page(global_vars, annotation, InspectionName, tower_lat, tower_long, total_pages) }}
+{{ increment(global_vars, "page_no") }}
+{# <!-- {% endfor %} --> #}
+
+
+
+
+</body>
+
+</html>
+__::__{{ global_vars["page_no"] }}

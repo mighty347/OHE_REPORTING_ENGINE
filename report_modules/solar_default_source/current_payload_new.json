@@ -1,0 +1,2719 @@
+{
+    "AssetDetails": {
+        "Up Line": [
+            {
+                "Anomaly": "Rust ",
+                "AssetId": "d6713bc5-ecb4-4536-bb29-064cdb151157",
+                "AssetName": "534-11",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1108.8001441955569,
+                                    3499.649951934815
+                                ],
+                                [
+                                    6161.400192260743,
+                                    3499.649951934815
+                                ],
+                                [
+                                    6161.400192260743,
+                                    4507.649951934815
+                                ],
+                                [
+                                    1108.8001441955569,
+                                    4507.649951934815
+                                ],
+                                [
+                                    1108.8001441955569,
+                                    3499.649951934815
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424112407_0027_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424112407_0027_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.823706722222223,
+                    "lng": 83.85202458333333,
+                    "name": "DJI_20260424112407_0027_V.JPG",
+                    "size": 14286848,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T05:54:07.000Z",
+                    "lastModified": 1778065485076
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Mast",
+                    "Sub-component": "Mast arm"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "d6713bc5-ecb4-4536-bb29-064cdb151157",
+                "AssetName": "534-11",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1415.5574322657487,
+                                    2647.6655689403387
+                                ],
+                                [
+                                    2860.788219408632,
+                                    2647.6655689403387
+                                ],
+                                [
+                                    2860.788219408632,
+                                    3313.4228322105914
+                                ],
+                                [
+                                    1415.5574322657487,
+                                    3313.4228322105914
+                                ],
+                                [
+                                    1415.5574322657487,
+                                    2647.6655689403387
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424112239_0024_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424112239_0024_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82389288888889,
+                    "lng": 83.85187363888889,
+                    "name": "DJI_20260424112239_0024_V.JPG",
+                    "size": 18186240,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T05:52:39.000Z",
+                    "lastModified": 1778065483472
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Rust ",
+                "AssetId": "22ecdf04-e257-4364-9586-f3640efd45af",
+                "AssetName": "534-13",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1089.899951934815,
+                                    3946.9498558044443
+                                ],
+                                [
+                                    2072.699855804444,
+                                    3946.9498558044443
+                                ],
+                                [
+                                    2072.699855804444,
+                                    4923.449975967408
+                                ],
+                                [
+                                    1089.899951934815,
+                                    4923.449975967408
+                                ],
+                                [
+                                    1089.899951934815,
+                                    3946.9498558044443
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424132648_0022_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424132648_0022_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.824089472222223,
+                    "lng": 83.85162652777777,
+                    "name": "DJI_20260424132648_0022_V.JPG",
+                    "size": 14303232,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T07:56:48.000Z",
+                    "lastModified": 1778065489927
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Mast",
+                    "Sub-component": "Mast arm"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Truss Tilted",
+                "AssetId": "576b6434-6af4-4dc4-92e5-8ac646e053df",
+                "AssetName": "534-15N",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2506.567802246842,
+                                    4284.0441122712045
+                                ],
+                                [
+                                    4442.124117361709,
+                                    4284.0441122712045
+                                ],
+                                [
+                                    4442.124117361709,
+                                    5629.09118550134
+                                ],
+                                [
+                                    2506.567802246842,
+                                    5629.09118550134
+                                ],
+                                [
+                                    2506.567802246842,
+                                    4284.0441122712045
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425095714_0013_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425095714_0013_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82461947222222,
+                    "lng": 83.8513443611111,
+                    "name": "DJI_20260425095714_0013_V.JPG",
+                    "size": 12935168,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T04:27:14.000Z",
+                    "lastModified": 1778065492506
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Mast",
+                    "Sub-component": "Mast arm"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "086192ea-5f4d-4356-a42d-08d9ef2161de",
+                "AssetName": "534-17",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1083.6000480651858,
+                                    834.75
+                                ],
+                                [
+                                    5405.400192260743,
+                                    834.75
+                                ],
+                                [
+                                    5405.400192260743,
+                                    3928.04990386963
+                                ],
+                                [
+                                    1083.6000480651858,
+                                    3928.04990386963
+                                ],
+                                [
+                                    1083.6000480651858,
+                                    834.75
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425144412_0004_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425144412_0004_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.825113666666667,
+                    "lng": 83.85079466666666,
+                    "name": "DJI_20260425144412_0004_V.JPG",
+                    "size": 13021184,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T09:14:12.000Z",
+                    "lastModified": 1778065497700
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket insulator chipped/damaged/flashed ",
+                "AssetId": "bb264d63-62e8-452c-ad48-93a64bb9bd1d",
+                "AssetName": "534-19",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3806.149665598207,
+                                    3190.4023209847423
+                                ],
+                                [
+                                    4026.0189846445437,
+                                    3190.4023209847423
+                                ],
+                                [
+                                    4026.0189846445437,
+                                    3434.041296144196
+                                ],
+                                [
+                                    3806.149665598207,
+                                    3434.041296144196
+                                ],
+                                [
+                                    3806.149665598207,
+                                    3190.4023209847423
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425150237_0024_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425150237_0024_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.825281222222223,
+                    "lng": 83.85060138888889,
+                    "name": "DJI_20260425150237_0024_V.JPG",
+                    "size": 17240064,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T09:32:37.000Z",
+                    "lastModified": 1778065499076
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Insulator broken"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Rust ",
+                "AssetId": "7c9d472f-a4d7-46fa-894d-08ac6242cc0f",
+                "AssetName": "534-21",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1209.599807739258,
+                                    683.5500841140738
+                                ],
+                                [
+                                    2204.999759674073,
+                                    683.5500841140738
+                                ],
+                                [
+                                    2204.999759674073,
+                                    5452.649951934814
+                                ],
+                                [
+                                    1209.599807739258,
+                                    5452.649951934814
+                                ],
+                                [
+                                    1209.599807739258,
+                                    683.5500841140738
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425153626_0018_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425153626_0018_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.825733305555556,
+                    "lng": 83.85016288888889,
+                    "name": "DJI_20260425153626_0018_V.JPG",
+                    "size": 11128832,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T10:06:26.000Z",
+                    "lastModified": 1778065501694
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Mast",
+                    "Sub-component": "Mast arm"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "7c9d472f-a4d7-46fa-894d-08ac6242cc0f",
+                "AssetName": "534-21",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2129.400192260743,
+                                    2359.350048065186
+                                ],
+                                [
+                                    4397.400192260743,
+                                    2359.350048065186
+                                ],
+                                [
+                                    4397.400192260743,
+                                    2838.149951934815
+                                ],
+                                [
+                                    2129.400192260743,
+                                    2838.149951934815
+                                ],
+                                [
+                                    2129.400192260743,
+                                    2359.350048065186
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425153708_0019_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425153708_0019_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.825748333333333,
+                    "lng": 83.85017783333333,
+                    "name": "DJI_20260425153708_0019_V.JPG",
+                    "size": 9527296,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T10:07:08.000Z",
+                    "lastModified": 1778065502084
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Stay insulator chipped/damaged/flashed ",
+                "AssetId": "de8354a2-5d30-4f38-a1de-d1164e27218b",
+                "AssetName": "534-23",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2039.4085253741455,
+                                    3439.8610393056206
+                                ],
+                                [
+                                    2767.449022283617,
+                                    3439.8610393056206
+                                ],
+                                [
+                                    2767.449022283617,
+                                    4149.851218536537
+                                ],
+                                [
+                                    2039.4085253741455,
+                                    4149.851218536537
+                                ],
+                                [
+                                    2039.4085253741455,
+                                    3439.8610393056206
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425162012_0017_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425162012_0017_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82631286111111,
+                    "lng": 83.84955216666667,
+                    "name": "DJI_20260425162012_0017_V.JPG",
+                    "size": 10186752,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T10:50:12.000Z",
+                    "lastModified": 1778065504256
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Insulator flashed"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Catenary Suspention Clamp Rusted",
+                "AssetId": "3875cf0e-7241-4633-a45e-037ba9d25e46",
+                "AssetName": "534-25",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3902.1433593635093,
+                                    3039.969508871952
+                                ],
+                                [
+                                    4718.383667991858,
+                                    3039.969508871952
+                                ],
+                                [
+                                    4718.383667991858,
+                                    4214.210109794942
+                                ],
+                                [
+                                    3902.1433593635093,
+                                    4214.210109794942
+                                ],
+                                [
+                                    3902.1433593635093,
+                                    3039.969508871952
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426075808_0012_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426075808_0012_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.8267535,
+                    "lng": 83.84926458333332,
+                    "name": "DJI_20260426075808_0012_V.JPG",
+                    "size": 8376320,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T02:28:08.000Z",
+                    "lastModified": 1778065506241
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Rusted",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Truss Tilted",
+                "AssetId": "d4c6845f-f0b7-46a3-b8c2-a86f7d1d0b4b",
+                "AssetName": "534-27",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    630.0000000000002,
+                                    4123.349927902223
+                                ],
+                                [
+                                    2929.500000000001,
+                                    4123.349927902223
+                                ],
+                                [
+                                    2929.500000000001,
+                                    5616.450006008149
+                                ],
+                                [
+                                    630.0000000000002,
+                                    5616.450006008149
+                                ],
+                                [
+                                    630.0000000000002,
+                                    4123.349927902223
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426081313_0032_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426081313_0032_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.827191222222222,
+                    "lng": 83.84878397222222,
+                    "name": "DJI_20260426081313_0032_V.JPG",
+                    "size": 10158080,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T02:43:13.000Z",
+                    "lastModified": 1778065508996
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Mast",
+                    "Sub-component": "Mast arm"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "d4c6845f-f0b7-46a3-b8c2-a86f7d1d0b4b",
+                "AssetName": "534-27",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1373.3999519348147,
+                                    683.5496635437012
+                                ],
+                                [
+                                    4825.79990386963,
+                                    683.5496635437012
+                                ],
+                                [
+                                    4825.79990386963,
+                                    3411.449975967408
+                                ],
+                                [
+                                    1373.3999519348147,
+                                    3411.449975967408
+                                ],
+                                [
+                                    1373.3999519348147,
+                                    683.5496635437012
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426081507_0035_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426081507_0035_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.827306805555555,
+                    "lng": 83.848664,
+                    "name": "DJI_20260426081507_0035_V.JPG",
+                    "size": 10530816,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T02:45:07.000Z",
+                    "lastModified": 1778065510526
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Anchor bolt rusting. ",
+                "AssetId": "d4c6845f-f0b7-46a3-b8c2-a86f7d1d0b4b",
+                "AssetName": "534-27",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2113.3411131869766,
+                                    3054.653761080338
+                                ],
+                                [
+                                    2804.295349532436,
+                                    3054.653761080338
+                                ],
+                                [
+                                    2804.295349532436,
+                                    4601.481443863932
+                                ],
+                                [
+                                    2113.3411131869766,
+                                    4601.481443863932
+                                ],
+                                [
+                                    2113.3411131869766,
+                                    3054.653761080338
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426081341_0033_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426081341_0033_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.827237194444443,
+                    "lng": 83.84881119444444,
+                    "name": "DJI_20260426081341_0033_V.JPG",
+                    "size": 9367552,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T02:43:41.000Z",
+                    "lastModified": 1778065509474
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Anchor",
+                    "Sub-component": "Bolt rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bird Drop",
+                "AssetId": "07d498e7-1b13-4f3b-b56c-31b15a69f19e",
+                "AssetName": "534-29",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3221.4167697238727,
+                                    3216.9939619840816
+                                ],
+                                [
+                                    3981.130175676319,
+                                    3216.9939619840816
+                                ],
+                                [
+                                    3981.130175676319,
+                                    3807.2476120138194
+                                ],
+                                [
+                                    3221.4167697238727,
+                                    3807.2476120138194
+                                ],
+                                [
+                                    3221.4167697238727,
+                                    3216.9939619840816
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426100842_0017_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426100842_0017_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.827643444444444,
+                    "lng": 83.8483383611111,
+                    "name": "DJI_20260426100842_0017_V.JPG",
+                    "size": 12840960,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T04:38:42.000Z",
+                    "lastModified": 1778065511037
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Insulator"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Damaged or cracked ",
+                "AssetId": "07d498e7-1b13-4f3b-b56c-31b15a69f19e",
+                "AssetName": "534-29",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2318.11397595976,
+                                    1807.4683579623038
+                                ],
+                                [
+                                    3045.2433052957513,
+                                    1807.4683579623038
+                                ],
+                                [
+                                    3045.2433052957513,
+                                    2330.7296655722184
+                                ],
+                                [
+                                    2318.11397595976,
+                                    2330.7296655722184
+                                ],
+                                [
+                                    2318.11397595976,
+                                    1807.4683579623038
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426100911_0018_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426100911_0018_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.827678444444444,
+                    "lng": 83.84835336111111,
+                    "name": "DJI_20260426100911_0018_V.JPG",
+                    "size": 11735040,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T04:39:11.000Z",
+                    "lastModified": 1778065511445
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Foundation",
+                    "Sub-component": "Foundation"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "2c75d182-8887-4a9d-a90b-0ee8323fb2d2",
+                "AssetName": "534-5",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1738.8001441955569,
+                                    2403.449855804444
+                                ],
+                                [
+                                    4731.29990386963,
+                                    2403.449855804444
+                                ],
+                                [
+                                    4731.29990386963,
+                                    3997.3500480651865
+                                ],
+                                [
+                                    1738.8001441955569,
+                                    3997.3500480651865
+                                ],
+                                [
+                                    1738.8001441955569,
+                                    2403.449855804444
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424083516_0012_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424083516_0012_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.822914444444443,
+                    "lng": 83.85289430555555,
+                    "name": "DJI_20260424083516_0012_V.JPG",
+                    "size": 16429056,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T03:05:16.000Z",
+                    "lastModified": 1778065514480
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Damaged or cracked ",
+                "AssetId": "31d0892c-b88a-417d-b773-d08b2aab4deb",
+                "AssetName": "534-7N",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    5682.051181413951,
+                                    1787.6313033645943
+                                ],
+                                [
+                                    7461.347522744161,
+                                    1787.6313033645943
+                                ],
+                                [
+                                    7461.347522744161,
+                                    2968.466266849074
+                                ],
+                                [
+                                    5682.051181413951,
+                                    2968.466266849074
+                                ],
+                                [
+                                    5682.051181413951,
+                                    1787.6313033645943
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424110948_0003_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424110948_0003_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82360575,
+                    "lng": 83.85237624999999,
+                    "name": "DJI_20260424110948_0003_V.JPG",
+                    "size": 14315520,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T05:39:48.000Z",
+                    "lastModified": 1778065520705
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Foundation",
+                    "Sub-component": "Foundation"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "31d0892c-b88a-417d-b773-d08b2aab4deb",
+                "AssetName": "534-7N",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    4683.81337886742,
+                                    2015.5175392839324
+                                ],
+                                [
+                                    5740.244377897455,
+                                    2015.5175392839324
+                                ],
+                                [
+                                    5740.244377897455,
+                                    2354.6188665533264
+                                ],
+                                [
+                                    4683.81337886742,
+                                    2354.6188665533264
+                                ],
+                                [
+                                    4683.81337886742,
+                                    2015.5175392839324
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424110835_0001_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424110835_0001_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82354925,
+                    "lng": 83.85221655555554,
+                    "name": "DJI_20260424110835_0001_V.JPG",
+                    "size": 18186240,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T05:38:35.000Z",
+                    "lastModified": 1778065519653
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "d1da03e1-6205-4c84-b595-e37e3433c179",
+                "AssetName": "535-1",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3181.500000000001,
+                                    1313.549903869629
+                                ],
+                                [
+                                    5443.200096130372,
+                                    1313.549903869629
+                                ],
+                                [
+                                    5443.200096130372,
+                                    4072.9498558044443
+                                ],
+                                [
+                                    3181.500000000001,
+                                    4072.9498558044443
+                                ],
+                                [
+                                    3181.500000000001,
+                                    1313.549903869629
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426114107_0020_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426114107_0020_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82849125,
+                    "lng": 83.84759952777777,
+                    "name": "DJI_20260426114107_0020_V.JPG",
+                    "size": 10354688,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T06:11:07.000Z",
+                    "lastModified": 1778065525005
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bird Drop",
+                "AssetId": "d1da03e1-6205-4c84-b595-e37e3433c179",
+                "AssetName": "535-1",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3101.0128270586615,
+                                    897.9699765838106
+                                ],
+                                [
+                                    3954.662778993476,
+                                    897.9699765838106
+                                ],
+                                [
+                                    3954.662778993476,
+                                    1773.6700727141817
+                                ],
+                                [
+                                    3101.0128270586615,
+                                    1773.6700727141817
+                                ],
+                                [
+                                    3101.0128270586615,
+                                    897.9699765838106
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426114042_0019_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426114042_0019_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82843063888889,
+                    "lng": 83.84757875,
+                    "name": "DJI_20260426114042_0019_V.JPG",
+                    "size": 10534912,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T06:10:42.000Z",
+                    "lastModified": 1778065524662
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Stay insulator",
+                    "Sub-component": "Insulator"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Damaged or cracked ",
+                "AssetId": "d1da03e1-6205-4c84-b595-e37e3433c179",
+                "AssetName": "535-1",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    4938.609411592743,
+                                    1577.1656405442966
+                                ],
+                                [
+                                    5459.934417600891,
+                                    1577.1656405442966
+                                ],
+                                [
+                                    5459.934417600891,
+                                    1970.1281375402225
+                                ],
+                                [
+                                    4938.609411592743,
+                                    1970.1281375402225
+                                ],
+                                [
+                                    4938.609411592743,
+                                    1577.1656405442966
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426114240_0022_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426114240_0022_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.828544083333334,
+                    "lng": 83.84745908333333,
+                    "name": "DJI_20260426114240_0022_V.JPG",
+                    "size": 14241792,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T06:12:40.000Z",
+                    "lastModified": 1778065525929
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Foundation",
+                    "Sub-component": "Foundation"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "be8eeb97-631b-488e-a4dd-b3e771c5eee0",
+                "AssetName": "535-3",
+                "ParentName": "Up Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3206.700096130372,
+                                    2907.449855804444
+                                ],
+                                [
+                                    6980.400192260744,
+                                    2907.449855804444
+                                ],
+                                [
+                                    6980.400192260744,
+                                    4457.250000000001
+                                ],
+                                [
+                                    3206.700096130372,
+                                    4457.250000000001
+                                ],
+                                [
+                                    3206.700096130372,
+                                    2907.449855804444
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426124204_0006_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426124204_0006_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.828875805555555,
+                    "lng": 83.84713241666667,
+                    "name": "DJI_20260426124204_0006_V.JPG",
+                    "size": 12361728,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T07:12:04.000Z",
+                    "lastModified": 1778065526655
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            }
+        ],
+        "Down Line": [
+            {
+                "Anomaly": "Bracket assembly rusted ",
+                "AssetId": "bc376ad5-cddc-425f-af87-38be91094085",
+                "AssetName": "534-12",
+                "ParentName": "Down Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3628.79990386963,
+                                    1036.3498077392578
+                                ],
+                                [
+                                    5607.000000000001,
+                                    1036.3498077392578
+                                ],
+                                [
+                                    5607.000000000001,
+                                    2693.2500000000005
+                                ],
+                                [
+                                    3628.79990386963,
+                                    2693.2500000000005
+                                ],
+                                [
+                                    3628.79990386963,
+                                    1036.3498077392578
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424131353_0003_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424131353_0003_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.823934055555554,
+                    "lng": 83.85171538888888,
+                    "name": "DJI_20260424131353_0003_V.JPG",
+                    "size": 12161024,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T07:43:53.000Z",
+                    "lastModified": 1778065473315
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket assembly",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Catenary Suspention Clamp Rusted",
+                "AssetId": "b35a2f04-da84-4a81-ab2b-ba4e693ba6b3",
+                "AssetName": "534-14",
+                "ParentName": "Down Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    926.1000480651858,
+                                    2422.350048065186
+                                ],
+                                [
+                                    3376.8003845214853,
+                                    2422.350048065186
+                                ],
+                                [
+                                    3376.8003845214853,
+                                    3946.9498558044443
+                                ],
+                                [
+                                    926.1000480651858,
+                                    3946.9498558044443
+                                ],
+                                [
+                                    926.1000480651858,
+                                    2422.350048065186
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425094146_0004_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425094146_0004_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.824303583333332,
+                    "lng": 83.85160083333332,
+                    "name": "DJI_20260425094146_0004_V.JPG",
+                    "size": 11624448,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T04:11:46.000Z",
+                    "lastModified": 1778065476974
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Rusted",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket insulator chipped/damaged/flashed ",
+                "AssetId": "a0c2746d-9a32-4754-8aa5-71174fd71fcd",
+                "AssetName": "534-26",
+                "ParentName": "Down Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    5326.890122315361,
+                                    1129.8581396630966
+                                ],
+                                [
+                                    5964.337753625553,
+                                    1129.8581396630966
+                                ],
+                                [
+                                    5964.337753625553,
+                                    1779.7775936003995
+                                ],
+                                [
+                                    5326.890122315361,
+                                    1779.7775936003995
+                                ],
+                                [
+                                    5326.890122315361,
+                                    1129.8581396630966
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426075639_0009_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426075639_0009_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.826698027777777,
+                    "lng": 83.84928866666667,
+                    "name": "DJI_20260426075639_0009_V.JPG",
+                    "size": 12701696,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T02:26:39.000Z",
+                    "lastModified": 1778065490079
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Insulator broken"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Catenary Suspention Clamp Rusted",
+                "AssetId": "f0d5ee83-df5e-4dd0-bee0-d28296ef1cbe",
+                "AssetName": "534-6",
+                "ParentName": "Down Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    4504.500000000001,
+                                    3206.699975967408
+                                ],
+                                [
+                                    5411.700096130372,
+                                    3206.699975967408
+                                ],
+                                [
+                                    5411.700096130372,
+                                    3843.000000000001
+                                ],
+                                [
+                                    4504.500000000001,
+                                    3843.000000000001
+                                ],
+                                [
+                                    4504.500000000001,
+                                    3206.699975967408
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424083241_0006_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424083241_0006_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.8229715,
+                    "lng": 83.85294649999999,
+                    "name": "DJI_20260424083241_0006_V.JPG",
+                    "size": 20828160,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T03:02:41.000Z",
+                    "lastModified": 1778065495152
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Rusted",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bracket insulator chipped/damaged/flashed ",
+                "AssetId": "f5e672da-9dbe-4342-bb72-3436f516c011",
+                "AssetName": "535-4",
+                "ParentName": "Down Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2570.1421537506426,
+                                    985.077704257699
+                                ],
+                                [
+                                    3486.207552745406,
+                                    985.077704257699
+                                ],
+                                [
+                                    3486.207552745406,
+                                    1860.876296609077
+                                ],
+                                [
+                                    2570.1421537506426,
+                                    1860.876296609077
+                                ],
+                                [
+                                    2570.1421537506426,
+                                    985.077704257699
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426124901_0019_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426124901_0019_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.829060194444445,
+                    "lng": 83.84709205555555,
+                    "name": "DJI_20260426124901_0019_V.JPG",
+                    "size": 9957376,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T07:19:01.000Z",
+                    "lastModified": 1778065503972
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Insulator broken"
+                },
+                "ReportColumnsThermal": null
+            }
+        ],
+        "Up Outer Line": [
+            {
+                "Anomaly": "Damaged or cracked ",
+                "AssetId": "ffe6c66d-8d04-4b73-9799-0d3919d74fd7",
+                "AssetName": "534-11X",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2759.337949845509,
+                                    968.6584972858901
+                                ],
+                                [
+                                    3053.565945994449,
+                                    968.6584972858901
+                                ],
+                                [
+                                    3053.565945994449,
+                                    1270.7326032625547
+                                ],
+                                [
+                                    2759.337949845509,
+                                    1270.7326032625547
+                                ],
+                                [
+                                    2759.337949845509,
+                                    968.6584972858901
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424132220_0015_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424132220_0015_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82393886111111,
+                    "lng": 83.85174124999999,
+                    "name": "DJI_20260424132220_0015_V.JPG",
+                    "size": 19521536,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T07:52:20.000Z",
+                    "lastModified": 1778065509787
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Foundation",
+                    "Sub-component": "Mast foundation"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bird Drop",
+                "AssetId": "991b495d-3407-448e-a6bc-157461ec2c80",
+                "AssetName": "534-21A",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    3180.050792089096,
+                                    2638.13173942114
+                                ],
+                                [
+                                    3708.699240041273,
+                                    2638.13173942114
+                                ],
+                                [
+                                    3708.699240041273,
+                                    3011.422259676075
+                                ],
+                                [
+                                    3180.050792089096,
+                                    3011.422259676075
+                                ],
+                                [
+                                    3180.050792089096,
+                                    2638.13173942114
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425161330_0003_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425161330_0003_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.825955916666665,
+                    "lng": 83.84991344444444,
+                    "name": "DJI_20260425161330_0003_V.JPG",
+                    "size": 12562432,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T10:43:30.000Z",
+                    "lastModified": 1778065523045
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Insulator"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Rust ",
+                "AssetId": "d27a74b5-8322-49ed-8610-a975a2365bd1",
+                "AssetName": "534-23A",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    264.6000480651858,
+                                    4306.050024032594
+                                ],
+                                [
+                                    7868.700576782228,
+                                    4306.050024032594
+                                ],
+                                [
+                                    7868.700576782228,
+                                    5339.250000000001
+                                ],
+                                [
+                                    264.6000480651858,
+                                    5339.250000000001
+                                ],
+                                [
+                                    264.6000480651858,
+                                    4306.050024032594
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260425161519_0007_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260425161519_0007_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.826152194444443,
+                    "lng": 83.84956936111111,
+                    "name": "DJI_20260425161519_0007_V.JPG",
+                    "size": 10125312,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-25T10:45:19.000Z",
+                    "lastModified": 1778065524771
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Mast",
+                    "Sub-component": "Mast"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Rust ",
+                "AssetId": "60496781-7e8c-4371-9e60-571ce3f93577",
+                "AssetName": "534-23A-1",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    285.95650355147245,
+                                    4173.11854207563
+                                ],
+                                [
+                                    2089.1875203462364,
+                                    4173.11854207563
+                                ],
+                                [
+                                    2089.1875203462364,
+                                    5472.296857239853
+                                ],
+                                [
+                                    285.95650355147245,
+                                    5472.296857239853
+                                ],
+                                [
+                                    285.95650355147245,
+                                    4173.11854207563
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426075315_0004_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426075315_0004_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82655175,
+                    "lng": 83.8490801111111,
+                    "name": "DJI_20260426075315_0004_V.JPG",
+                    "size": 11309056,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T02:23:15.000Z",
+                    "lastModified": 1778065527215
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Mast",
+                    "Sub-component": "Mast"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Stay insulator chipped/damaged/flashed ",
+                "AssetId": "7b4f21c1-609c-4918-acf3-fe1d6d3aa8b6",
+                "AssetName": "534-5A",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    4620.544607032443,
+                                    4369.3187731364405
+                                ],
+                                [
+                                    5020.869367514581,
+                                    4369.3187731364405
+                                ],
+                                [
+                                    5020.869367514581,
+                                    4824.449780601448
+                                ],
+                                [
+                                    4620.544607032443,
+                                    4824.449780601448
+                                ],
+                                [
+                                    4620.544607032443,
+                                    4369.3187731364405
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424083833_0016_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424083833_0016_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.822927555555555,
+                    "lng": 83.8528301111111,
+                    "name": "DJI_20260424083833_0016_V.JPG",
+                    "size": 16711680,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T03:08:33.000Z",
+                    "lastModified": 1778065535181
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Insulator flashed"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Isolate Moving Handle",
+                "AssetId": "7b4f21c1-609c-4918-acf3-fe1d6d3aa8b6",
+                "AssetName": "534-5A",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    4213.350730339562,
+                                    5299.299772537517
+                                ],
+                                [
+                                    5396.818014018429,
+                                    5299.299772537517
+                                ],
+                                [
+                                    5396.818014018429,
+                                    6033.104829259898
+                                ],
+                                [
+                                    4213.350730339562,
+                                    6033.104829259898
+                                ],
+                                [
+                                    4213.350730339562,
+                                    5299.299772537517
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424084054_0018_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424084054_0018_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.822919805555554,
+                    "lng": 83.85290969444443,
+                    "name": "DJI_20260424084054_0018_V.JPG",
+                    "size": 14872576,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T03:10:54.000Z",
+                    "lastModified": 1778065535933
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Mast"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Jumper Twisted",
+                "AssetId": "7b4f21c1-609c-4918-acf3-fe1d6d3aa8b6",
+                "AssetName": "534-5A",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    5345.310143544147,
+                                    3842.4962966834614
+                                ],
+                                [
+                                    7995.476199805056,
+                                    3842.4962966834614
+                                ],
+                                [
+                                    7995.476199805056,
+                                    5662.610419168925
+                                ],
+                                [
+                                    5345.310143544147,
+                                    5662.610419168925
+                                ],
+                                [
+                                    5345.310143544147,
+                                    3842.4962966834614
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424084015_0017_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Fair",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424084015_0017_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.822926166666665,
+                    "lng": 83.85282325,
+                    "name": "DJI_20260424084015_0017_V.JPG",
+                    "size": 15106048,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T03:10:15.000Z",
+                    "lastModified": 1778065535529
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Insulator",
+                    "Sub-component": "Jumper twisted missing"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Bird Drop",
+                "AssetId": "8b9602b6-7fe7-4392-8da6-d605e08bdfa5",
+                "AssetName": "534-7A",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1998.597969242714,
+                                    3378.238240078844
+                                ],
+                                [
+                                    3126.131276916128,
+                                    3378.238240078844
+                                ],
+                                [
+                                    3126.131276916128,
+                                    4227.266705422998
+                                ],
+                                [
+                                    1998.597969242714,
+                                    4227.266705422998
+                                ],
+                                [
+                                    1998.597969242714,
+                                    3378.238240078844
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424091644_0020_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": null,
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424091644_0020_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.82304688888889,
+                    "lng": 83.85270197222222,
+                    "name": "DJI_20260424091644_0020_V.JPG",
+                    "size": 12775424,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T03:46:44.000Z",
+                    "lastModified": 1778065538088
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "stay Insulator ",
+                    "Sub-component": "Insulator "
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Insulator Broken",
+                "AssetId": "9166cff7-da8b-491c-8869-f4a0f688722e",
+                "AssetName": "534-9NA",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    1690.2485166231556,
+                                    2333.569505135506
+                                ],
+                                [
+                                    2433.345062119638,
+                                    2333.569505135506
+                                ],
+                                [
+                                    2433.345062119638,
+                                    3289.0930464448043
+                                ],
+                                [
+                                    1690.2485166231556,
+                                    3289.0930464448043
+                                ],
+                                [
+                                    1690.2485166231556,
+                                    2333.569505135506
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260424092006_0023_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": null,
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260424092006_0023_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.823693333333335,
+                    "lng": 83.85224541666666,
+                    "name": "DJI_20260424092006_0023_V.JPG",
+                    "size": 14589952,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-24T03:50:06.000Z",
+                    "lastModified": 1778065539312
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Bracket isulator",
+                    "Sub-component": "Insulator"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Damaged or cracked ",
+                "AssetId": "2620d91d-3dc1-49bc-93a5-c27880a71079",
+                "AssetName": "535-1A",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    4651.643394438986,
+                                    1418.1286915516907
+                                ],
+                                [
+                                    5591.299955608135,
+                                    1418.1286915516907
+                                ],
+                                [
+                                    5591.299955608135,
+                                    2488.904030612439
+                                ],
+                                [
+                                    5103.209205227119,
+                                    2488.904030612439
+                                ],
+                                [
+                                    4651.643394438986,
+                                    2488.904030612439
+                                ],
+                                [
+                                    4651.643394438986,
+                                    1418.1286915516907
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": {
+                        "label": "Damaged or cracked ",
+                        "severity": 0,
+                        "annotationData": {
+                            "notes": "",
+                            "rating": null,
+                            "assetId": "2620d91d-3dc1-49bc-93a5-c27880a71079",
+                            "severity": 0,
+                            "surveyId": "cb773baf-6ede-4366-8e1c-77ca862543c2",
+                            "anomalyId": "598a150e-1b5e-49cd-9f6b-bafe5998f268",
+                            "assetName": "535-1A",
+                            "condition": null,
+                            "direction": null,
+                            "anomalyName": "Damaged or cracked ",
+                            "referenceId": "ae6698b0-9191-46c0-b405-23123aa72937",
+                            "annotationId": "49fbdc41-65c1-449e-9b9d-0a3272698b56",
+                            "reportColumns": "{\"Component\":\"Foundation\",\"Sub-component\":\"Insulator damaged\"}",
+                            "maxTemperature": null,
+                            "minTemperature": null,
+                            "deltaTemperature": null,
+                            "averageTemperature": null,
+                            "mapAnnotationCoordinates": null,
+                            "imageAnnotationCoordinates": "{\"type\": \"Feature\", \"geometry\": {\"type\": \"Polygon\", \"coordinates\": [[[4651.643394438986, 1418.1286915516907], [5591.299955608135, 1418.1286915516907], [5591.299955608135, 2488.904030612439], [4651.643394438986, 2488.904030612439], [4651.643394438986, 1418.1286915516907]]]}, \"properties\": null}"
+                        }
+                    }
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426113527_0007_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": null,
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426113527_0007_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.828321055555556,
+                    "lng": 83.84749219444444,
+                    "name": "DJI_20260426113527_0007_V.JPG",
+                    "size": 14544896,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T06:05:27.000Z",
+                    "lastModified": 1778065540587
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Foundation",
+                    "Sub-component": "Foundation Damaged"
+                },
+                "ReportColumnsThermal": null
+            },
+            {
+                "Anomaly": "Damaged or cracked ",
+                "AssetId": "cda07877-3baa-49c5-8ab9-fff73252f079",
+                "AssetName": "535-1A1",
+                "ParentName": "Up Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    2992.8432711581304,
+                                    1277.8554625227548
+                                ],
+                                [
+                                    3577.8190016831286,
+                                    1277.8554625227548
+                                ],
+                                [
+                                    3577.8190016831286,
+                                    1784.9306867776368
+                                ],
+                                [
+                                    2992.8432711581304,
+                                    1784.9306867776368
+                                ],
+                                [
+                                    2992.8432711581304,
+                                    1277.8554625227548
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426123720_0001_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": null,
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426123720_0001_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.828660916666667,
+                    "lng": 83.84717333333333,
+                    "name": "DJI_20260426123720_0001_V.JPG",
+                    "size": 15691776,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T07:07:20.000Z",
+                    "lastModified": 1778065542691
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Foundation",
+                    "Sub-component": "Foundation Damaged"
+                },
+                "ReportColumnsThermal": null
+            }
+        ],
+        "Down Outer Line": [
+            {
+                "Anomaly": "Catenary Suspention Clamp Rusted",
+                "AssetId": "81e08b7e-1fda-42fa-b990-b81f45418392",
+                "AssetName": "535-6A",
+                "ParentName": "Down Outer Line",
+                "AssetTypeName": "default",
+                "GeometryVisual": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    5539.043332664588,
+                                    3312.969883721451
+                                ],
+                                [
+                                    7138.449927778616,
+                                    3312.969883721451
+                                ],
+                                [
+                                    7138.449927778616,
+                                    4586.938992764312
+                                ],
+                                [
+                                    5539.043332664588,
+                                    4586.938992764312
+                                ],
+                                [
+                                    5539.043332664588,
+                                    3312.969883721451
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": null
+                },
+                "ImageVisualUrl": "https://coredatarepo.s3.ap-south-1.amazonaws.com/Yugmi/rawimages/cb773baf-6ede-4366-8e1c-77ca862543c2/DJI_20260426145333_0004_V.JPG",
+                "MaxTemperature": null,
+                "MinTemperature": null,
+                "ParentTypeName": "default",
+                "ConditionVisual": "Poor",
+                "GeometryThermal": null,
+                "ImageThermalUrl": null,
+                "ImageVisualName": "DJI_20260426145333_0004_V.JPG",
+                "ConditionThermal": null,
+                "DeltaTemperature": null,
+                "ImageThermalName": null,
+                "AverageTemperature": null,
+                "ImageVisualPayload": {
+                    "lat": 21.829591027777777,
+                    "lng": 83.8466715,
+                    "name": "DJI_20260426145333_0004_V.JPG",
+                    "size": 14032896,
+                    "type": "image/jpeg",
+                    "width": 8064,
+                    "camera": "M4T",
+                    "height": 6048,
+                    "takenAt": "2026-04-26T09:23:33.000Z",
+                    "lastModified": 1778065516212
+                },
+                "ImageThermalPayload": null,
+                "ReportColumnsVisual": {
+                    "Component": "Rusted",
+                    "Sub-component": "Rusted"
+                },
+                "ReportColumnsThermal": null
+            }
+        ]
+    },
+    "ProjectDetails": {
+        "SiteName": "Belpahar Yard ",
+        "SurveyDate": "2026-04-29T01:40:01.49472+00:00",
+        "SurveyName": "Belpahar Yard",
+        "ProjectName": "Jharsuguda To Bilaspur",
+        "SurveyMetaData": {}
+    },
+    "TotalAnomaliesCounts": {
+        "Rust ": 5,
+        "Bird Drop": 4,
+        "Truss Tilted": 2,
+        "Jumper Twisted": 1,
+        "Insulator Broken": 1,
+        "Damaged or cracked ": 6,
+        "Anchor bolt rusting. ": 1,
+        "Isolate Moving Handle": 1,
+        "Bracket assembly rusted ": 9,
+        "Catenary Suspention Clamp Rusted": 4,
+        "Stay insulator chipped/damaged/flashed ": 2,
+        "Bracket insulator chipped/damaged/flashed ": 3
+    },
+    "AssetWiseAnomaliesCount": {
+        "Up Line": 22,
+        "Down Line": 5,
+        "Up Outer Line": 11,
+        "Down Outer Line": 1
+    }
+}

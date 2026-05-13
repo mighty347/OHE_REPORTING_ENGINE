@@ -2,7 +2,8 @@
 # MODE = 'PRODUCTION'
 
 # MODE = 'INSPECTION'
-MODE = 'IOCL'
+# MODE = 'IOCL'
+MODE = 'BRIDGE-INSPECTION'
 
 
 # For DEVELOPMENT
@@ -38,13 +39,22 @@ class KafkaConfigIocl(object):
     RESPONSE_TOPIC = "surveillance-iocl-prod-report-response"
     
     GROUP_ID = 'iocl_consumer_bridge'
-
+    
+class KafkaConfigBridgeInspection(object):
+    BOOTSTRAP_SERVERS = "15.206.68.206:9092"
+    # SUBSCRIBE_TOPIC = "AI_client"
+    SUBSCRIBE_TOPIC = "bridge-inspection-report-request-ohe"
+    RESPONSE_TOPIC = "bridge-inspection-report-response-ohe"
+    
+    GROUP_ID = 'file-upload-group'
+    
 
 class KafkaConfig ( KafkaConfigDevelopment if (MODE=="DEVELOPMENT") else \
                     KafkaConfigProduction if (MODE=="PRODUCTION") else \
                     KafkaConfigInspection if (MODE=="INSPECTION") else \
-                    KafkaConfigIocl if (MODE=="IOCL") \
-                    else KafkaConfigDevelopment ) :
+                    KafkaConfigIocl if (MODE=="IOCL") else \
+                    KafkaConfigBridgeInspection if (MODE=="BRIDGE-INSPECTION") else \
+                    KafkaConfigDevelopment ) :
     pass
 
 

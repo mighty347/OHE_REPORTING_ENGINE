@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./ntpc.css"> -->
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+
+            border-collapse: collapse;
+
+        }
+
+        td {
+            border-right: 1px solid rgba(153, 153, 153, 1);
+        }
+
+        th,
+        td {
+            padding: 8px
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        li {
+            padding: 8px 0;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .col {
+            padding: 0 62px 0 74px;
+        }
+
+        .header {
+            /* background-image: url(./assests/header-image.png); */
+            background-image: url(/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/header-image.png);
+            background-repeat: no-repeat;
+            background-size: 70% 100%;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header>span {
+            font-size: 22px;
+            color: #ffffff;
+            margin-left: 60px;
+            font-weight: 600;
+            padding: 10px 0;
+        }
+
+
+        .content {
+            flex: 1;
+            color: rgba(98, 105, 113, 1);
+            /* height: 100%; */
+        }
+
+        .container .content {
+            font-size: 20px;
+        }
+
+        .container .content .col {
+            margin-top: 36px;
+        }
+
+        .content-image {
+            background-image: url(/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/Group.png);
+            /* background-image: url(./assests/Group.png); */
+            background-repeat: no-repeat;
+            background-position: right bottom 150px;
+            background-size: 36px 114px;
+        }
+
+        .index .content .col:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            margin-top: 46px;
+        }
+
+        .index .content .col:nth-child(2) {
+            margin-top: 28px;
+        }
+
+        .index .content .col:nth-child(2) table tbody>tr>td {
+            border: none;
+        }
+
+        .content .col table {
+            border: 1px solid rgba(153, 153, 153, 1);
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .content .col table tbody>tr:nth-child(odd) {
+            background: rgba(231, 255, 235, 1)
+        }
+
+        .content .col table tbody>tr>td {
+            padding: 14px 28px;
+        }
+
+        /* About Section */
+        .about .content .col:nth-child(2) {
+            margin-top: 40px;
+        }
+
+        .about .content .col:nth-child(2) section {
+            display: flex;
+            padding: 0 50px;
+        }
+
+        .about .content .col:nth-child(2)>section>.image-section {
+            display: flex;
+            align-items: center;
+            padding: 14px 38px;
+        }
+
+        .about .content .col:nth-child(2)>section>.image-section img {
+            height: 88px;
+        }
+
+        .about .content .col:nth-child(2) section>.detail-section ul {
+            font-size: 20px;
+        }
+
+        .about .content .col:nth-child(2) section>.detail-section h3 {
+            font-size: 22px;
+        }
+
+        .objective .content .col:nth-child(4)>p {
+            margin-top: 26px;
+        }
+
+        .objective .content .col:nth-child(4)>p:nth-child(1) {
+            margin-top: 0px;
+        }
+
+        .objective .content .col:nth-child(4) ul {
+            height: 310px;
+            list-style: none !important;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .objective .content .col:nth-child(4) ul li {
+            /* padding: 8px 0; */
+            width: 49%;
+        }
+
+
+        .asset_analysis .content {
+            position: relative;
+        }
+
+        .asset_analysis .content>img {
+            position: absolute;
+            bottom: 100px;
+        }
+
+        .asset_analysis .content .row .col span {
+            font-size: 70px;
+            font-weight: 600;
+            display: inline-block;
+            max-width: 356px;
+            position: absolute;
+            bottom: 380px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .summary .content .col table {
+            color: rgba(0, 0, 0, 1);
+            font-weight: 600;
+        }
+
+        .summary .content .col table thead>tr {
+            background: rgba(67, 165, 82, 1);
+        }
+
+        .summary .content .col table thead>tr>th {
+            color: rgba(255, 255, 255, 1);
+            font-weight: 600;
+        }
+
+        .summary .content .col table tbody>tr>td:nth-child(1) {
+            width: 66%;
+        }
+
+        .summary .content .col table tbody>tr:nth-child(1) th {
+            height: 36px;
+        }
+
+        .summary .content .col:nth-child(3) table tbody>tr {
+            background: transparent;
+        }
+
+        .summary .content .col:nth-child(3) table tbody>tr:nth-child(even) {
+            background: rgba(231, 255, 235, 1);
+        }
+
+        .summary .content .col table tbody>tr>td:nth-child(2) {
+            text-align: center;
+        }
+
+        .anomalies .content .col table {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        .anomalies .content .col table thead>tr {
+            background: rgba(67, 165, 82, 1);
+        }
+
+        .anomalies .content .col table thead>tr>th {
+            color: rgba(255, 255, 255, 1);
+            font-weight: 500;
+            padding: 16px 0;
+        }
+
+        .anomalies .content .col table tbody>tr>td:nth-child(2) {
+            text-align: center;
+        }
+
+        .anomalies_table .content .col table thead>tr>th {
+            font-size: 18px;
+        }
+
+        .anomalies_table .content .col table tbody>tr>td {
+            font-size: 14px;
+        }
+
+
+        .topic-head-image>span {
+            display: inline-block;
+            font-size: 24px;
+            color: rgba(32, 137, 48, 1);
+            font-weight: 600;
+            padding: 14px 110px;
+            /* background-image: url(./assests/topic-image.png); */
+            background-image: url(/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/topic-image.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* margin-top: 50px !important; */
+            /* margin-left: 42px; */
+            padding-left: 50px;
+        }
+
+        .index-head-image>span {
+            display: inline-block;
+            font-size: 24px;
+            color: rgba(32, 137, 48, 1);
+            font-weight: 600;
+            padding: 14px 64px;
+            /* background-image: url(./assests/index-image.png); */
+            background-image: url(/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/index-image.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* margin-top: 50px !important; */
+            /* margin-left: 42px; */
+            padding-left: 50px;
+        }
+
+
+        .page-footer {
+            /* background-image: url(./assests/footer-image.png); */
+            background-image: url(/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/footer-image.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: end;
+        }
+
+        .page-footer>span {
+            display: inline-block;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            margin-right: 72px;
+            padding: 4px 0;
+        }
+
+        .index>.page-footer span {
+            display: inline-block;
+            height: 15px;
+        }
+
+        .charts {
+            display: block;
+            width: 855px;
+
+        }
+
+        .charts canvas {
+            display: block;
+            padding: 20px 0;
+            width: 100%;
+            height: 432px;
+            border-radius: 40px;
+            border: 1px solid transparent;
+            /* border-image: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0) 100%) 1; */
+        }
+
+        .charts canvas#capacity {
+            background: linear-gradient(0deg, rgba(177, 220, 251, 0.31) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+
+        .charts canvas#modules {
+            background: linear-gradient(0deg, rgba(251, 245, 187, 0.31) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        img {
+            /* height: 100%; */
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 700px;
+        }
+
+
+        .about .content .col:nth-child(2) .image-section img {
+            width: 90px;
+        }
+
+        .anomalies .content .col:nth-child(2)>p {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgba(32, 137, 48, 1);
+            margin-bottom: 26px;
+        }
+
+        .charts-wrapper .content .col:nth-child(2)>p,
+        .charts-wrapper .content .col:nth-child(3)>p {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgba(32, 137, 48, 1);
+            margin-bottom: 26px;
+        }
+
+        .page-image>img {
+            margin: 40px auto;
+            display: block;
+        }
+
+        .page-image>p {
+            margin: 20px 0;
+        }
+
+        table thead>tr {
+            background: rgba(67, 165, 82, 1);
+        }
+
+        table thead>tr>th {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .cover_page .content {
+            position: relative;
+        }
+
+        .cover_page .index-head-image>span {
+            padding: 14px 90px;
+            font-size: 28px;
+            color: rgba(85, 85, 85, 1);
+        }
+
+        .cover_page .content>img {
+            position: absolute;
+        }
+
+
+        .cover_page .content>img:nth-child(1) {
+            width: 90px;
+            bottom: 120px;
+            left: 0;
+        }
+
+        .cover_page .content>img:nth-child(2) {
+            width: 170px;
+            top: 350px;
+            right: 0;
+        }
+
+        .cover_page .logo_header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .cover_page .logo_header>img {
+            width: 150px;
+            height: 90px;
+        }
+
+        .cover_page .logo_header>img:nth-child(1) {
+            width: 280px;
+            height: 100px;
+        }
+
+        .cover_page .logo_header {
+            padding: 10px 42px;
+        }
+
+
+        .cover_page .content .col {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cover_page .content .col:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cover_page .content .col:nth-child(1)>span {
+            font-size: 30px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cover_page .content .col:nth-child(2)>span {
+            display: inline-block;
+            background: rgba(67, 165, 82, 1);
+            font-size: 40px;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 600;
+            padding: 36px 150px;
+        }
+
+        .cover_page .content .col:nth-child(4)>img {
+            width: 700px;
+            height: 550px;
+        }
+
+        .cover_page .content .col:nth-child(5)>span {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .cover_page .footer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .cover_page .footer span:nth-child(1) {
+            flex: 1;
+        }
+
+        .cover_page .footer span:nth-child(1)>img {
+            height: 20px;
+            max-width: unset;
+        }
+
+        .cover_page .footer span:nth-child(2) {
+            font-size: 26px;
+            padding: 0 26px;
+            font-weight: 500;
+            color: rgba(67, 165, 82, 1);
+        }
+
+        .footer span:nth-child(3)>img {
+            width: 160px;
+            padding-right: 100px;
+        }
+
+        .thermography_and_interpretation .content .col:nth-child(3) table thead>tr>th {
+            /* font-size: 15px; */
+            text-align: start;
+            padding-left: 28px;
+        }
+
+        .anomalies_table .content .col:nth-child(2) table thead>tr>th {
+            border: 1px solid #ffffff;
+            border-bottom: none;
+        }
+
+        .anomalies_table .content .col:nth-child(2) table thead>tr>th:nth-child(1) {
+            border-left: none;
+        }
+
+        .anomalies_table .content .col:nth-child(2) table thead>tr>th:nth-child(5) {
+            border-right: none;
+        }
+    </style>
+    <!-- Resources -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container cover_page">
+        <div class="logo_header">
+            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/GarudaUav.png"
+                alt="GarudaUav">
+            <!-- <img src="./assests/GarudaUav.png" alt=""> -->
+
+            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/NTPC.png"
+                alt="NTPC">
+            <!-- <img src="./assests/NTPC.png" alt=""> -->
+
+        </div>
+        <div class="content">
+            <!-- <img src="./assests/Polygon 14.png" alt=""> -->
+            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/Polygon 14.png"
+                alt="">
+            <!-- <img src="./assests/coverPage_polygon.png" alt=""> -->
+            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/coverPage_polygon.png"
+                alt="">
+            <div class="row">
+                <div class="col">
+                    <span>AERIAL INSPECTION</span>
+                    <span>OF</span>
+                    <span>(50MW AC) SOLAR PLANT</span>
+                </div>
+                <div class="col">
+                    <span>NTPC GALIVEEDU</span>
+                </div>
+                <div class="col index-head-image">
+                    <span>BLOCK-P2</span>
+                </div>
+                <div class="col">
+                    <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/Cover_img.jpg"
+                        alt="">
+                </div>
+                <div class="col">
+                    <span>GarudaUAV Soft Solution PVT. LTD.</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span>
+                <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/coverpage_footer.png"
+                    alt="">
+                <!-- <img src="./assests/coverpage_footer.png" alt=""> -->
+            </span>
+            <span class="powered_by">Powered By</span>
+            <span>
+                <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/Bluehawk_logo.png"
+                    alt="">
+                <!-- <img src="./assests/Bluehawk_logo.png" alt=""> -->
+            </span>
+        </div>
+    </div>
+
+    <div class="container index">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="row ">
+                <div class="col index-head-image">
+                    <span>Table of Content</span>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>1. Scope of Work</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>2. Objective</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>3. Methodology</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>4. Summary</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>5. Plant affected capacity</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>6. Plant summary 11</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>7. Steady state thermography and their interpretation</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>8. Execution plan 12</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>9. Analysis and recommendations</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>10. Anomailies</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span></span>
+        </div>
+
+    </div>
+
+    <div class="container about">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content content-image">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>About GarudaUAV</span>
+                </div>
+                <div class="col">
+                    <section>
+                        <div class="image-section">
+                            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/Layer_1.png"
+                                alt="">
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Our Inception</h3>
+                            <ul>
+                                <li>
+                                    Founded in 2017, GarudaUAV has swiftly diversified its operations across pan
+                                    industrial verticals.
+                                </li>
+                                <li>
+                                    Our footprint has significantly expanded, demonstrating rapid growth and
+                                    adaptability.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="image-section">
+                            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/Layer_2.png"
+                                alt="">
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Legacy Growth</h3>
+                            <ul>
+                                <li>
+                                    GarudaUAV operates within Trentar, a full-stack UAV solutions company.
+
+                                </li>
+                                <li>
+                                    Trentar is nested under Dorf Ketal, an Indian multinational corporation established
+                                    in 1992.
+
+                                </li>
+                                <li>
+                                    Dorf Ketal is known for its robust global presence in the oil and gas industry.
+
+                                </li>
+                                <li>
+                                    Through Trentar, Dorf Ketal is strategically expanding in the realm of aerial
+                                    technology and AI/ML applications.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="image-section">
+                            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/Layer_3.png"
+                                alt="">
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Our Solutions</h3>
+                            <ul>
+                                <li>
+                                    As industry leaders in software-driven aerial services, we cater to a wide array of
+                                    sectors including forestry, urban, railways, and beyond
+                                </li>
+                                <li>
+                                    Our unified digital platform, "BlueHawk," efficiently manages projects end-to-end.
+                                </li>
+                                <li>
+                                    With specialized surveys, meticulous data handling, and real-time field updates, we
+                                    ensure thorough project oversight and timely delivery.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 1</span>
+        </div>
+    </div>
+
+    <div class="container objective">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content content-image">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Scope of Work</span>
+                </div>
+                <div class="col">
+                    <p>The scope of work includes the analysis drone based infrared thermography conducted by the
+                        <strong>GarudaUAV for NTPC Anantapur (50 MW AC) Solar PV Plant located at Galiveedu
+                            (Kadiri).</strong> A thorough
+                        analysis is done based on the thermal data of 50 MWp (50 MW AC) Solar PV Plant captured.
+                    </p>
+                </div>
+                <div class="col topic-head-image">
+                    <span>Objective</span>
+                </div>
+                <div class="col">
+                    <p>Solar companies often struggle to maintain a consistently high-power generation from the
+                        installed capacity due to constant recurring issues in solar panels.
+                    </p>
+                    <p>
+                        The expansive nature of solar farms makes manual inspection of each panel impractical, both in
+                        terms of economics and manpower. This process not only consumes significant time and resources
+                        but also introduces the risk of human error and biases, ultimately impeding the speed and
+                        efficiency of inspection.
+                    </p>
+                    <p>
+                        Traditional methods of solar panel maintenance are tedious and time consuming where it's
+                        difficult to access every panel for inspection. Other major issues in the inspection process are
+                        the harsh climatic conditions, unavailability of skilled labor for constant supervision, height
+                        of the panels, site design framework and other natural hindrances.
+                    </p>
+                    <p>
+                        Drone-based thermography identifies issues in solar panels including, but not limited to:
+                    </p>
+                    <ul>
+                        <li>a) Identification of hotspots</li>
+                        <li>b) Dust over panels</li>
+                        <li>c) Identification of shade on panels</li>
+                        <li>d) Possibility of PID</li>
+                        <li>e) Cell mismatches</li>
+                        <li>f) Broken or cracked module</li>
+                        <li>g) Module degradation</li>
+                        <li>h) Bird dropping</li>
+                        <li>i) Vegetation encroachment</li>
+                        <li>j) Open circuit</li>
+                        <li>k) Bypassing of diodes</li>
+                        <li>l) Reverse polarity</li>
+                        <li>m) Disconnected String</li>
+                        <li>n) Isolated Module</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 2</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content content-image">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Methodology</span>
+                </div>
+                <div class="col">
+                    <p>The Block was covered in multiple flights using DJI Thermal Camera sensor mounted on a UAV The
+                        data
+                        collection process is explained in the following steps:</p>
+                    <ol>
+                        <li>Custom quad-copter drone is loaded with the appropriate flight plans.
+                        </li>
+                        <li>
+                            The drone is equipped with:
+                            <ul>
+                                <li>48 MP camera (visual)</li>
+                                <li>DJI Radiometric industrial grade thermal camera (09 mm focal length)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            The calibration of thermal and visual camera is duly verified.
+                        </li>
+                        <li>
+                            Before initiating the drone flight, ideal flight path is identified for unencumbered
+                            operations.
+                        </li>
+                        <li>
+                            GarudaUAV's proprietary mobile application helps create an automated flight plan for the
+                            site.
+                        </li>
+                        <li>
+                            Area of interest is precisely identified, and inspection carried out covering the entire
+                            area
+                        </li>
+                        <li>
+                            The images are carefully extracted post inspection.
+                        </li>
+                        <li>
+                            These images are uploaded to our cloud platform where the inspection team runs automated
+                            services to identify anomalies and tag them. These are then compiled into a final report.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 3</span>
+        </div>
+    </div>
+
+    <div class="container asset_analysis">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content content-image">
+            <!-- <img src="./assests/assets_analysis.png" alt=""> -->
+            <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/assets_analysis.png"
+                alt="">
+            <div class="row">
+                <div class="col">
+                    <span>ASSETS ANALYSIS</span>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 4</span>
+        </div>
+    </div>
+
+    <div class="container summary">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Summary</span>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Total modules Inspected</td>
+                                <td>200448</td>
+                            </tr>
+                            <tr>
+                                <td>Total no. of Issues</td>
+                                <td>2741</td>
+                            </tr>
+                            <tr>
+                                <td>Bypassed diodes SC</td>
+                                <td>282</td>
+                            </tr>
+                            <tr>
+                                <td>Disconnected Module</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Disconnected String</td>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <td>Reverse Polarity</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Single Cell Hotspot</td>
+                                <td>2460</td>
+                            </tr>
+                            <tr>
+                                <td>Cleaning Required</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Muti-Cell Hotspot</td>
+                                <td>782</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Plant Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th colspan="2"></th>
+                            </tr>
+                            <tr>
+                                <td>Total Number of Strings</td>
+                                <td>8,352</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Modules per String</td>
+                                <td>24 Modules</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Power Details</th>
+
+                            </tr>
+                            <tr>
+                                <td>1 Module Capacities</td>
+                                <td><strong>240W,243W,246W,249W,
+                                        252W,255W,258W
+                                    </strong></td>
+                            </tr>
+                            <tr>
+                                <td>AC Capacity</td>
+                                <td>50 MW</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 4</span>
+        </div>
+    </div>
+
+    <div class="container charts-wrapper">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Plant Affected Capacity</span>
+                </div>
+
+                <div class="col">
+                    <p>In Terms Of MW:</p>
+                    <div class="charts">
+                        <canvas id="capacity"></canvas>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>In Terms Of Modules:</p>
+                    <div class="charts">
+                        <canvas id="modules"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <span>Pg. 4</span>
+        </div>
+    </div>
+
+
+    <div class="container anomalies">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Plant Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>Bypassed diodes SC</td>
+                                <td>8,352</td>
+                            </tr>
+                            <tr>
+                                <td>Disconnected Module</td>
+                                <td>24 Modules</td>
+                            </tr>
+                            <tr>
+                                <td>Disconnected String</td>
+                                <td>258W</td>
+                            </tr>
+                            <tr>
+                                <td>Reverse Polarity</td>
+                                <td>50 MW</td>
+                            </tr>
+                            <tr>
+                                <td>Single Cell Hotspot</td>
+                                <td>50 MW</td>
+                            </tr>
+                            <tr>
+                                <td>Cleaning Required</td>
+                                <td>50 MW</td>
+                            </tr>
+                            <tr>
+                                <td>Muti-Cell Hotspot</td>
+                                <td>50 MW</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <p>Anomalies</p>
+                    <div class="charts">
+                        <canvas id="anomalies_chart"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 6</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Steady State thermography and their interpretation</span>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Plant Information</th>
+                                <th>Description</th>
+                                <th>Possible Failure Reason</th>
+                                <th>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/image 180.png"
+                                        alt=""></td>
+                                <td>One module
+                                    warmer than
+                                    others
+                                </td>
+                                <td>
+                                    Module is open circuited -
+                                    not connected to the system
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/image 181.png"
+                                        alt=""></td>
+                                <td>One module
+                                    warmer than
+                                    others
+                                </td>
+                                <td>
+                                    Module is open circuited -
+                                    not connected to the system
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/image 182.png"
+                                        alt=""></td>
+                                <td>One module
+                                    warmer than
+                                    others
+                                </td>
+                                <td>
+                                    Module is open circuited -
+                                    not connected to the system
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/image 183.png"
+                                        alt=""></td>
+                                <td>One module
+                                    warmer than
+                                    others
+                                </td>
+                                <td>
+                                    Module is open circuited -
+                                    not connected to the system
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 7</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="col topic-head-image">
+                <span>Execution Plan</span>
+            </div>
+            <div class="col page-image">
+                <p>The map below shows the way we segmented the entire plant into blocks, rows, and tables for
+                    ease of location. The same was duly explained to the site operations team.</p>
+                <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/excution_image.png"
+                    alt="">
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 7</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Execution Plan</span>
+                </div>
+
+                <div class="col">
+                    <div class="row page-image">
+                        <p>Module Numbering Nomenclature</p>
+                        <img src="/home/garudauav/Development/tnd-kafka/report_gen/development_report_server/assets/solar_image.png"
+                            alt="">
+                        <p>Photograph shown above is a sample used to show the nomenclature for module numbering. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 8</span>
+        </div>
+    </div>
+
+    <div class="container thermography_and_interpretation">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Execution Policy</span>
+                </div>
+                <div class="col">
+                    <p>The inspection was conducted during the month of April 2024. The ambient temperature was reported
+                        to be 39°C. </p>
+                    <p>Various issues were found throughout the panels. These may cause failure of the solar unit if not
+                        rectified in time. This report gives an insight into issues for the entire panel. This
+                        information can be used to maintain an uninterrupted solar power supply and keep the solar farm
+                        functional for a longer duration.
+                    </p>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Issue Type</th>
+                                <th>Recommended Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>
+                                    Bypassed diodes SC
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Disconnected Module
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Hotspot due to Vegetation
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Single Cell Hotspot
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Muti-Cell Hotspot
+
+                                </td>
+                                <td>
+                                    Check wiring
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <span>Pg. 9</span>
+        </div>
+    </div>
+
+    <div class="container anomalies_table">
+        <div class="header">
+            <span>Block - P2</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>Anomalies</span>
+                </div>
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">S.No.</th>
+                                <th rowspan="2">BLOCK</th>
+                                <th colspan="2">LOCATION</th>
+                                <th rowspan="2">REMARKS</th>
+                                <th rowspan="2">SEVERITY</th>
+                            </tr>
+                            <tr>
+                                <th>Row,Table</th>
+                                <th>Module</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>Block 1</td>
+                                <td>ROW3_TABLE1</td>
+                                <td>R1_C9</td>
+                                <td>SINGLE CELL HOTSPOT</td>
+                                <td>MEDIUM</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. 9</span>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        'use strict';
+
+
+        function drawGraph(id) {
+            let data;
+            if (id == "capacity") {
+                data = {
+                    text: 'PLANT AFFECTED CAPACITY (MW)',
+                    labels: [
+                        'Total Functional Capacity',
+                        'Total Affected Capacity',
+                    ],
+                    datasets: [{
+                        data: [0.682509, 49.3174],
+                        backgroundColor: [
+                            'rgba(87, 179, 244, 1)',
+                            'rgba(177, 220, 251, 1)',
+                        ],
+                        borderWidth: 0
+                    }]
+                };
+            } else if (id == "modules") {
+                data = {
+                    text: 'AFFECTED CAPACITY MODULES',
+                    labels: [
+                        'Affected Modules',
+                        'Inspected Modules',
+                    ],
+                    datasets: [{
+                        data: [2741, 200448],
+                        backgroundColor: [
+                            'rgba(230, 207, 5, 1)',
+                            'rgba(251, 245, 187, 1)',
+                        ],
+
+                        borderWidth: 0
+                    }]
+                };
+            } else if (id == "anomalies_chart") {
+                data = {
+                    text: 'AFFECTED CAPACITY MODULES',
+                    labels: [
+                        'Bypassed diodes SC',
+                        'Disconnected Module',
+                        'Disconnected String',
+                        'Reverse Polarity',
+                        'Single Cell Hotspot',
+                        'Cleaning Required',
+                        'Muti-Cell Hotspot',
+                    ],
+                    datasets: [{
+                        data: [6, 5, 4, 3, 9, 18, 55],
+                        backgroundColor: [
+                            'rgba(195, 252, 204, 1)',
+                            'rgba(138, 244, 172, 1)',
+                            'rgba(107, 246, 151, 1)',
+                            'rgba(57, 230, 112, 1)',
+                            'rgba(22, 208, 81, 1)',
+                            'rgba(16, 176, 67, 1)',
+                            'rgba(17, 150, 59, 1)',
+                        ],
+                        borderWidth: 0
+                    }]
+                };
+
+            }
+
+            Chart.pluginService.register({
+                afterUpdate: function (chart) {
+                    var centerConfig = chart.config.options.elements.center;
+                    if (centerConfig) {
+                        var ctx = chart.chart.ctx;
+                        var maxWidth = 150; // Adjust this value as needed for your layout
+                        var lineHeightMultiplier = 1.5; // Adjust this multiplier as needed
+
+                        // Other configurations remain the same
+                        var fontSize = centerConfig.fontSize || 15;
+                        var fontStyle = centerConfig.fontStyle || 'normal';
+                        var fontFamily = centerConfig.fontFamily || 'Arial';
+
+                        ctx.font = fontStyle + ' ' + fontSize + 'px ' + fontFamily;
+
+                        var words = centerConfig.text.split(' ');
+                        var lines = [];
+                        var currentLine = '';
+
+                        words.forEach(function (word) {
+                            var width = ctx.measureText(currentLine + ' ' + word).width;
+                            if (width < maxWidth) {
+                                currentLine += (currentLine === '' ? '' : ' ') + word;
+                            } else {
+                                lines.push(currentLine);
+                                currentLine = word;
+                            }
+                        });
+                        lines.push(currentLine);
+
+                        var lineHeight = fontSize * lineHeightMultiplier;
+                        var totalHeight = lines.length * lineHeight;
+
+                        ctx.font = fontStyle + ' ' + fontSize + 'px ' + fontFamily;
+
+                        chart.center = {
+                            lines: lines,
+                            font: ctx.font,
+                            fillStyle: centerConfig.fontColor || 'black',
+                            lineHeight: lineHeight,
+                            backgroundColor: centerConfig.backgroundColor || 'rgba(255, 255, 255, 0.8)', // Default background color
+                            padding: centerConfig.padding || 10 // Default padding
+                        };
+                    }
+                },
+                afterDraw: function (chart) {
+                    var centerConfig = chart.config.options.elements.center;
+                    if (centerConfig && chart.center) {
+                        var ctx = chart.chart.ctx;
+                        var centerX = (chart.chartArea.left + chart.chartArea.right) / 2;
+                        var centerY = (chart.chartArea.top + chart.chartArea.bottom) / 2;
+
+                        ctx.save();
+
+                        // Draw circular background
+                        var textWidth = chart.center.lines.reduce(function (acc, line) {
+                            return Math.max(acc, ctx.measureText(line).width);
+                        }, 0);
+                        var textHeight = chart.center.lines.length * chart.center.lineHeight;
+                        var circleRadius = Math.max(textWidth, textHeight) / 2 + chart.center.padding;
+                        var circleX = centerX;
+                        var circleY = centerY;
+
+                        ctx.fillStyle = chart.center.backgroundColor;
+                        ctx.beginPath();
+                        ctx.arc(circleX, circleY, circleRadius, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        // Draw text
+                        ctx.font = chart.center.font;
+                        ctx.fillStyle = chart.center.fillStyle;
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+
+                        chart.center.lines.forEach(function (line, index) {
+                            var offsetY = (index - (chart.center.lines.length - 1) / 2) * chart.center.lineHeight;
+                            ctx.fillText(line, centerX, centerY + offsetY);
+                        });
+
+                        ctx.restore();
+                    }
+                },
+            });
+
+            new Chart(
+                document.getElementById(id), {
+                "responsive": true,
+                "type": "doughnut",
+                "data": data,
+                "options": {
+                    cutoutPercentage: 65,
+                    elements: {
+                        // arc: {
+                        //     roundedCornersFor: 0
+                        // },
+                        center: {
+                            // the longest text that could appear in the center
+                            maxText: '100%',
+                            text: data.text,
+                            fontColor: '#000',
+                            fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+                            fontStyle: 'normal',
+                            // fontSize: 12,
+                            // if a fontSize is NOT specified, we will scale (within the below limits) maxText to take up the maximum space in the center
+                            // if these are not specified either, we default to 1 and 256
+                            minFontSize: 1,
+                            maxFontSize: 256,
+                        }
+                    },
+                    animation: {
+                        duration: 0 // Disable animation
+                    },
+                    hover: {
+                        mode: null,
+                    },
+                    responsive: true,
+                    legend: {
+                        position: id === 'anomalies_chart' ? 'right' : 'bottom',
+                        labels: {
+                            fontSize: 20,
+                            usePointStyle: true,
+                            pointStyle: 'circle',
+                            padding: 30,
+                            boxWidth: 12
+                        }
+                    },
+                    tooltips: {
+                        mode: 'index',
+                        displayColors: false,
+                        backgroundColor: '#ffffff',
+                        titleFontColor: '#000',
+                        titleFontSize: 14,
+                        bodyFontColor: 'rgba(177, 158, 160, 1)',
+                        bodyFontSize: 13,
+                        xPadding: 20,
+                        yPadding: 10,
+                        cornerRadius: 12,
+                        caretSize: 10,
+                        xAlign: 'left',
+                        yAlign: 'bottom',
+                        x: -20,
+                        y: -10,
+                        // animation: false, // Disable tooltip animation
+                        callbacks: {
+                            title: function (tooltipItems, data) {
+                                console.log(data, "<<< data")
+                                const datasetIndex = tooltipItems[0].datasetIndex;
+                                const index = tooltipItems[0].index;
+                                const value = data.datasets[datasetIndex].data[index];
+                                const total = data.datasets[datasetIndex].data.reduce((a, b) => a + b, 0);
+                                const percentage = ((value / total) * 100).toFixed(2) + '%';
+
+                                if (id === "capacity") {
+                                    return `${data.datasets[0].data[tooltipItems[0].index]}, ${percentage}`;
+                                } else if (id === "modules") {
+                                    return `${data.datasets[0].data[tooltipItems[0].index]}, ${percentage}`;
+                                } else if (id === "anomalies_chart") {
+                                    return `${value}`;
+                                }
+                            },
+                            label: function (tooltipItems, data) {
+                                return data.labels[tooltipItems.index]; // Dynamic label based on dataset
+                            }
+                        },
+                    },
+                }
+            });
+        }
+
+        window.onload = function () {
+            drawGraph("capacity");
+            drawGraph("modules");
+            drawGraph("anomalies_chart");
+        };
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+{% set global_vars = {
+    "page_no": report_page_index,
+} %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="file://{{ base_dir }}/inspection-report-new.component.css">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            padding: 10px 20px 60px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8px;
+            table-layout: fixed;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 4px;
+            text-align: left;
+            word-wrap: break-word;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #E0E0E0 !important;
+            text-align: center;
+            font-weight: bold;
+        }
+        thead {
+            display: table-header-group !important;
+        }
+        tr {
+            page-break-inside: avoid !important;
+        }
+        .section-header {
+            background-color: #F5F5F5 !important;
+            font-weight: bold;
+        }
+        .num-format {
+            text-align: center;
+        }
+        .bhi-summary-container {
+            margin-top: 20px;
+            page-break-inside: avoid;
+        }
+        .bhi-summary-table {
+            width: 250px;
+            margin-left: auto;
+        }
+        .bhi-summary-table td {
+            font-weight: bold;
+            font-size: 10px;
+            padding: 8px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+        }
+        .footer-bottom {
+            padding: 4px 30px;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        p.footer-date, p.footer-page {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .col-sl { width: 45px; }
+        .col-bridge { width: 110px; }
+        .col-comp { width: 130px; }
+        .col-dist { width: 160px; }
+        .col-cs { width: 60px; }
+        .col-wj { width: 50px; }
+        .col-csj { width: 50px; }
+        .col-cii { width: 50px; }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 style="text-align: center; margin-bottom: 20px;">Bridge Health Index (BHI) Report - {{ span_name }}</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th class="col-sl">Sl. No.</th>
+            <th class="col-bridge">Bridge components</th>
+            <th class="col-comp">Component Name</th>
+            <th class="col-dist">Distress Type</th>
+            <th class="col-cs">Cond. State</th>
+            <th class="col-wj">Wj</th>
+            <th class="col-csj">CSj</th>
+            <th class="col-cii">CIi</th>
+        </tr>
+    </thead>
+
+<tbody>
+
+{% set ns = namespace(prev_section_id=prev_section_id|default(None), prev_component_name=prev_component_name|default(None)) %}
+
+{% for row in rows %}
+
+    {% set component = row.component %}
+    {% set distress = row.distress %}
+
+    <!-- SECTION HEADER -->
+    {% if row.show_section %}
+    <tr class="section-header">
+        <td class="num-format"><b>{{ row.section_id }}</b></td>
+        <td colspan="7"><b>{{ row.section_name }}</b></td>
+    </tr>
+    {% endif %}
+
+    <tr>
+
+        <!-- Sl No -->
+        {% if row.component_rowspan > 0 %}
+        <td class="num-format" rowspan="{{ row.component_rowspan }}">
+            {{ component.sl_no }}
+        </td>
+        {% endif %}
+
+        <!-- Bridge Component -->
+        {% if row.component_rowspan > 0 %}
+        <td rowspan="{{ row.component_rowspan }}">
+            {{ component.component_name }}
+        </td>
+        {% endif %}
+
+        <!-- Component Name -->
+        <td>
+            {{ distress.asset_name if distress and distress.asset_name else component.component_name }}
+        </td>
+
+        <!-- Distress -->
+        <td>
+            {{ distress.anomaly_name if distress else 'None' }}
+        </td>
+
+        <!-- Condition -->
+        <td class="num-format">
+            {{ distress.condition_state if distress else 'I' }}
+        </td>
+
+        <!-- Wj -->
+        {% if row.component_rowspan > 0 %}
+        <td class="num-format" rowspan="{{ row.component_rowspan }}">
+            {{ component.weight_wj }}
+        </td>
+        {% endif %}
+
+        <!-- CSj -->
+        {% if row.component_rowspan > 0 %}
+        <td class="num-format" rowspan="{{ row.component_rowspan }}">
+            {{ component.cs_j }}
+        </td>
+        {% endif %}
+
+        <!-- CIi (Merged at Section level) -->
+        {% if row.section_rowspan > 0 %}
+        <td class="num-format" rowspan="{{ row.section_rowspan }}">
+            <b>{{ row.section_score }}</b>
+        </td>
+        {% endif %}
+
+    </tr>
+
+    {% set ns.prev_section_id = row.section_id %}
+    {% set ns.prev_component_name = component.component_name %}
+
+{% endfor %}
+
+</tbody>
+</table>
+
+{% if show_summary %}
+<div class="bhi-summary-container">
+    <table class="bhi-summary-table">
+        <tr>
+            <td style="background-color: #E0E0E0; text-align: right;">
+                BRIDGE HEALTH INDEX (BHI)
+            </td>
+            <td class="num-format" style="background-color: #E0F2F1; border: 2px solid #004d40; width: 60px;">
+                {{ bhi }}
+            </td>
+        </tr>
+        {% if is_final_summary and overall_min_bhi is not none %}
+        <tr>
+            <td style="background-color: #FFE082; text-align: right;">
+                OVERALL BHI
+            </td>
+            <td class="num-format" style="background-color: #FFF9C4; border: 2px solid #FF8F00; width: 60px;">
+                {{ overall_min_bhi }}
+            </td>
+        </tr>
+        {% endif %}
+    </table>
+</div>
+{% endif %}
+
+</div>
+
+<footer>
+    <div class="footer-bottom">
+        <p class="footer-date">
+            <span>{{ footer_inspection_name }} on {{ footer_current_date }}</span>
+        </p>
+        <p class="footer-page">
+            Page {{ current_section_page }} of {{ total_section_pages }}
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+__::__{{ global_vars['page_no'] }}

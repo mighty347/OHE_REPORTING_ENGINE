@@ -32,14 +32,14 @@ RUN chmod +x /app/*.sh && sed -i 's/\r$//' /app/*.sh
 
 
 # NOTE: As of now not creating virtual environment for the project (only for development)
-# RUN python3 -m venv /app/ntpc_reporting_engine_venv \
-#     && . /app/ntpc_reporting_engine_venv/bin/activate \
-#     && pip install --upgrade pip \
-#     && pip install -r requirements.txt
+RUN python3 -m venv /app/ntpc_reporting_engine_venv \
+    && . /app/ntpc_reporting_engine_venv/bin/activate \
+    && pip install --upgrade pip \
+    && pip install -r requirements.txt
 
 
 # Build Python extensions
-# RUN . /opt/venv/bin/activate && python build.py build_ext clean
+# RUN . /opt/venv/bin/activate && python build.py build_ext clean/
 
 # Copy supervisor config
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf

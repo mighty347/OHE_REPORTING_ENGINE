@@ -1,0 +1,674 @@
+{# required parameters #}
+
+{# base_dir #}
+{# page_index #}
+
+
+{# global variables, counter and parameters #}
+{% set global_vars = {  
+    "page_no": page_index,
+} %}
+
+{# for debugging by creating error #}
+{% macro break() %}
+{% set new_var = 90/0 %}
+{% endmacro %}
+
+
+{# Macro to increment the counter #}
+{% macro increment(dct, key, inc=1) %}
+{% if dct.update({key: dct[key] + inc}) %} {% endif %}
+{% endmacro %}
+
+{# Macro to update the dictionary #}
+{% macro update(dct, key, value)%}
+{% if dct.update({key: value}) %} {% endif %}
+{% endmacro %}
+
+
+
+
+
+{% macro create_page(global_vars) %}
+    <div class="container about">
+        <div class="header">
+            <!-- <span>Block - P2</span> -->
+            <span> </span>
+        </div>
+        <div class="content content-image">
+            <div class="row">
+                <div class="col topic-head-image">
+                    <span>About GarudaUAV</span>
+                </div>
+                <div class="col">
+                    <section>
+                        <div class="image-section">
+                            <img src="{{ base_dir }}/assets/Layer_1.png"
+                                alt="">
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Our Inception</h3>
+                            <ul>
+                                <li>
+                                    Founded in 2017, GarudaUAV has swiftly diversified its operations across pan
+                                    industrial verticals.
+                                </li>
+                                <li>
+                                    Our footprint has significantly expanded, demonstrating rapid growth and
+                                    adaptability.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="image-section">
+                            <img src="{{ base_dir }}/assets/Layer_2.png"
+                                alt="">
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Legacy Growth</h3>
+                            <ul>
+                                <li>
+                                    GarudaUAV operates within Trentar, a full-stack UAV solutions company.
+
+                                </li>
+                                <li>
+                                    Trentar is nested under Dorf Ketal, an Indian multinational corporation established
+                                    in 1992.
+
+                                </li>
+                                <li>
+                                    Dorf Ketal is known for its robust global presence in the oil and gas industry.
+
+                                </li>
+                                <li>
+                                    Through Trentar, Dorf Ketal is strategically expanding in the realm of aerial
+                                    technology and AI/ML applications.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="image-section">
+                            <img src="{{ base_dir }}/assets/Layer_3.png"
+                                alt="">
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Our Solutions</h3>
+                            <ul>
+                                <li>
+                                    As industry leaders in software-driven aerial services, we cater to a wide array of
+                                    sectors including forestry, urban, railways, and beyond
+                                </li>
+                                <li>
+                                    Our unified digital platform, "BlueHawk," efficiently manages projects end-to-end.
+                                </li>
+                                <li>
+                                    With specialized surveys, meticulous data handling, and real-time field updates, we
+                                    ensure thorough project oversight and timely delivery.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span>Pg. {{ global_vars["page_no"] }}</span>
+        </div>
+    </div>
+{% endmacro %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <!-- <link rel="stylesheet" href="./ntpc.css"> -->
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin: 0;
+                padding: 0;
+            }
+
+            table {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            table,
+            th,
+            td {
+
+                border-collapse: collapse;
+
+            }
+
+            td {
+                border-right: 1px solid rgba(153, 153, 153, 1);
+            }
+
+            th,
+            td {
+                padding: 8px
+            }
+
+            ul {
+                list-style-type: disc;
+            }
+
+            li {
+                padding: 8px 0;
+            }
+
+            .container {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .col {
+                padding: 0 62px 0 74px;
+            }
+
+            .header {
+                /* background-image: url(./assests/header-image.png); */
+                background-image: url({{ base_dir }}/assets/header-image.png);
+                background-repeat: no-repeat;
+                background-size: 70% 100%;
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+            }
+
+            .header>span {
+                font-size: 22px;
+                color: #ffffff;
+                margin-left: 60px;
+                font-weight: 600;
+                padding: 10px 0;
+                height: 30px;
+            }
+
+
+            .content {
+                flex: 1;
+                color: rgba(98, 105, 113, 1);
+                /* height: 100%; */
+            }
+
+            .container .content {
+                font-size: 20px;
+            }
+
+            .container .content .col {
+                margin-top: 36px;
+            }
+
+            .content-image {
+                background-image: url({{ base_dir }}/assets/Group.png);
+                /* background-image: url(./assests/Group.png); */
+                background-repeat: no-repeat;
+                background-position: right bottom 150px;
+                background-size: 36px 114px;
+            }
+
+            .index .content .col:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                margin-top: 46px;
+            }
+
+            .index .content .col:nth-child(2) {
+                margin-top: 28px;
+            }
+
+            .index .content .col:nth-child(2) table tbody>tr>td {
+                border: none;
+            }
+
+            .content .col table {
+                border: 1px solid rgba(153, 153, 153, 1);
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .content .col table tbody>tr:nth-child(odd) {
+                background: rgba(231, 255, 235, 1)
+            }
+
+            .content .col table tbody>tr>td {
+                padding: 14px 28px;
+            }
+
+            /* About Section */
+            .about .content .col:nth-child(2) {
+                margin-top: 40px;
+            }
+
+            .about .content .col:nth-child(2) section {
+                display: flex;
+                padding-right:50px;
+            }
+
+            .about .content .col:nth-child(2)>section>.image-section {
+                display: flex;
+                align-items: center;
+                padding: 14px 38px;
+                padding-left: 0;
+            }
+
+            .about .content .col:nth-child(2)>section>.image-section img {
+                height: 88px;
+            }
+
+            .about .content .col:nth-child(2) section>.detail-section ul {
+                font-size: 20px;
+            }
+
+            .about .content .col:nth-child(2) section>.detail-section h3 {
+                font-size: 22px;
+            }
+
+            .objective .content .col:nth-child(4)>p {
+                margin-top: 26px;
+            }
+
+            .objective .content .col:nth-child(4)>p:nth-child(1) {
+                margin-top: 0px;
+            }
+
+            .objective .content .col:nth-child(4) ul {
+                height: 310px;
+                list-style: none !important;
+                font-weight: 500;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .objective .content .col:nth-child(4) ul li {
+                /* padding: 8px 0; */
+                width: 49%;
+            }
+
+
+            .asset_analysis .content {
+                position: relative;
+            }
+
+            .asset_analysis .content>img {
+                position: absolute;
+                bottom: 100px;
+            }
+
+            .asset_analysis .content .row .col span {
+                font-size: 70px;
+                font-weight: 600;
+                display: inline-block;
+                max-width: 356px;
+                position: absolute;
+                bottom: 380px;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .summary .content .col table {
+                color: rgba(0, 0, 0, 1);
+                font-weight: 600;
+            }
+
+            .summary .content .col table thead>tr {
+                background: rgba(67, 165, 82, 1);
+            }
+
+            .summary .content .col table thead>tr>th {
+                color: rgba(255, 255, 255, 1);
+                font-weight: 600;
+            }
+
+            .summary .content .col table tbody>tr>td:nth-child(1) {
+                width: 66%;
+            }
+
+            .summary .content .col table tbody>tr:nth-child(1) th {
+                height: 36px;
+            }
+
+            .summary .content .col:nth-child(3) table tbody>tr {
+                background: transparent;
+            }
+
+            .summary .content .col:nth-child(3) table tbody>tr:nth-child(even) {
+                background: rgba(231, 255, 235, 1);
+            }
+
+            .summary .content .col table tbody>tr>td:nth-child(2) {
+                text-align: center;
+            }
+
+            .anomalies .content .col table {
+                color: rgba(0, 0, 0, 1);
+            }
+
+            .anomalies .content .col table thead>tr {
+                background: rgba(67, 165, 82, 1);
+            }
+
+            .anomalies .content .col table thead>tr>th {
+                color: rgba(255, 255, 255, 1);
+                font-weight: 500;
+                padding: 16px 0;
+            }
+
+            .anomalies .content .col table tbody>tr>td:nth-child(2) {
+                text-align: center;
+            }
+
+            .anomalies_table .content .col table thead>tr>th {
+                font-size: 18px;
+            }
+
+            .anomalies_table .content .col table tbody>tr>td {
+                font-size: 14px;
+            }
+
+
+            .topic-head-image>span {
+                display: inline-block;
+                font-size: 24px;
+                color: rgba(32, 137, 48, 1);
+                font-weight: 600;
+                padding: 14px 110px;
+                /* background-image: url(./assests/topic-image.png); */
+                background-image: url({{ base_dir }}/assets/topic-image.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* margin-top: 50px !important; */
+                /* margin-left: 42px; */
+                padding-left: 50px;
+            }
+
+            .index-head-image>span {
+                display: inline-block;
+                font-size: 24px;
+                color: rgba(32, 137, 48, 1);
+                font-weight: 600;
+                padding: 14px 64px;
+                /* background-image: url(./assests/index-image.png); */
+                background-image: url({{ base_dir }}/assets/index-image.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* margin-top: 50px !important; */
+                /* margin-left: 42px; */
+                padding-left: 50px;
+            }
+
+
+            .page-footer {
+                /* background-image: url(./assests/footer-image.png); */
+                background-image: url({{ base_dir }}/assets/footer-image.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                text-align: end;
+            }
+
+            .page-footer>span {
+                display: inline-block;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 500;
+                margin-right: 72px;
+                padding: 4px 0;
+            }
+
+            .index>.page-footer span {
+                display: inline-block;
+                height: 15px;
+            }
+
+            .charts {
+                display: block;
+                width: 855px;
+
+            }
+
+            .charts canvas {
+                display: block;
+                padding: 20px 0;
+                width: 100%;
+                height: 432px;
+                border-radius: 40px;
+                border: 1px solid transparent;
+                /* border-image: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0) 100%) 1; */
+            }
+
+            .charts canvas#capacity {
+                background: linear-gradient(0deg, rgba(177, 220, 251, 0.31) 0%, rgba(255, 255, 255, 0) 100%);
+            }
+
+
+            .charts canvas#modules {
+                background: linear-gradient(0deg, rgba(251, 245, 187, 0.31) 0%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            img {
+                /* height: 100%; */
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                max-width: 700px;
+            }
+
+
+            .about .content .col:nth-child(2) .image-section img {
+                width: 90px;
+            }
+
+            .anomalies .content .col:nth-child(2)>p {
+                font-size: 22px;
+                font-weight: 600;
+                color: rgba(32, 137, 48, 1);
+                margin-bottom: 26px;
+            }
+
+            .charts-wrapper .content .col:nth-child(2)>p,
+            .charts-wrapper .content .col:nth-child(3)>p {
+                font-size: 22px;
+                font-weight: 600;
+                color: rgba(32, 137, 48, 1);
+                margin-bottom: 26px;
+            }
+
+            .page-image>img {
+                margin: 40px auto;
+                display: block;
+            }
+
+            .page-image>p {
+                margin: 20px 0;
+            }
+
+            table thead>tr {
+                background: rgba(67, 165, 82, 1);
+            }
+
+            table thead>tr>th {
+                color: #fff;
+                font-weight: 500;
+            }
+
+            .cover_page .content {
+                position: relative;
+            }
+
+            .cover_page .index-head-image>span {
+                padding: 14px 90px;
+                font-size: 28px;
+                color: rgba(85, 85, 85, 1);
+            }
+
+            .cover_page .content>img {
+                position: absolute;
+            }
+
+
+            .cover_page .content>img:nth-child(1) {
+                width: 90px;
+                bottom: 120px;
+                left: 0;
+            }
+
+            .cover_page .content>img:nth-child(2) {
+                width: 170px;
+                top: 350px;
+                right: 0;
+            }
+
+            .cover_page .logo_header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .cover_page .logo_header>img {
+                width: 150px;
+                height: 90px;
+            }
+
+            .cover_page .logo_header>img:nth-child(1) {
+                width: 280px;
+                height: 100px;
+            }
+
+            .cover_page .logo_header {
+                padding: 10px 42px;
+            }
+
+
+            .cover_page .content .col {
+                display: flex;
+                justify-content: center;
+            }
+
+            .cover_page .content .col:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cover_page .content .col:nth-child(1)>span {
+                font-size: 30px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+            }
+
+            .cover_page .content .col:nth-child(2)>span {
+                display: inline-block;
+                background: rgba(67, 165, 82, 1);
+                font-size: 40px;
+                color: rgba(255, 255, 255, 1);
+                font-weight: 600;
+                padding: 36px 150px;
+            }
+
+            .cover_page .content .col:nth-child(4)>img {
+                width: 700px;
+                height: 550px;
+            }
+
+            .cover_page .content .col:nth-child(5)>span {
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .cover_page .footer {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+
+            .cover_page .footer span:nth-child(1) {
+                flex: 1;
+            }
+
+            .cover_page .footer span:nth-child(1)>img {
+                height: 20px;
+                max-width: unset;
+            }
+
+            .cover_page .footer span:nth-child(2) {
+                font-size: 26px;
+                padding: 0 26px;
+                font-weight: 500;
+                color: rgba(67, 165, 82, 1);
+            }
+
+            .footer span:nth-child(3)>img {
+                width: 160px;
+                padding-right: 100px;
+            }
+
+            .thermography_and_interpretation .content .col:nth-child(3) table thead>tr>th {
+                /* font-size: 15px; */
+                text-align: start;
+                padding-left: 28px;
+            }
+
+            .anomalies_table .content .col:nth-child(2) table thead>tr>th {
+                border: 1px solid #ffffff;
+                border-bottom: none;
+            }
+
+            .anomalies_table .content .col:nth-child(2) table thead>tr>th:nth-child(1) {
+                border-left: none;
+            }
+
+            .anomalies_table .content .col:nth-child(2) table thead>tr>th:nth-child(5) {
+                border-right: none;
+            }
+        </style>
+        <!-- Resources -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+    </head>
+
+    <body>
+        {{ create_page(global_vars) }}
+        {{ increment(global_vars, "page_no") }}
+    </body>
+
+</html>
+__::__{{ global_vars["page_no"] }}

@@ -90,7 +90,7 @@ def task_tnd_report(self, task, kafka_bootstrap_servers, result_response_topic):
         report_module_dir = os.path.join(report_module_dir, "thermal_default_source" if test_mode else "thermal_default_build")
 
     else:
-        report_module_dir = os.path.join(report_module_dir, "surveillance_default_source" if test_mode else "surveillance_default_build")
+        report_module_dir = os.path.join(report_module_dir, "solar_default_source" if test_mode else "solar_default_build")
 
     # elif task.get("RequestType") == 's':
     #     report_module_dir = os.path.join(report_module_dir, "solar_default_source" if test_mode else "solar_default_build")

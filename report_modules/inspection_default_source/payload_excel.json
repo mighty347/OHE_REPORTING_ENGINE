@@ -1,0 +1,38 @@
+{
+  "bhi": 75,
+  "site_id": "8e343ae6-a451-43cc-86a0-259113aa58c9",
+  "sections": [
+    {
+      "weight": 18,
+      "components": [
+        {
+          "ci": 75,
+          "cs_j": 75,
+          "sl_no": "C2.1",
+          "weight_wj": 14.2,
+          "distresses": [
+            {
+              "cs": 75,
+              "image_id": "7f36923d-50d0-414c-8878-acc87f8ded2b",
+              "severity": 0,
+              "anomaly_id": "3c92810f-c3e8-4015-84d3-b2c2f470d78a",
+              "asset_name": "Abutment — A1",
+              "anomaly_name": "Staining",
+              "annotation_id": "de56e2fe-8980-4ad2-9fea-6abbb7f44d26",
+              "condition_state": "II"
+            }
+          ],
+          "component_name": "Abutment",
+          "condition_state": "II"
+        }
+      ],
+      "section_id": "C2",
+      "group_score": 75,
+      "section_name": "Substructure"
+    }
+  ],
+  "survey_id": "69da9619-2f99-4866-95b5-b1d0e4b12be5",
+  "table_title": "Table 7.6 Application of BHI",
+  "total_annotations": 3,
+  "document_reference": "IRC:SP:35-2024"
+}

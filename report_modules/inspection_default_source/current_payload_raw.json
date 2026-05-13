@@ -1,0 +1,921 @@
+{
+    "InspectionId": "add8592c-1fa3-4888-a3cd-a61626f28893",
+    "InspectionName": "Inspection",
+    "ProjectName": "Proect1",
+    "SiteName": "LineNew",
+    "DateRange": "May 29, 2024 - May 31, 2024",
+    "LineCapacity": [
+        {
+            "value": "33 KV"
+        }
+    ],
+    "TotalImagesCaptured": 12,
+    "AnnomalyDetails": [
+        {
+            "AnnomalyName": "Bird drop.....:4"
+        },
+        {
+            "AnnomalyName": "Broken Insulator:5"
+        },
+        {
+            "AnnomalyName": "Dust:2"
+        },
+        {
+            "AnnomalyName": "Flash Mark:6"
+        },
+        {
+            "AnnomalyName": "Vegetation:2"
+        }
+    ],
+    "TotalTowersInspected": 4,
+    "Towers": [
+        {
+            "ObjectStructureId": "fe5e3160-0ec8-4f51-8c22-44e867f1bf5a",
+            "ObjectStructureName": "T1",
+            "ObjectStructureGeoLocation": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            },
+            "Images": [
+                {
+                    "ImageId": "7e96bf07-92be-4250-a7a6-fd968c0637ae",
+                    "ImageName": "T1_0002_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T1_0002_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "263d2f8d-b90e-4f40-b99a-ab7d54822d8d",
+                            "annomaly_name": "Bird drop.....",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2257.0,
+                                            2174.0
+                                        ],
+                                        [
+                                            2311.0,
+                                            2174.0
+                                        ],
+                                        [
+                                            2311.0,
+                                            2121.0
+                                        ],
+                                        [
+                                            2257.0,
+                                            2121.0
+                                        ],
+                                        [
+                                            2257.0,
+                                            2174.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 0,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "273139c6-81a8-4895-be5c-59b4af61976f",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "ImageId": "54622869-1f43-4b99-99f0-ce65ef6293e4",
+                    "ImageName": "T1_0004_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T1_0004_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": null
+                },
+                {
+                    "ImageId": "0a4fef6c-5576-4f08-8806-9682eb8992a0",
+                    "ImageName": "T1_0006_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T1_0006_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "ea6f666c-ae86-48b3-a5b7-6201938b35c5",
+                            "annomaly_name": "Bird drop.....",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2016.0,
+                                            2094.0
+                                        ],
+                                        [
+                                            2107.0,
+                                            2094.0
+                                        ],
+                                        [
+                                            2107.0,
+                                            2032.0
+                                        ],
+                                        [
+                                            2016.0,
+                                            2032.0
+                                        ],
+                                        [
+                                            2016.0,
+                                            2094.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 0,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "273139c6-81a8-4895-be5c-59b4af61976f",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ObjectStructureId": "433c6d75-e490-4dd1-bf89-6156f5580317",
+            "ObjectStructureName": "T2",
+            "ObjectStructureGeoLocation": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            },
+            "Images": [
+                {
+                    "ImageId": "8f9ba5cb-e61a-4557-bba6-38b9931ef3ca",
+                    "ImageName": "T2_0002_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T2_0002_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "011030f2-1f9f-4a20-a14c-7e39d2998d0d",
+                            "annomaly_name": "Broken Insulator",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2134.0,
+                                            1505.0
+                                        ],
+                                        [
+                                            2271.0,
+                                            1505.0
+                                        ],
+                                        [
+                                            2271.0,
+                                            1446.0
+                                        ],
+                                        [
+                                            2134.0,
+                                            1446.0
+                                        ],
+                                        [
+                                            2134.0,
+                                            1505.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "dcb811d1-0439-4d0d-94ee-fe8cc3f34f88",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "75e6f35f-4274-4ce8-b12e-2e7d01bb3682",
+                            "annomaly_name": "Broken Insulator",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2104.0,
+                                            1583.0
+                                        ],
+                                        [
+                                            2222.0,
+                                            1583.0
+                                        ],
+                                        [
+                                            2222.0,
+                                            1528.0
+                                        ],
+                                        [
+                                            2104.0,
+                                            1528.0
+                                        ],
+                                        [
+                                            2104.0,
+                                            1583.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "dcb811d1-0439-4d0d-94ee-fe8cc3f34f88",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "ee032c4a-aeee-4ef4-b189-62ca7bebb05f",
+                            "annomaly_name": "Dust",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2116.0,
+                                            2196.0
+                                        ],
+                                        [
+                                            2302.0,
+                                            2196.0
+                                        ],
+                                        [
+                                            2302.0,
+                                            2033.0
+                                        ],
+                                        [
+                                            2116.0,
+                                            2033.0
+                                        ],
+                                        [
+                                            2116.0,
+                                            2196.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 0,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "df273f28-ce4e-4faa-bbaf-13aaa476e3e5",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "ImageId": "46cc9a16-8505-47c0-ac73-a92d48d4ccd7",
+                    "ImageName": "T2_0004_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T2_0004_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "637570f1-6467-4166-8ecf-492c82d55443",
+                            "annomaly_name": "Dust",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2218.0,
+                                            2103.0
+                                        ],
+                                        [
+                                            2427.0,
+                                            2103.0
+                                        ],
+                                        [
+                                            2427.0,
+                                            2037.0
+                                        ],
+                                        [
+                                            2218.0,
+                                            2037.0
+                                        ],
+                                        [
+                                            2218.0,
+                                            2103.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 0,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "df273f28-ce4e-4faa-bbaf-13aaa476e3e5",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "c6512219-15dd-4800-9903-a5efb9abc135",
+                            "annomaly_name": "Broken Insulator",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2191.0,
+                                            1099.0
+                                        ],
+                                        [
+                                            2348.0,
+                                            1099.0
+                                        ],
+                                        [
+                                            2348.0,
+                                            1050.0
+                                        ],
+                                        [
+                                            2191.0,
+                                            1050.0
+                                        ],
+                                        [
+                                            2191.0,
+                                            1099.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "dcb811d1-0439-4d0d-94ee-fe8cc3f34f88",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "ee5e9b94-c06a-41f0-90d0-981a4f774fc3",
+                            "annomaly_name": "Bird drop.....",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2379.0,
+                                            2219.0
+                                        ],
+                                        [
+                                            2427.0,
+                                            2219.0
+                                        ],
+                                        [
+                                            2427.0,
+                                            2183.0
+                                        ],
+                                        [
+                                            2379.0,
+                                            2183.0
+                                        ],
+                                        [
+                                            2379.0,
+                                            2219.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 0,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "273139c6-81a8-4895-be5c-59b4af61976f",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "ImageId": "be15648f-02c4-4f30-9ec7-80d4fa0cbf06",
+                    "ImageName": "T2_0006_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T2_0006_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "3f4c3747-8110-4c7c-b1d3-ccfbffbe29d3",
+                            "annomaly_name": "Broken Insulator",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2036.0,
+                                            1734.0
+                                        ],
+                                        [
+                                            2114.0,
+                                            1734.0
+                                        ],
+                                        [
+                                            2114.0,
+                                            1668.0
+                                        ],
+                                        [
+                                            2036.0,
+                                            1668.0
+                                        ],
+                                        [
+                                            2036.0,
+                                            1734.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "dcb811d1-0439-4d0d-94ee-fe8cc3f34f88",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ObjectStructureId": "d3347220-823c-4c58-837c-32c723d92024",
+            "ObjectStructureName": "T3",
+            "ObjectStructureGeoLocation": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            },
+            "Images": [
+                {
+                    "ImageId": "9fe3c937-3a01-4b09-b0f8-c86cb1b2e3f0",
+                    "ImageName": "T3_0002_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T3_0002_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "1f68d561-c5a7-490a-bffc-385d7c9f9784",
+                            "annomaly_name": "Flash Mark",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            1990.0,
+                                            2064.0
+                                        ],
+                                        [
+                                            2057.0,
+                                            2064.0
+                                        ],
+                                        [
+                                            2057.0,
+                                            2016.0
+                                        ],
+                                        [
+                                            1990.0,
+                                            2016.0
+                                        ],
+                                        [
+                                            1990.0,
+                                            2064.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "837c8d1e-5c3d-4568-add3-c3ace6ce7cea",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "ImageId": "671bfdf6-29db-4668-864d-006394842c13",
+                    "ImageName": "T3_0004_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T3_0004_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "a3904e74-e4bd-4366-8ae0-4f77d7bed973",
+                            "annomaly_name": "Flash Mark",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            712.0,
+                                            1008.0
+                                        ],
+                                        [
+                                            772.0,
+                                            1008.0
+                                        ],
+                                        [
+                                            772.0,
+                                            951.0
+                                        ],
+                                        [
+                                            712.0,
+                                            951.0
+                                        ],
+                                        [
+                                            712.0,
+                                            1008.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "837c8d1e-5c3d-4568-add3-c3ace6ce7cea",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "d6fb22b1-1848-4b7a-82cb-682c3c23f4b1",
+                            "annomaly_name": "Flash Mark",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            1313.0,
+                                            1169.0
+                                        ],
+                                        [
+                                            1358.0,
+                                            1169.0
+                                        ],
+                                        [
+                                            1358.0,
+                                            1113.0
+                                        ],
+                                        [
+                                            1313.0,
+                                            1113.0
+                                        ],
+                                        [
+                                            1313.0,
+                                            1169.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "837c8d1e-5c3d-4568-add3-c3ace6ce7cea",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "ImageId": "004f7edb-914d-40c4-b710-c38a9e33ac76",
+                    "ImageName": "T3_0006_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T3_0006_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "802cea46-10c8-4694-8171-ce73c77ac47a",
+                            "annomaly_name": "Flash Mark",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            1996.0,
+                                            1215.0
+                                        ],
+                                        [
+                                            2054.0,
+                                            1215.0
+                                        ],
+                                        [
+                                            2054.0,
+                                            1144.0
+                                        ],
+                                        [
+                                            1996.0,
+                                            1144.0
+                                        ],
+                                        [
+                                            1996.0,
+                                            1215.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "837c8d1e-5c3d-4568-add3-c3ace6ce7cea",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "fa65ef26-e1c9-49ed-bd0b-8284405d0d01",
+                            "annomaly_name": "Flash Mark",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2669.0,
+                                            1076.0
+                                        ],
+                                        [
+                                            2733.0,
+                                            1076.0
+                                        ],
+                                        [
+                                            2733.0,
+                                            987.0
+                                        ],
+                                        [
+                                            2669.0,
+                                            987.0
+                                        ],
+                                        [
+                                            2669.0,
+                                            1076.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "837c8d1e-5c3d-4568-add3-c3ace6ce7cea",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ObjectStructureId": "5f5bbe74-a662-40d9-b9c0-3f610ee839eb",
+            "ObjectStructureName": "T4",
+            "ObjectStructureGeoLocation": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            },
+            "Images": [
+                {
+                    "ImageId": "30961de7-cbf0-4af5-9bf4-7b5ba91edda4",
+                    "ImageName": "T4_0002_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T4_0002_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "dd722378-91e1-4517-b793-91219f8fde88",
+                            "annomaly_name": "Flash Mark",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            1766.0,
+                                            2136.0
+                                        ],
+                                        [
+                                            1897.0,
+                                            2136.0
+                                        ],
+                                        [
+                                            1897.0,
+                                            2065.0
+                                        ],
+                                        [
+                                            1766.0,
+                                            2065.0
+                                        ],
+                                        [
+                                            1766.0,
+                                            2136.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "837c8d1e-5c3d-4568-add3-c3ace6ce7cea",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "ImageId": "08e9a31f-701a-496a-a965-d579e5c0f726",
+                    "ImageName": "T4_0004_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T4_0004_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "296fe46e-99da-4b11-bc9a-4adfc7e4ee4c",
+                            "annomaly_name": "Bird drop.....",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2685.0,
+                                            1287.0
+                                        ],
+                                        [
+                                            2728.0,
+                                            1287.0
+                                        ],
+                                        [
+                                            2728.0,
+                                            1178.0
+                                        ],
+                                        [
+                                            2685.0,
+                                            1178.0
+                                        ],
+                                        [
+                                            2685.0,
+                                            1287.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 0,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "273139c6-81a8-4895-be5c-59b4af61976f",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "3deccada-86b9-41ca-aab7-d273ff3fd9bb",
+                            "annomaly_name": "Vegetation",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            1429.0,
+                                            831.0
+                                        ],
+                                        [
+                                            2769.0,
+                                            831.0
+                                        ],
+                                        [
+                                            2769.0,
+                                            1.0
+                                        ],
+                                        [
+                                            1429.0,
+                                            1.0
+                                        ],
+                                        [
+                                            1429.0,
+                                            831.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "c4f1604b-04e7-42ae-91ad-ef2f2e7018d6",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        },
+                        {
+                            "annotation_id": "e638224b-65a1-45ee-bf1e-ff1d1b5e1f7e",
+                            "annomaly_name": "Broken Insulator",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            2828.0,
+                                            1197.0
+                                        ],
+                                        [
+                                            2868.0,
+                                            1197.0
+                                        ],
+                                        [
+                                            2868.0,
+                                            1148.0
+                                        ],
+                                        [
+                                            2828.0,
+                                            1148.0
+                                        ],
+                                        [
+                                            2828.0,
+                                            1197.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "dcb811d1-0439-4d0d-94ee-fe8cc3f34f88",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "ImageId": "14ee807c-c424-4ca8-8104-76012cc7139c",
+                    "ImageName": "T4_0006_V.jpg",
+                    "ImageUrl": "https://bluehawk-uat.s3.ap-south-1.amazonaws.com/bluehawk-inspections/rawimages/add8592c-1fa3-4888-a3cd-a61626f28893/T4_0006_V.jpg",
+                    "ImageDate": "May 29, 2024",
+                    "Annotations": [
+                        {
+                            "annotation_id": "d6195761-f02d-4a20-bdd4-53314401bca0",
+                            "annomaly_name": "Vegetation",
+                            "member_name": "NOT_DEFINED",
+                            "parent_name": null,
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            1175.0,
+                                            913.0
+                                        ],
+                                        [
+                                            1740.0,
+                                            913.0
+                                        ],
+                                        [
+                                            1740.0,
+                                            7.0
+                                        ],
+                                        [
+                                            1175.0,
+                                            7.0
+                                        ],
+                                        [
+                                            1175.0,
+                                            913.0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "severity": 1,
+                            "notes": "Annotated by AI",
+                            "annomaly_id": "c4f1604b-04e7-42ae-91ad-ef2f2e7018d6",
+                            "annotation_json": null,
+                            "member_id": "c741fe53-33f0-4a7e-b038-ecf5c07f24b3",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

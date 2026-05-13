@@ -1,18 +1,18 @@
 {
     "task": {
-        "reportRequestId": "bac72bd7-38cf-4512-b331-dd428fae2450",
-        "organizationId": "9eef6999-1bf0-4ad7-850b-5158121ac7b4",
-        "requestedBy": "1c83dedd-a426-4281-9134-59b0c4f1e339",
-        "parameters": {
-            "p_from": "2026-02-25T18:30:00Z",
-            "p_to": "2026-02-27T18:29:59Z",
-            "p_site_ids": null,
-            "p_zone_ids": null,
-            "p_camera_ids": null,
-            "p_anomaly_ids": null
+        "Report": {
+            "ReportDownloadId": "2492e52c-f196-4254-930f-f278389966b4",
+            "SurveyId": "cb773baf-6ede-4366-8e1c-77ca862543c2",
+            "ReportUrl": null,
+            "ReportStatusEnum": 0,
+            "GeneratedOn": "0001-01-01T00:00:00"
         },
-        "createdAt": "2026-02-27T09:28:11.2843007Z"
+        "AssetIds": [
+            "9c935667-578e-4990-9e4b-d9653c0c0095"
+        ],
+        "Type": 2,
+        "RequestedBy": null
     },
-    "kafka_bootstrap_servers": "kafka:9092",
-    "result_response_topic": "surveillance-iocl-prod-report-response"
+    "kafka_bootstrap_servers": "15.206.68.206:9092",
+    "result_response_topic": "bridge-inspection-report-response-ohe"
 }
