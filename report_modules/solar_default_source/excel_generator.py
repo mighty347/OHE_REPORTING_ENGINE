@@ -10,97 +10,182 @@ class ExcelGenerator:
         exported_data = []
         s_no = 1
 
-        for block in self.payload.get("Blocks", []):
-            for annotation in block.get("Annotations", []):
+        blocks = self.payload.get("Blocks", []) or self.payload.get("Towers", [])
+        asset_details = self.payload.get("AssetDetails", {})
 
-                images = annotation.get("Images", [])
-                if not images:
-                    continue
-
-                # -------- Parse member_path --------
-                member_path = annotation.get("member_path", "") or ""
-                segments = [p.strip() for p in member_path.split("/") if p.strip()]
-
-                mp = {}
-                for seg in segments:
-                    if ":" in seg:
-                        k, v = seg.split(":", 1)
-                        mp[k.strip()] = v.strip()
-
-                # -------- Image handling (3 cases) --------
-                visual_img_url = ""
-                thermal_img_url = ""
-                capture_date = ""
-                annotation_json = {}
-
-                for image in images:
-                    img_url = image.get("ImageUrl", "")
-                    capture_date = image.get("ImageDate", capture_date)
-                    Latitude = image.get('MetaData').get("Latitude")
-                    Longitude = image.get('MetaData').get('Longitude')
-
-                    if not img_url:
+        # Process Blocks or Towers structure
+        if blocks:
+            for block in blocks:
+                mast_name = block.get("ObjectStructureName") or block.get("name") or ""
+                for annotation in block.get("Annotations", []) or []:
+                    images = annotation.get("Images", []) or []
+                    if not images:
                         continue
 
-                    if "_T.JPG" in img_url:
-                        thermal_img_url = img_url
-                        annotation_json = image.get("annotation_json") or {}
-                        
-                    elif "_V.JPG" in img_url or "RGB" in img_url:
-                        visual_img_url = img_url
+                    visual_img_url = ""
+                    thermal_img_url = ""
+                    latitude = None
+                    longitude = None
 
-                
+                    for image in images:
+                        if not isinstance(image, dict):
+                            continue
+                        img_url = image.get("ImageUrl", "")
+                        meta = image.get("MetaData") or {}
+                        if isinstance(meta, dict):
+                            if meta.get("Latitude") is not None:
+                                latitude = meta.get("Latitude")
+                            if meta.get("Longitude") is not None:
+                                longitude = meta.get("Longitude")
 
-                exported_data.append({
-                    "S.No.": s_no,
-                    "Image Type": block.get("ObjectStructureName", ""),
-                    "Block No.": mp.get("Block", ""),
-                    "String No.": mp.get("String", ""),
-                    "Row No.": mp.get("Row", ""),
-                    "Table No.": mp.get("Table", ""),
-                    "Module No.": mp.get("Module", ""),
-                    "Defect": annotation.get("annomaly_name", ""),
-                    "Severity": annotation.get("severity", ""),
-                    "Average Temp.": annotation_json.get("AvgTemp", ""),
-                    "Delta Temp.": annotation_json.get("DeltaTemp", ""),
-                    "Min Temp.": annotation_json.get("MinTemp", ""),
-                    "Max Temp.": annotation_json.get("MaxTemp", ""),
-                    "Latitude" : Latitude,
-                    "Longitude" : Longitude,
-                    "Thermal Image Url": thermal_img_url,
-                    "Visual Image Url": visual_img_url,
-                    "Capture Date": capture_date,
-                    "Remarks/Comment": annotation.get("remarks", "")
-                })
+                        if not img_url:
+                            continue
 
-                s_no += 1
+                        if "_T.JPG" in img_url.upper():
+                            thermal_img_url = img_url
+                        elif "_V.JPG" in img_url.upper() or "RGB" in img_url.upper():
+                            visual_img_url = img_url
+
+                    report_cols_v = annotation.get("ReportColumnsVisual") or {}
+                    report_cols_t = annotation.get("ReportColumnsThermal") or {}
+
+                    component = (
+                        annotation.get("component")
+                        or report_cols_v.get("Component  Name")
+                        or report_cols_v.get("Component Name")
+                        or report_cols_v.get("Component")
+                        or report_cols_t.get("Component  Name")
+                        or report_cols_t.get("Component Name")
+                        or report_cols_t.get("Component")
+                        or annotation.get("parent_name")
+                        or ""
+                    )
+
+                    sub_component = (
+                        annotation.get("sub_component")
+                        or report_cols_v.get("Subcomponent Name")
+                        or report_cols_v.get("Sub-Component")
+                        or report_cols_v.get("Sub-component")
+                        or report_cols_v.get("Subcomponent")
+                        or report_cols_t.get("Subcomponent Name")
+                        or report_cols_t.get("Sub-Component")
+                        or report_cols_t.get("Sub-component")
+                        or report_cols_t.get("Subcomponent")
+                        or annotation.get("member_name")
+                        or ""
+                    )
+
+                    defect = annotation.get("annomaly_name") or annotation.get("Anomaly") or ""
+
+                    exported_data.append({
+                        "S.No.": s_no,
+                        "Mast Name": mast_name,
+                        "Defect": defect,
+                        "Component": component,
+                        "Sub-Component": sub_component,
+                        "Latitude": latitude,
+                        "Longitude": longitude,
+                        "Visual Image URL": visual_img_url,
+                        "Thermal Image URL": thermal_img_url
+                    })
+                    s_no += 1
+
+        # Process AssetDetails structure
+        elif isinstance(asset_details, dict) and asset_details:
+            for section_name, items in asset_details.items():
+                if not isinstance(items, list):
+                    continue
+                for item in items:
+                    if not isinstance(item, dict):
+                        continue
+
+                    mast_name = item.get("AssetName") or item.get("ObjectStructureName") or ""
+                    defect = item.get("Anomaly") or item.get("annomaly_name") or ""
+
+                    report_cols_v = item.get("ReportColumnsVisual") or {}
+                    report_cols_t = item.get("ReportColumnsThermal") or {}
+
+                    component = (
+                        report_cols_v.get("Component  Name")
+                        or report_cols_v.get("Component Name")
+                        or report_cols_v.get("Component")
+                        or report_cols_t.get("Component  Name")
+                        or report_cols_t.get("Component Name")
+                        or report_cols_t.get("Component")
+                        or item.get("Component")
+                        or item.get("parent_name")
+                        or ""
+                    )
+
+                    sub_component = (
+                        report_cols_v.get("Subcomponent Name")
+                        or report_cols_v.get("Sub-Component")
+                        or report_cols_v.get("Sub-component")
+                        or report_cols_v.get("Subcomponent")
+                        or report_cols_t.get("Subcomponent Name")
+                        or report_cols_t.get("Sub-Component")
+                        or report_cols_t.get("Sub-component")
+                        or report_cols_t.get("Subcomponent")
+                        or item.get("Sub-Component")
+                        or item.get("member_name")
+                        or ""
+                    )
+
+                    visual_img_url = item.get("ImageVisualUrl") or ""
+                    thermal_img_url = item.get("ImageThermalUrl") or ""
+
+                    latitude = None
+                    longitude = None
+
+                    img_payload_v = item.get("ImageVisualPayload") or {}
+                    if isinstance(img_payload_v, dict):
+                        latitude = img_payload_v.get("lat")
+                        longitude = img_payload_v.get("lng")
+
+                    if latitude is None or longitude is None:
+                        img_payload_t = item.get("ImageThermalPayload") or {}
+                        if isinstance(img_payload_t, dict):
+                            latitude = latitude if latitude is not None else img_payload_t.get("lat")
+                            longitude = longitude if longitude is not None else img_payload_t.get("lng")
+
+                    exported_data.append({
+                        "S.No.": s_no,
+                        "Mast Name": mast_name,
+                        "Defect": defect,
+                        "Component": component,
+                        "Sub-Component": sub_component,
+                        "Latitude": latitude,
+                        "Longitude": longitude,
+                        "Visual Image URL": visual_img_url,
+                        "Thermal Image URL": thermal_img_url
+                    })
+                    s_no += 1
 
         # -------- Handle empty export --------
         if not exported_data:
-            exported_data.append({})
+            exported_data.append({
+                "S.No.": "",
+                "Mast Name": "",
+                "Defect": "",
+                "Component": "",
+                "Sub-Component": "",
+                "Latitude": "",
+                "Longitude": "",
+                "Visual Image URL": "",
+                "Thermal Image URL": ""
+            })
 
         df = pd.DataFrame(exported_data)
-        
-        temp_columns = [
-            "Average Temp.",
-            "Delta Temp.",
-            "Min Temp.",
-            "Max Temp."
-        ]
 
-        # Check if all temperature columns are fully empty
-        if all(
-            col in df.columns and df[col].replace("", pd.NA).isna().all()
-            for col in temp_columns
-        ):
-            df.drop(columns=temp_columns, inplace=True)
+        # -------- Drop columns where no values exist --------
+        cols_to_drop = []
+        for col in df.columns:
+            series_str = df[col].fillna("").astype(str).str.strip()
+            if (series_str.isin(["", "None", "nan", "NaN", "<NA>"])).all():
+                cols_to_drop.append(col)
 
-        # -------- Drop empty image columns --------
-        if "Thermal Image Url" in df.columns and df["Thermal Image Url"].replace("", pd.NA).isna().all():
-            df.drop(columns=["Thermal Image Url"], inplace=True)
-
-        if "Visual Image Url" in df.columns and df["Visual Image Url"].replace("", pd.NA).isna().all():
-            df.drop(columns=["Visual Image Url"], inplace=True)
+        if cols_to_drop:
+            df.drop(columns=cols_to_drop, inplace=True)
 
         # -------- Write Excel --------
         with pd.ExcelWriter(output_file, engine="xlsxwriter") as writer:
@@ -119,7 +204,7 @@ class ExcelGenerator:
 
 
 if __name__ == "__main__":
-    with open("current_payload.json", "r") as f:
+    with open("current_payload_new.json", "r") as f:
         payload = json.load(f)
 
     excel_generator = ExcelGenerator(payload)
