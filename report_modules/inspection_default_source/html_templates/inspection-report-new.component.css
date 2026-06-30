@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Ubuntu:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Ubuntu:wght@300&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
 /* @import url(../../../assets/css/fonts.googleapis.css); */
 /* @import url(../../../assets/css/font.googleapis.robotics.css); */
 
@@ -79,7 +79,7 @@ header img {
 }
 
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
+  font-family: Arial, Helvetica, "Montserrat", sans-serif !important;
   font-weight: normal;
   font-style: normal;
   color: #333333;
@@ -90,7 +90,7 @@ body {
 
 
 * {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
+  font-family: Arial, Helvetica, "Montserrat", sans-serif !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1306,7 +1306,7 @@ ul.tableContent_wrap>li p::before {
   font-size: 28px;
   margin-bottom: 20px;
   color: #797979;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, "Montserrat", sans-serif;
 }
 
 .four-image-grid {

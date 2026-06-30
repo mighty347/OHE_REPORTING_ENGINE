@@ -83,370 +83,6 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
             json.dump(payload, f , indent=4)
             # payload = json.load(f)
 
-
-
-
-        #------------------------------------------------------
-        # payload = {
-        #             "SurveyId": "ceb86687-dbba-4b3d-8017-998e58798288",
-        #             "SurveyName": "thirteenjanuary",
-        #             "SurveyCreatedDate": "2026-01-14T07:04:48.624139+00:00",
-        #             "ProjectName": "wholetest",
-        #             "SiteName": "noida",
-        #             "PlantCapacity": 22,
-        #             "ModuleCapacity": 5,
-        #             "TotalAffectModules": 3,
-        #             "TotalNumberOfModules": 18,
-        #             "AnnomalyDetails": [
-        #                 {
-        #                     "AnnomalyName": "BYPASS DIODE FAILURE",
-        #                     "AnnomalyCount": 1,
-        #                     "AnomalyColor": "#ff00ff"
-        #                 },
-        #                 {
-        #                     "AnnomalyName": "CELL MISMATCH",
-        #                     "AnnomalyCount": 1,
-        #                     "AnomalyColor": "#ffff00"
-        #                 },
-        #                 {
-        #                     "AnnomalyName": "MULTIPLE CELL MISMATCH",
-        #                     "AnnomalyCount": 1,
-        #                     "AnomalyColor": "#0000ff"
-        #                 }
-        #             ],
-        #             "HasAnomalyFilter": False,
-        #             "AnnotationCount": 3,
-        #             "Blocks": [
-        #                 {
-        #                     "ObjectStructureId": "b20ee15d-24ca-4a59-9d26-dbaa6dbe581a",
-        #                     "ObjectStructureName": "FL-5",
-        #                     "ObjectStructureGeoLocation": null,
-        #                     "TotalImages": 32,
-        #                     "ImagesWithAnnotations": 2,
-        #                     "Annotations": [
-        #                         {
-        #                             "annotation_id": "51739cdc-35a1-4ed6-a9b2-2c43f5be930a",
-        #                             "annomaly_name": "CELL MISMATCH",
-        #                             "anomaly_color": "#ffff00",
-        #                             "annomaly_id": "88dd4d20-2410-4e70-a928-f6de0e17a814",
-        #                             "member_name": "",
-        #                             "parent_name": "",
-        #                             "severity": "LOW",
-        #                             "remarks": "CELL MISMATCH",
-        #                             "member_id": "00000000-0000-0000-0000-000000000000",
-        #                             "member_path": "Block:1 / String:1 / Row:1 / Table:1 / Module:A",
-        #                             "annotation_status": "PENDING",
-        #                             "created_date": "2026-01-14T07:06:52.714449+00:00",
-        #                             "Images": [
-        #                                 {
-        #                                     "ImageId": "4ba0ee64-64a3-44b6-aa85-9419448672d8",
-        #                                     "ImageName": "DJI_20251117140737_0001_V.JPG",
-        #                                     "ImageUrl": "https://minio.mapbyvaayu.com/vaayudatarepo/vaayu/rawimages/Solar/surveys/ceb86687-dbba-4b3d-8017-998e58798288/FL-5/DJI_20251117140737_0001_V.JPG",
-        #                                     "ImageDate": "Jan 14, 2026",
-        #                                     "SensorType": 3,
-        #                                     "BaseName": "DJI_20251117140737_0001",
-        #                                     "Suffix": "_V",
-        #                                     "geometry": {
-        #                                         "type": "Polygon",
-        #                                         "coordinates": [
-        #                                             [
-        #                                                 [
-        #                                                     574.0153607624934,
-        #                                                     1022.569494160974
-        #                                                 ],
-        #                                                 [
-        #                                                     574.0153607624934,
-        #                                                     1226.5625762074828
-        #                                                 ],
-        #                                                 [
-        #                                                     821.4112338322567,
-        #                                                     1226.5625762074828
-        #                                                 ],
-        #                                                 [
-        #                                                     821.4112338322567,
-        #                                                     1022.569494160974
-        #                                                 ],
-        #                                                 [
-        #                                                     574.0153607624934,
-        #                                                     1022.569494160974
-        #                                                 ]
-        #                                             ]
-        #                                         ]
-        #                                     },
-        #                                     "annotation_json": null
-        #                                 },
-        #                                 {
-        #                                     "ImageId": "198e0a86-ea3d-47b4-a6e2-92adb7f951df",
-        #                                     "ImageName": "DJI_20251117140737_0001_T.JPG",
-        #                                     "ImageUrl": "https://minio.mapbyvaayu.com/vaayudatarepo/vaayu/rawimages/Solar/surveys/ceb86687-dbba-4b3d-8017-998e58798288/FL-5/DJI_20251117140737_0001_T.JPG",
-        #                                     "ImageDate": "Jan 14, 2026",
-        #                                     "SensorType": 4,
-        #                                     "BaseName": "DJI_20251117140737_0001",
-        #                                     "Suffix": "_T",
-        #                                     "geometry": {
-        #                                         "type": "Polygon",
-        #                                         "coordinates": [
-        #                                             [
-        #                                                 [
-        #                                                     123,
-        #                                                     235
-        #                                                 ],
-        #                                                 [
-        #                                                     123,
-        #                                                     168
-        #                                                 ],
-        #                                                 [
-        #                                                     191,
-        #                                                     168
-        #                                                 ],
-        #                                                 [
-        #                                                     191,
-        #                                                     235
-        #                                                 ],
-        #                                                 [
-        #                                                     123,
-        #                                                     235
-        #                                                 ]
-        #                                             ]
-        #                                         ]
-        #                                     },
-        #                                     "annotation_json": {
-        #                                         "MinTemp": 29.6,
-        #                                         "MaxTemp": 38.49,
-        #                                         "MinTempCoord": [
-        #                                             181,
-        #                                             187
-        #                                         ],
-        #                                         "MaxTempCoord": [
-        #                                             160,
-        #                                             168
-        #                                         ],
-        #                                         "AvgTemp": 34.05,
-        #                                         "DeltaTemp": 8.89,
-        #                                         "AmbientTemp": null,
-        #                                         "AdjacentTemp": null,
-        #                                         "count": null
-        #                                     }
-        #                                 }
-        #                             ]
-        #                         },
-        #                         {
-        #                             "annotation_id": "f6382b2d-1d67-44a2-b4e2-44fb380faadc",
-        #                             "annomaly_name": "BYPASS DIODE FAILURE",
-        #                             "anomaly_color": "#ff00ff",
-        #                             "annomaly_id": "5d884c43-c22b-4790-8508-a89d434536f1",
-        #                             "member_name": "",
-        #                             "parent_name": "",
-        #                             "severity": "HIGH",
-        #                             "remarks": "BYPASS DIODE FAILURE",
-        #                             "member_id": "00000000-0000-0000-0000-000000000000",
-        #                             "member_path": "Block:1 / String:1 / Row:1 / Table:1 / Module:B",
-        #                             "annotation_status": "PENDING",
-        #                             "created_date": "2026-01-14T07:09:55.229785+00:00",
-        #                             "Images": [
-        #                                 {
-        #                                     "ImageId": "d18aae95-5761-4e0f-b8ac-c8fe335ffdb2",
-        #                                     "ImageName": "DJI_20251117140740_0003_V.JPG",
-        #                                     "ImageUrl": "https://minio.mapbyvaayu.com/vaayudatarepo/vaayu/rawimages/Solar/surveys/ceb86687-dbba-4b3d-8017-998e58798288/FL-5/DJI_20251117140740_0003_V.JPG",
-        #                                     "ImageDate": "Jan 14, 2026",
-        #                                     "SensorType": 3,
-        #                                     "BaseName": "DJI_20251117140740_0003",
-        #                                     "Suffix": "_V",
-        #                                     "geometry": {
-        #                                         "type": "Polygon",
-        #                                         "coordinates": [
-        #                                             [
-        #                                                 [
-        #                                                     539.2931517857478,
-        #                                                     979.1667031377197
-        #                                                 ],
-        #                                                 [
-        #                                                     539.2931517857478,
-        #                                                     1131.0764585886116
-        #                                                 ],
-        #                                                 [
-        #                                                     795.3695402147241,
-        #                                                     1131.0764585886116
-        #                                                 ],
-        #                                                 [
-        #                                                     795.3695402147241,
-        #                                                     979.1667031377197
-        #                                                 ],
-        #                                                 [
-        #                                                     539.2931517857478,
-        #                                                     979.1667031377197
-        #                                                 ]
-        #                                             ]
-        #                                         ]
-        #                                     },
-        #                                     "annotation_json": null
-        #                                 },
-        #                                 {
-        #                                     "ImageId": "11cfdbfb-9578-4134-98ab-b5248348637b",
-        #                                     "ImageName": "DJI_20251117140740_0003_T.JPG",
-        #                                     "ImageUrl": "https://minio.mapbyvaayu.com/vaayudatarepo/vaayu/rawimages/Solar/surveys/ceb86687-dbba-4b3d-8017-998e58798288/FL-5/DJI_20251117140740_0003_T.JPG",
-        #                                     "ImageDate": "Jan 14, 2026",
-        #                                     "SensorType": 4,
-        #                                     "BaseName": "DJI_20251117140740_0003",
-        #                                     "Suffix": "_T",
-        #                                     "geometry": {
-        #                                         "type": "Polygon",
-        #                                         "coordinates": [
-        #                                             [
-        #                                                 [
-        #                                                     74,
-        #                                                     178
-        #                                                 ],
-        #                                                 [
-        #                                                     74,
-        #                                                     122
-        #                                                 ],
-        #                                                 [
-        #                                                     167,
-        #                                                     122
-        #                                                 ],
-        #                                                 [
-        #                                                     167,
-        #                                                     178
-        #                                                 ],
-        #                                                 [
-        #                                                     74,
-        #                                                     178
-        #                                                 ]
-        #                                             ]
-        #                                         ]
-        #                                     },
-        #                                     "annotation_json": {
-        #                                         "MinTemp": 28.14,
-        #                                         "MaxTemp": 38.02,
-        #                                         "MinTempCoord": [
-        #                                             76,
-        #                                             147
-        #                                         ],
-        #                                         "MaxTempCoord": [
-        #                                             166,
-        #                                             159
-        #                                         ],
-        #                                         "AvgTemp": 33.08,
-        #                                         "DeltaTemp": 9.880000000000003,
-        #                                         "AmbientTemp": null,
-        #                                         "AdjacentTemp": null,
-        #                                         "count": null
-        #                                     }
-        #                                 }
-        #                             ]
-        #                         },
-        #                         {
-        #                             "annotation_id": "19e6f10a-df35-4c8e-9a10-7bbf1437a465",
-        #                             "annomaly_name": "MULTIPLE CELL MISMATCH",
-        #                             "anomaly_color": "#0000ff",
-        #                             "annomaly_id": "943aac69-28bf-4884-8351-f55d44d33552",
-        #                             "member_name": "",
-        #                             "parent_name": "",
-        #                             "severity": "MEDIUM",
-        #                             "remarks": "MULTIPLE CELL MISMATCH",
-        #                             "member_id": "00000000-0000-0000-0000-000000000000",
-        #                             "member_path": "Block:1 / String:1 / Row:1 / Table:1 / Module:C",
-        #                             "annotation_status": "PENDING",
-        #                             "created_date": "2026-01-14T07:10:53.479723+00:00",
-        #                             "Images": [
-        #                                 {
-        #                                     "ImageId": "4ba0ee64-64a3-44b6-aa85-9419448672d8",
-        #                                     "ImageName": "DJI_20251117140737_0001_V.JPG",
-        #                                     "ImageUrl": "https://minio.mapbyvaayu.com/vaayudatarepo/vaayu/rawimages/Solar/surveys/ceb86687-dbba-4b3d-8017-998e58798288/FL-5/DJI_20251117140737_0001_V.JPG",
-        #                                     "ImageDate": "Jan 14, 2026",
-        #                                     "SensorType": 3,
-        #                                     "BaseName": "DJI_20251117140737_0001",
-        #                                     "Suffix": "_V",
-        #                                     "geometry": {
-        #                                         "type": "Polygon",
-        #                                         "coordinates": [
-        #                                             [
-        #                                                 [
-        #                                                     543.6334428090022,
-        #                                                     1309.0278672307372
-        #                                                 ],
-        #                                                 [
-        #                                                     543.6334428090022,
-        #                                                     1469.6181582539916
-        #                                                 ],
-        #                                                 [
-        #                                                     817.0709428090023,
-        #                                                     1469.6181582539916
-        #                                                 ],
-        #                                                 [
-        #                                                     817.0709428090023,
-        #                                                     1309.0278672307372
-        #                                                 ],
-        #                                                 [
-        #                                                     543.6334428090022,
-        #                                                     1309.0278672307372
-        #                                                 ]
-        #                                             ]
-        #                                         ]
-        #                                     },
-        #                                     "annotation_json": null
-        #                                 },
-        #                                 {
-        #                                     "ImageId": "198e0a86-ea3d-47b4-a6e2-92adb7f951df",
-        #                                     "ImageName": "DJI_20251117140737_0001_T.JPG",
-        #                                     "ImageUrl": "https://minio.mapbyvaayu.com/vaayudatarepo/vaayu/rawimages/Solar/surveys/ceb86687-dbba-4b3d-8017-998e58798288/FL-5/DJI_20251117140737_0001_T.JPG",
-        #                                     "ImageDate": "Jan 14, 2026",
-        #                                     "SensorType": 4,
-        #                                     "BaseName": "DJI_20251117140737_0001",
-        #                                     "Suffix": "_T",
-        #                                     "geometry": {
-        #                                         "type": "Polygon",
-        #                                         "coordinates": [
-        #                                             [
-        #                                                 [
-        #                                                     124,
-        #                                                     306
-        #                                                 ],
-        #                                                 [
-        #                                                     124,
-        #                                                     258
-        #                                                 ],
-        #                                                 [
-        #                                                     198,
-        #                                                     258
-        #                                                 ],
-        #                                                 [
-        #                                                     198,
-        #                                                     306
-        #                                                 ],
-        #                                                 [
-        #                                                     124,
-        #                                                     306
-        #                                                 ]
-        #                                             ]
-        #                                         ]
-        #                                     },
-        #                                     "annotation_json": {
-        #                                         "MinTemp": 29.36,
-        #                                         "MaxTemp": 38.02,
-        #                                         "MinTempCoord": [
-        #                                             189,
-        #                                             300
-        #                                         ],
-        #                                         "MaxTempCoord": [
-        #                                             161,
-        #                                             262
-        #                                         ],
-        #                                         "AvgTemp": 33.69,
-        #                                         "DeltaTemp": 8.660000000000004,
-        #                                         "AmbientTemp": null,
-        #                                         "AdjacentTemp": null,
-        #                                         "count": null
-        #                                     }
-        #                                 }
-        #                             ]
-        #                         }
-        #                     ]
-        #                 }
-        #             ]
-        #         }
-
         project_dir = os.path.join(ReportGenConfig.TEMP_DIR, task.get("Report").get("SurveyId"))
         temp_dir, project_dir = setup_directories(ReportGenConfig.TEMP_DIR, project_dir)
 
@@ -569,28 +205,28 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         # --------------------------------------------------------------------------------------------------------------------------------
         # 11                                                     GENERATING EXCEL
 
-        # print("Generating Excel file ...")
+        print("Generating Excel file ...")
 
-        # excel_file_path = os.path.join(project_dir, task.get("SurveyId")+".xlsx")
+        excel_file_path = os.path.join(project_dir, task.get("Report").get("SurveyId")+".xlsx")
         
-        # excel_generator = ExcelGenerator(payload=payload)
-        # excel_file_path = excel_generator.generate_excel(output_file=excel_file_path)
+        excel_generator = ExcelGenerator(payload=payload)
+        excel_file_path = excel_generator.generate_excel(output_file=excel_file_path)
 
-        # # s3_excel_file_path = AWSConfig.SOLAR_EXCEL_DIR.format( SurveyId = task.get("SurveyId") , ReportName = payload.get("SurveyId").replace(' ','_') )
-        # s3_excel_file_path = AWSConfig.SOLAR_EXCEL_DIR.format( SurveyId = task.get("SurveyId") , ReportName = task.get("TopicName") )
+        # s3_excel_file_path = AWSConfig.SOLAR_EXCEL_DIR.format( SurveyId = task.get("SurveyId") , ReportName = payload.get("SurveyId").replace(' ','_') )
+        s3_excel_file_path = AWSConfig.SOLAR_EXCEL_DIR.format( SurveyId = task.get("Report").get("SurveyId") , ReportName = task.get("Report").get("TopicName") or task.get("Report").get("SurveyId") )
 
-        # ret = aws_manager.upload_file(file_path= excel_file_path, s3_file_path= s3_excel_file_path)
+        ret = aws_manager.upload_file(file_path= excel_file_path, s3_file_path= s3_excel_file_path)
 
-        # print("excel file file uploading status : ", ret)
+        print("excel file file uploading status : ", ret)
 
-        # # generating downloading link.
-        # if ret:
-        #     ret, excel_download_link = aws_manager.get_download_link(s3_file_path= s3_excel_file_path)
+        # generating downloading link.
+        if ret:
+            ret, excel_download_link = aws_manager.get_download_link(s3_file_path= s3_excel_file_path)
             
-        # if (not ret) or (not bool(excel_download_link)) :
-        #     print("ret : ", ret)
-        #     print("excel_download_link : ", excel_download_link)
-        #     raise Exception("Error while generating excel file.")
+        if (not ret) or (not bool(excel_download_link)) :
+            print("ret : ", ret)
+            print("excel_download_link : ", excel_download_link)
+            raise Exception("Error while generating excel file.")
 
 
         # MANUAL SUCCESS / FAILED ENTRY ON TOPIC -----------------------------------
@@ -604,6 +240,7 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         ret_payload = {"ReportDownloadId":task.get("Report").get("ReportDownloadId"),
                         "SurveyId":task.get("Report").get("SurveyId"),
                         "ReportUrl": pdf_download_link,
+                        "ExcelUrl" : excel_download_link,
                         "ReportStatusEnum":1,
                         "GeneratedOn":datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%fZ")
                         }
@@ -612,6 +249,7 @@ def main(task, kafka_bootstrap_servers, result_response_topic, progress_callback
         ret_payload = {"ReportDownloadId":task.get("Report").get("ReportDownloadId"),
                         "SurveyId":task.get("Report").get("SurveyId"),
                         "ReportUrl": None,
+                        "ExcelUrl" : None,
                         "ReportStatusEnum":2,
                         "GeneratedOn":datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%fZ")
                         }

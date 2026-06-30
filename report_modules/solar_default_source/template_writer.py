@@ -956,22 +956,26 @@ class TemplateWriter(object):
 
         total_annotated_images = 0
         images = []
-        # for asset in self.payload.get("AssetDetails"):
         for section_name, section_data in self.payload.get("AssetDetails", {}).items():
             for anno in section_data:
                 if anno.get("GeometryVisual") or anno.get("GeometryThermal"):
                     anno["Direction"] = section_name
                     images.append(anno)
                     total_annotated_images += 1
-              
 
-        for image_count, annotation in enumerate(images):
+        # Pre-assign annotation index before multithreading to avoid race conditions
+        for annotation in images:
+            if "annotation_index" not in annotation:
+                annotation["annotation_index"] = anomaly_count
+                anomaly_count += 1
+
+        def process_image_task(item):
+            image_count, annotation = item
             print(f"Processing... {Fore.YELLOW}{ image_count + 1 }{Fore.RESET}/{Fore.BLUE}{total_annotated_images}{Fore.RESET} ")
               
             image_id = f"image_{image_count + 1}"
             current_image_dir = os.path.join(self.project_dir, str(image_id))
             os.makedirs(current_image_dir, exist_ok=True)
-            
             
             image_sources = []
             if annotation.get("GeometryVisual") and annotation.get("ImageVisualUrl"):
@@ -981,21 +985,22 @@ class TemplateWriter(object):
                 
             if not image_sources:
                 print("No Visual Or thermal image found")
-                continue
+                return
             
-            if "annotation_index" not in annotation:
-                annotation["annotation_index"] = anomaly_count
-                anomaly_count += 1
+            anno_idx = annotation.get("annotation_index", image_count + 1)
             
             for image_type, image_url in image_sources:
                 print(f"  Processing {image_type} image...")
                 
-                response = requests.get(image_url)
-                
-                if response.status_code == 200:
-                    image_bytes = response.content
-                else:
-                    print(f"    Got return code : {response.status_code}")
+                try:
+                    response = requests.get(image_url, timeout=30)
+                    if response.status_code == 200:
+                        image_bytes = response.content
+                    else:
+                        print(f"    Got return code : {response.status_code}")
+                        image_bytes = None
+                except Exception as e:
+                    print(f"    Download error for {image_url}: {e}")
                     image_bytes = None
                 
                 if not image_bytes:
@@ -1014,7 +1019,6 @@ class TemplateWriter(object):
                     print(f"    No geometry found for {image_type}")
                     continue
                 
-                # imagePayload may already be a dict
                 if isinstance(annotation_payload.get("imagePayload"), str):
                     try:
                         annotation_payload["imagePayload"] = json.loads(annotation_payload["imagePayload"])
@@ -1023,12 +1027,10 @@ class TemplateWriter(object):
                     
                 geojson = annotation_payload
 
-                    # --- Handle GeoJSON Feature wrapper ---
                 if geojson is None:
                     print("No geojson found in annotation payload.")
                     continue
                 
-                # If type is Feature, extract geometry
                 if geojson.get("type") == "Feature":
                     geometry = geojson.get("geometry")
                     if not geometry:
@@ -1057,9 +1059,9 @@ class TemplateWriter(object):
                         draw_output='line'
                     )
                     cropped_annotation = raw_img.crop((crop_coord[0][0], crop_coord[0][1], crop_coord[1][0], crop_coord[1][1]))
-                    cropped_annotation = draw_line_and_count(cropped_annotation, crop_box_coord, crop_line_coord, anomaly_count, image_type="annotation")
-                    img = draw_line_and_count(img, box_coord, line_coord, anomaly_count, image_type="original", line_width=3)
-                    annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
+                    cropped_annotation = draw_line_and_count(cropped_annotation, crop_box_coord, crop_line_coord, anno_idx, image_type="annotation")
+                    img = draw_line_and_count(img, box_coord, line_coord, anno_idx, image_type="original", line_width=3)
+                    annot_img_save_path = os.path.join(current_image_dir, str(anno_idx)+".jpg")
                     cropped_annotation = cropped_annotation.convert("RGB")
                     cropped_annotation.save(annot_img_save_path)
                     if image_type == "thermal":
@@ -1072,7 +1074,7 @@ class TemplateWriter(object):
 
                     img_save_path = os.path.join(
                         current_image_dir,
-                        f"{image_type}_{base_name}_{anomaly_count}.jpg"
+                        f"{image_type}_{base_name}_{anno_idx}.jpg"
                     )
                     img = img.convert("RGB")
                     img.save(img_save_path)
@@ -1094,11 +1096,11 @@ class TemplateWriter(object):
                     )
                     cropped_annotation = raw_img.crop((crop_coord[0][0], crop_coord[0][1], crop_coord[1][0], crop_coord[1][1]))
                     
-                    cropped_annotation = draw_box_and_count(cropped_annotation, crop_box_coord, anomaly_count, image_type="annotation",outline_color=outline_color)
-                    img = draw_box_and_count(img, box_coord, anomaly_count, image_type="original", line_width=20, outline_color=outline_color)
+                    cropped_annotation = draw_box_and_count(cropped_annotation, crop_box_coord, anno_idx, image_type="annotation",outline_color=outline_color)
+                    img = draw_box_and_count(img, box_coord, anno_idx, image_type="original", line_width=20, outline_color=outline_color)
                             
-                    annot_img_save_path = os.path.join(current_image_dir, str(anomaly_count)+".jpg")
-                    cropped_annotation = cropped_annotation.convert("RGB")  # <-- ADD THIS
+                    annot_img_save_path = os.path.join(current_image_dir, str(anno_idx)+".jpg")
+                    cropped_annotation = cropped_annotation.convert("RGB")
                     cropped_annotation.save(annot_img_save_path)
                     if image_type == "thermal":
                         annotation["thermal_image_path"] = annot_img_save_path
@@ -1111,9 +1113,9 @@ class TemplateWriter(object):
 
                     img_save_path = os.path.join(
                         current_image_dir,
-                        f"{image_type}_{base_name}_{anomaly_count}.jpg"
+                        f"{image_type}_{base_name}_{anno_idx}.jpg"
                     )
-                    img = img.convert("RGB")  # <-- ADD THIS
+                    img = img.convert("RGB")
                     img.save(img_save_path)
                     if image_type == "thermal":
                         annotation["thermal_parent_img_path"] = img_save_path
@@ -1124,60 +1126,58 @@ class TemplateWriter(object):
                     print(f"Got unsupported Annotation type : {geometry_type}")
                     continue
 
-            else:
-                print(f"{Fore.RED} [template_writer] > generate_anomaly_page {Fore.RESET} |  image could not be downloaded :")
-                                    
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(executor.map(process_image_task, enumerate(images)))
+
         print("\nAll images processed ...")
- 
-        # header_image = self.download_header_image()
-        # get the annotation template
+
         annotation_page_template = self.jinja_env.get_template("annotation_page_template.html")
-        for image_count, annotation in enumerate(images):
+        start_page_count = self.current_page_count
+
+        def generate_pdf_task(item):
+            image_count, annotation = item
             print(f"Generating PDF of ... {Fore.YELLOW}{ image_count + 1 }{Fore.RESET}/{Fore.BLUE}{total_annotated_images}{Fore.RESET} ")
+            page_idx = start_page_count + image_count
             html = annotation_page_template.render({
-                                    "base_dir":self.templates_path,
-                                    # "InspectionName": self.payload.get("InspectionName"),
-                                    # "inspection_date": self.payload.get("DateRange"),
-                                    # "tower_data": tower,
-                                    "annotation":annotation,
+                                    "base_dir": self.templates_path,
+                                    "annotation": annotation,
                                     "tower_no": "&nbsp",
-                                    
-                                    # "tower_lat": tower["ObjectStructureGeoLocation"]["coordinates"][0],
-                                    # "tower_long": tower["ObjectStructureGeoLocation"]["coordinates"][1],
                                     "base_url": "https://coredatarepo.s3.ap-south-1.amazonaws.com/",
-                                    "page_index": self.current_page_count,
+                                    "page_index": page_idx,
                                     "total_pages": self.total_page_count,
-                                    # "position_of_defect": image.get("AssetPath", "N/A"),
-                                    "footer_inspection_name":self.payload.get("SurveyName"),
+                                    "footer_inspection_name": self.payload.get("SurveyName"),
                                     "footer_current_date": self.current_date
                                     })
                 
-            split_html =  html.split("__::__")
+            split_html = html.split("__::__")
             html = split_html[0]
-            self.current_page_count = int(split_html[1])
-
-            if self.debug:
-                with open( os.path.join(self.templates_path, "temp_anomaly_page.html"), "w") as f:
-                    f.write(html)
 
             inspection_name = self.payload.get("InspectionName") or "UnknownInspection"
-            
             annotation_id = annotation.get("annotation_id", image_count+1)
             pdf_path = os.path.join(self.project_dir, f"{inspection_name}_{annotation_id}.pdf")
 
             ret = pdfkit.from_string(
                                 html,
-                                output_path= pdf_path,
-                                options= self.wkhtml_options,
-                                configuration= self.wkhtmltopdf_config,
-                                verbose = self.verbose,
-                                css = self.css_path
+                                output_path=pdf_path,
+                                options=self.wkhtml_options,
+                                configuration=self.wkhtmltopdf_config,
+                                verbose=self.verbose,
+                                css=self.css_path
                             )
-            if ret :
-                self.generated_pdfs.append(pdf_path)
+            if ret:
+                return pdf_path
             else:
                 self.vprint(f"Error in Generating PDF file : {pdf_path}")
-           
+                return None
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            pdf_results = list(executor.map(generate_pdf_task, enumerate(images)))
+
+        for pdf_path in pdf_results:
+            if pdf_path:
+                self.generated_pdfs.append(pdf_path)
+
+        self.current_page_count = start_page_count + len(images)
         return True
 
 
@@ -1222,6 +1222,8 @@ class TemplateWriter(object):
                 '-sDEVICE=pdfwrite',
                 '-dCompatibilityLevel=1.4',
                 '-dPDFSETTINGS=/prepress',
+                '-dEmbedAllFonts=true',
+                '-dSubsetFonts=true',
                 '-dNOPAUSE',
                 '-dQUIET',
                 '-dBATCH',
