@@ -1,3 +1,3 @@
 start_redis_server.sh -> 9
 start_celery_worker.sh -> 13
-start_kafka_listener.sh -> 17
+start_kafka_listener.sh -> 19
